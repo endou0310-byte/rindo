@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>林道 通行止めウォッチ（最小）</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Leaflet（地図用・無料・鍵不要）-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- PWA化は次段階で manifest.json を足します -->
+</head>
+<body>
+  <header>
+    <h1>林道 通行止めウォッチ（最小）</h1>
+  </header>
+
+  <section class="toolbar">
+    <select id="prefSelect"></select>
+    <input id="routeInput" placeholder="路線名メモ（例：林道〇〇線）" />
+    <button id="favBtn">★ お気に入りに追加</button>
+  </section>
+
+  <div id="map"></div>
+
+  <section class="favorites">
+    <h2>お気に入り</h2>
+    <ul id="favList"></ul>
+  </section>
+
+  <script src="./app.js"></script>
+</body>
+</html>
