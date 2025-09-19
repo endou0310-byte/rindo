@@ -9,6 +9,11 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <link rel="stylesheet" href="./style.css" />
   <!-- PWA化は次段階で manifest.json を足します -->
+
+<link rel="manifest" href="./manifest.json" />
+<meta name="theme-color" content="#0a7f2e" />
+
+
 </head>
 <body>
   <header>
@@ -29,5 +34,21 @@
   </section>
 
   <script src="./app.js"></script>
+
+  <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./service-worker.js').then(reg => {
+    reg.addEventListener('updatefound', () => {
+      const nw = reg.installing;
+      nw && nw.addEventListener('statechange', () => {
+        if (nw.state === 'installed' && navigator.serviceWorker.controller) {
+          confirm('新しい版があります。更新しますか？') && location.reload();
+        }
+      });
+    });
+  });
+}
+</script>
+
 </body>
 </html>
