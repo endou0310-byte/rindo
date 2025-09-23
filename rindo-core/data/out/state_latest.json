@@ -1,0 +1,1341 @@
+{
+  "generated_at": "2025-09-23T01:56:37.018068+00:00",
+  "roads": [
+    {
+      "name": "大名栗",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "寄居林業事務所"
+      },
+      "status": "restricted",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html",
+          "type": "html",
+          "title": "森林管理道（林道）及び県営林作業道についての注意喚起 - 埼玉県",
+          "published_at": null,
+          "snippet": "神川町秩父市 / 矢納楢尾線 / 一部通行止め（起点から王城線合流地点までは通行可能） / 路体崩落 / 当分の間",
+          "captured_at": "2025-09-23T01:56:34.557964+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html",
+          "type": "html",
+          "title": "森林管理道（林道）及び県営林作業道についての注意喚起 - 埼玉県",
+          "published_at": null,
+          "snippet": "神川町 / 城峰2号線 / 一部通行止め(神川方面から神の泉水までは通行可能)詳細は下記の通行状況路線図よりご確認ください。 / 路体崩壊 / 当分の間",
+          "captured_at": "2025-09-23T01:56:34.558041+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html",
+          "type": "html",
+          "title": "森林管理道（林道）及び県営林作業道についての注意喚起 - 埼玉県",
+          "published_at": null,
+          "snippet": "東秩父村小川町 / 萩平笠山線 / 全線通行止め / 路面洗堀 / 当分の間",
+          "captured_at": "2025-09-23T01:56:34.558103+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html",
+          "type": "html",
+          "title": "森林管理道（林道）及び県営林作業道についての注意喚起 - 埼玉県",
+          "published_at": null,
+          "snippet": "小川町東秩父村 / 勝呂入山線 / 全線通行止め / 路面洗堀 / 当分の間",
+          "captured_at": "2025-09-23T01:56:34.558163+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html",
+          "type": "html",
+          "title": "森林管理道（林道）及び県営林作業道についての注意喚起 - 埼玉県",
+          "published_at": null,
+          "snippet": "ときがわ町 / 雀川上雲線 / 全線通行止め / 路肩崩落 / 当分の間",
+          "captured_at": "2025-09-23T01:56:34.558214+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T05:16:06.281431+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "清流",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "農林部 森林課"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0902/forestry/road-closed.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行止め情報 - 埼玉県",
+          "published_at": null,
+          "snippet": "清流線 / 一部 / 当分の間",
+          "captured_at": "2025-09-22T06:18:40.962167+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "西名栗",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "農林部 森林課"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0902/forestry/road-closed.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行止め情報 - 埼玉県",
+          "published_at": null,
+          "snippet": "西名栗線 / 全線 / 当分の間",
+          "captured_at": "2025-09-22T06:18:40.962261+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "有馬",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "農林部 森林課"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0902/forestry/road-closed.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行止め情報 - 埼玉県",
+          "published_at": null,
+          "snippet": "有馬線 / 全線 / 当分の間",
+          "captured_at": "2025-09-22T06:18:40.962337+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "日向沢",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "農林部 森林課"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0902/forestry/road-closed.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行止め情報 - 埼玉県",
+          "published_at": null,
+          "snippet": "日向沢線 / 全線 / 当分の間",
+          "captured_at": "2025-09-22T06:18:40.962467+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "人見入",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "農林部 森林課"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0902/forestry/road-closed.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行止め情報 - 埼玉県",
+          "published_at": null,
+          "snippet": "人見入線 / 全線 / 当分の間",
+          "captured_at": "2025-09-22T06:18:40.962523+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "原市場名栗",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "農林部 森林課"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0902/forestry/road-closed.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行止め情報 - 埼玉県",
+          "published_at": null,
+          "snippet": "原市場名栗線 / 全線 / 当分の間",
+          "captured_at": "2025-09-22T06:18:40.962575+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "広河原逆川",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "農林部 森林課"
+      },
+      "status": "closed",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0902/forestry/road-closed.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行止め情報 - 埼玉県",
+          "published_at": null,
+          "snippet": "広河原逆川線 / 全線 / 当分の間",
+          "captured_at": "2025-09-22T06:18:40.962631+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "広河原逆川線 / 浦山渓流フィッシングセンター及び秩父彩の国キャンプ村より先は全面通行止め / 路体崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.393170+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "各路",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "open",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "※令和元年度台風19号による通行止めについて秩父農林振興センターが管理する全30路線について、令和元年度台風19号による被災がありました。ついては、各路線に通行制限を設けています。通行止め箇所：位置図（PDFリンク）（PDF：362KB）詳細はこちらの路線別詳細(PDFリンク)（PDF：82KB）でご確認ください。 / ※令和元年度台風19号による通行止めについて秩父農林振興センターが管理する全30路線について、令和元年度台風19号による被災がありました。ついては、各路線に通行制限を設けています。通行止め箇所：位置図（PDFリンク）（PDF：362KB）詳細はこちらの路線別詳細(PDFリンク)（PDF：82KB）でご確認ください。",
+          "captured_at": "2025-09-22T06:18:42.391604+00:00"
+        }
+      ],
+      "last_seen": "2025-09-22T10:10:42.675968+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 7
+    },
+    {
+      "name": "詳細はこちらの路",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "open",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "※令和元年度台風19号による通行止めについて秩父農林振興センターが管理する全30路線について、令和元年度台風19号による被災がありました。ついては、各路線に通行制限を設けています。通行止め箇所：位置図（PDFリンク）（PDF：362KB）詳細はこちらの路線別詳細(PDFリンク)（PDF：82KB）でご確認ください。 / ※令和元年度台風19号による通行止めについて秩父農林振興センターが管理する全30路線について、令和元年度台風19号による被災がありました。ついては、各路線に通行制限を設けています。通行止め箇所：位置図（PDFリンク）（PDF：362KB）詳細はこちらの路線別詳細(PDFリンク)（PDF：82KB）でご確認ください。",
+          "captured_at": "2025-09-22T06:18:42.391604+00:00"
+        }
+      ],
+      "last_seen": "2025-09-22T07:04:24.223528+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 8
+    },
+    {
+      "name": "が管理する全30路",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "closed",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "※令和元年度台風19号による通行止めについて秩父農林振興センターが管理する全30路線について、令和元年度台風19号による被災がありました。ついては、各路線に通行制限を設けています。通行止め箇所：位置図（PDFリンク）（PDF：362KB）詳細はこちらの路線別詳細(PDFリンク)（PDF：82KB）でご確認ください。 / ※令和元年度台風19号による通行止めについて秩父農林振興センターが管理する全30路線について、令和元年度台風19号による被災がありました。ついては、各路線に通行制限を設けています。通行止め箇所：位置図（PDFリンク）（PDF：362KB）詳細はこちらの路線別詳細(PDFリンク)（PDF：82KB）でご確認ください。",
+          "captured_at": "2025-09-22T06:18:42.391604+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "太田部峠2号",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "closed",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "太田部峠2号線 / 大久保橋（4tトラック（総重量8t）を超える車両のみ通行止め） / 大久保橋老朽化のため / 当面 の間",
+          "captured_at": "2025-09-22T06:18:42.392516+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "西秩父",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "西秩父線 / 土坂峠～股峠登山口・駐車場手前※国道299号分岐～股峠登山口・駐車場までは通行可 / 路肩崩落、法面崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.392624+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "大血川",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "大血川線 / 大血川観光渓流釣場より1km先～県道278号合流地点 / 路面不良のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.392727+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "城峰1号",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "closed",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "上武秩父線 / 更木線分岐～風早峠（大型車両のみ通行止め）城峰2号線合流地点～城峰1号線合流地点（通行止め 令和7年5月7日から当分の間） / 法面崩落のため改良工事のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.392842+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "上武秩父",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "closed",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "上武秩父線 / 更木線分岐～風早峠（大型車両のみ通行止め）城峰2号線合流地点～城峰1号線合流地点（通行止め 令和7年5月7日から当分の間） / 法面崩落のため改良工事のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.392842+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "城峰2号",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "restricted",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "上武秩父線 / 更木線分岐～風早峠（大型車両のみ通行止め）城峰2号線合流地点～城峰1号線合流地点（通行止め 令和7年5月7日から当分の間） / 法面崩落のため改良工事のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.392842+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html",
+          "type": "html",
+          "title": "森林管理道（林道）及び県営林作業道についての注意喚起 - 埼玉県",
+          "published_at": null,
+          "snippet": "神川町 / 城峰2号線 / 一部通行止め(神川方面から神の泉水までは通行可能)詳細は下記の通行状況路線図よりご確認ください。 / 路体崩壊 / 当分の間",
+          "captured_at": "2025-09-22T06:18:42.765007+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "更木",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "closed",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "上武秩父線 / 更木線分岐～風早峠（大型車両のみ通行止め）城峰2号線合流地点～城峰1号線合流地点（通行止め 令和7年5月7日から当分の間） / 法面崩落のため改良工事のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.392842+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "日向大谷工区全",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "八日見線 / 日向大谷工区全線（小鹿野町両神薄地内）尾ノ内工区一部区間（小鹿野町河原沢地内）※尾ノ内渓谷入口まで通行可能 / 開設工事中のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.392962+00:00"
+        }
+      ],
+      "last_seen": "2025-09-22T07:04:24.223528+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 8
+    },
+    {
+      "name": "八日見",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "八日見線 / 日向大谷工区全線（小鹿野町両神薄地内）尾ノ内工区一部区間（小鹿野町河原沢地内）※尾ノ内渓谷入口まで通行可能 / 開設工事中のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.392962+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "丸山",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "丸山支線 / 全線（横瀬町芦ヶ久保地内） / 県民の森エリア内のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.393065+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "丸山分線 / 全線（横瀬町芦ヶ久保地内） / 県民の森エリア内のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.394616+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "広河原",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "広河原線 / 全線（秩父市浦山地内) / 落石多発のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.393268+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "金山志賀坂",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "上野大滝線 / 金山志賀坂線 分岐～天丸トンネル / 落石多発及び路肩崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.393393+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "金山志賀坂線 / 上落合橋～国道299号分岐 / 路体崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.394272+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "上野大滝",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "上野大滝線 / 金山志賀坂線 分岐～天丸トンネル / 落石多発及び路肩崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.393393+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "大山沢",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "大山沢線 / 全線（秩父市中津川地内） / 落石多発、路体崩落、及び法面崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.393473+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "定峰",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "定峰線 / 全線（秩父市定峰地内） / 路肩崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.393547+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "定峰支線 / 全線（秩父市山田及び栃谷地内） / 法面崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.393636+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "御岳山",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "御岳山線 / 全線（秩父市大滝地内) / 路体崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.393725+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "秩父中央",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "秩父中央線 / 全線（秩父市荒川白久地内） / 路面不良及び法面崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.393818+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "高篠峠",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "高篠峠線 / 全線（秩父市定峰地内） / 法面崩落及び路体崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.393911+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "半納城峰",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "半納城峰線 / 全線（秩父市吉田石間地内） / 開設工事中のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.394019+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "平沢戸",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "明ヶ平沢戸線 / 全線（秩父市上吉田地内～吉田石間地内) / 法面崩落及び路肩崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.394127+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "御岳山2号",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "御岳山2号線 / 全線（小鹿野町両神小森地内) / 路面不良及び路肩崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.394387+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "城峰奈良尾",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "城峰奈良尾線 / 全線（皆野町上日野沢地内） / 路面不良及び路体崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.394492+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "二子",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "二子線 / 芦ヶ久保工区全線（横瀬町芦ヶ久保地内）生川工区全線（横瀬町生川地内） / 法面崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.394711+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "生川工区全",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "二子線 / 芦ヶ久保工区全線（横瀬町芦ヶ久保地内）生川工区全線（横瀬町生川地内） / 法面崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.394711+00:00"
+        }
+      ],
+      "last_seen": "2025-09-22T07:04:24.223528+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 8
+    },
+    {
+      "name": "久保工区全",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "二子線 / 芦ヶ久保工区全線（横瀬町芦ヶ久保地内）生川工区全線（横瀬町生川地内） / 法面崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.394711+00:00"
+        }
+      ],
+      "last_seen": "2025-09-22T07:04:24.223528+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 8
+    },
+    {
+      "name": "茅ノ坂峠",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "茅ノ坂峠線 / 全線（小鹿野町藤倉地内～河原沢地内） / 路面不良及び路体崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.394777+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "皆本沼里",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "秩父農林振興センター"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "皆本沼里線 / 全線（小鹿野町三山地内～両神薄地内） / 路肩崩落のため / 当面の間",
+          "captured_at": "2025-09-22T06:18:42.394877+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "起点から王城",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "寄居林業事務所"
+      },
+      "status": "open",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html",
+          "type": "html",
+          "title": "森林管理道（林道）及び県営林作業道についての注意喚起 - 埼玉県",
+          "published_at": null,
+          "snippet": "神川町秩父市 / 矢納楢尾線 / 一部通行止め（起点から王城線合流地点までは通行可能） / 路体崩落 / 当分の間",
+          "captured_at": "2025-09-22T06:18:42.764930+00:00"
+        }
+      ],
+      "last_seen": "2025-09-22T07:04:24.223528+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 8
+    },
+    {
+      "name": "矢納楢尾",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "寄居林業事務所"
+      },
+      "status": "restricted",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html",
+          "type": "html",
+          "title": "森林管理道（林道）及び県営林作業道についての注意喚起 - 埼玉県",
+          "published_at": null,
+          "snippet": "神川町秩父市 / 矢納楢尾線 / 一部通行止め（起点から王城線合流地点までは通行可能） / 路体崩落 / 当分の間",
+          "captured_at": "2025-09-22T06:18:42.764930+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "詳細は下記の通行状況路",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "寄居林業事務所"
+      },
+      "status": "open",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html",
+          "type": "html",
+          "title": "森林管理道（林道）及び県営林作業道についての注意喚起 - 埼玉県",
+          "published_at": null,
+          "snippet": "神川町 / 城峰2号線 / 一部通行止め(神川方面から神の泉水までは通行可能)詳細は下記の通行状況路線図よりご確認ください。 / 路体崩壊 / 当分の間",
+          "captured_at": "2025-09-22T06:18:42.765007+00:00"
+        }
+      ],
+      "last_seen": "2025-09-22T07:04:24.223528+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 8
+    },
+    {
+      "name": "萩平笠山",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "寄居林業事務所"
+      },
+      "status": "closed",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html",
+          "type": "html",
+          "title": "森林管理道（林道）及び県営林作業道についての注意喚起 - 埼玉県",
+          "published_at": null,
+          "snippet": "東秩父村小川町 / 萩平笠山線 / 全線通行止め / 路面洗堀 / 当分の間",
+          "captured_at": "2025-09-22T06:18:42.765077+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/documents/21805/ogidonosenn.pdf",
+          "type": "pdf",
+          "title": "PDF抽出",
+          "published_at": null,
+          "snippet": "萩平笠山線",
+          "captured_at": "2025-09-22T06:18:43.349046+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "勝呂入山",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "寄居林業事務所"
+      },
+      "status": "closed",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html",
+          "type": "html",
+          "title": "森林管理道（林道）及び県営林作業道についての注意喚起 - 埼玉県",
+          "published_at": null,
+          "snippet": "小川町東秩父村 / 勝呂入山線 / 全線通行止め / 路面洗堀 / 当分の間",
+          "captured_at": "2025-09-22T06:18:42.765140+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "雀川上雲",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "寄居林業事務所"
+      },
+      "status": "closed",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html",
+          "type": "html",
+          "title": "森林管理道（林道）及び県営林作業道についての注意喚起 - 埼玉県",
+          "published_at": null,
+          "snippet": "ときがわ町 / 雀川上雲線 / 全線通行止め / 路肩崩落 / 当分の間",
+          "captured_at": "2025-09-22T06:18:42.765192+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "荻殿",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "寄居林業事務所"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/documents/21805/ogidonosenn.pdf",
+          "type": "pdf",
+          "title": "PDF抽出",
+          "published_at": null,
+          "snippet": "荻殿線",
+          "captured_at": "2025-09-22T06:18:43.349062+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/documents/21805/ogidonosenn.pdf",
+          "type": "pdf",
+          "title": "PDF抽出",
+          "published_at": null,
+          "snippet": "荻殿線終点",
+          "captured_at": "2025-09-22T06:18:43.349085+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "荻平笠山",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "寄居林業事務所"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/documents/21805/ogidonosenn.pdf",
+          "type": "pdf",
+          "title": "PDF抽出",
+          "published_at": null,
+          "snippet": "荻平笠山線終点",
+          "captured_at": "2025-09-22T06:18:43.349075+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "栗山",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "寄居林業事務所"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/documents/21805/ogidonosenn.pdf",
+          "type": "pdf",
+          "title": "PDF抽出",
+          "published_at": null,
+          "snippet": "栗山線終点",
+          "captured_at": "2025-09-22T06:18:43.349094+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/documents/21805/ogidonosenn.pdf",
+          "type": "pdf",
+          "title": "PDF抽出",
+          "published_at": null,
+          "snippet": "栗山線",
+          "captured_at": "2025-09-22T06:18:43.349132+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "奈田良",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "寄居林業事務所"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/documents/21805/ogidonosenn.pdf",
+          "type": "pdf",
+          "title": "PDF抽出",
+          "published_at": null,
+          "snippet": "奈田良線",
+          "captured_at": "2025-09-22T06:18:43.349104+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/documents/21805/ogidonosenn.pdf",
+          "type": "pdf",
+          "title": "PDF抽出",
+          "published_at": null,
+          "snippet": "奈田良線終点",
+          "captured_at": "2025-09-22T06:18:43.349113+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "栗山七重",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "寄居林業事務所"
+      },
+      "status": "notice",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/documents/21805/ogidonosenn.pdf",
+          "type": "pdf",
+          "title": "PDF抽出",
+          "published_at": null,
+          "snippet": "栗山七重線",
+          "captured_at": "2025-09-22T06:18:43.349142+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T06:18:43.551027+00:00",
+      "missing_runs": 0
+    },
+    {
+      "name": "（名称未抽出）",
+      "owner": {
+        "region_code": "11",
+        "mun_code": "",
+        "owner_type": "prefecture",
+        "owner_name": "埼玉県",
+        "dept": "農林部 森林課"
+      },
+      "status": "closed",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/documents/3829/tuukoudomeitizu20250612.pdf",
+          "type": "pdf",
+          "title": "PDF（路線名抽出0件）",
+          "published_at": null,
+          "snippet": "後日OCR/調整予定",
+          "captured_at": "2025-09-22T07:04:18.635871+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html",
+          "type": "html",
+          "title": "森林管理道（林道）の通行制限情報（秩父農林振興センター管内） - 埼玉県",
+          "published_at": null,
+          "snippet": "路線名 / 通行制限区間（位置） / 通行制限事由 / 通行制限の期間",
+          "captured_at": "2025-09-22T07:04:20.711118+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/documents/21805/ogidonosenn.pdf",
+          "type": "pdf",
+          "title": "PDF抽出",
+          "published_at": null,
+          "snippet": "森林管理道通行止め情報 路線図",
+          "captured_at": "2025-09-22T07:04:23.032057+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/documents/21805/ogidonosenn.pdf",
+          "type": "pdf",
+          "title": "PDF抽出",
+          "published_at": null,
+          "snippet": "奥武蔵１号線起点",
+          "captured_at": "2025-09-22T07:04:23.032252+00:00"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/documents/21805/ogidonosenn.pdf",
+          "type": "pdf",
+          "title": "PDF抽出",
+          "published_at": null,
+          "snippet": "奥武蔵１号線",
+          "captured_at": "2025-09-22T07:04:23.032325+00:00"
+        }
+      ],
+      "last_seen": "2025-09-23T01:56:37.018068+00:00",
+      "first_seen": "2025-09-22T10:10:42.675968+00:00",
+      "missing_runs": 0
+    }
+  ]
+}

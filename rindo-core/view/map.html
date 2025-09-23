@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>林道MAP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="%231e88e5"/><path d="M14 38c8-8 14-8 22 0 6 6 10 6 14 0" stroke="%23fff" stroke-width="6" fill="none" stroke-linecap="round"/></svg>' />
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Turf / Supercluster -->
+  <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+  <script src="https://unpkg.com/supercluster@8.0.1/dist/supercluster.min.js"></script>
+
+  <style>
+    html, body, #app { height:100%; margin:0; }
+    #app { display:grid; grid-template-columns:320px 1fr; }
+    #sidebar {
+      padding:12px 12px 16px; border-right:1px solid #e0e0e0; background:#fafafa; overflow:auto;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;
+    }
+    #map { height:100%; width:100%; }
+    .sec-title { font-weight:700; margin:10px 0 6px; }
+    .hint { color:#666; font-size:12px; }
+
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; margin:10px 0;}
+    .card h4 { margin:0 0 6px; font-size:14px; }
+    .badge { display:inline-block; font-size:11px; padding:2px 6px; border-radius:999px; background:#eef2ff; color:#3730a3; }
+    .btn { display:inline-block; font-size:12px; padding:6px 8px; border:1px solid #ddd; border-radius:6px; background:#fafafa; cursor:pointer; }
+    .btn + .btn { margin-left:6px; }
+    .linkrow a { margin-right:10px; }
+    .comment { font-size:12px; border-left:3px solid #eee; padding:4px 8px; margin:4px 0; }
+    .gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; }
+    .gallery img { width:100%; height:70px; object-fit:cover; border-radius:6px; border:1px solid #eee; }
+
+    /* ラベルは透明背景＋白フチ。クリックできるようにする */
+    .rindo-label .leaflet-tooltip{
+      background:transparent; border:0; box-shadow:none;
+      padding:0 2px; font-size:12px; color:#111;
+      text-shadow:0 0 3px #fff,0 0 3px #fff;
+      pointer-events:auto;  /* クリック可 */
+      cursor:pointer;
+    }
+
+    /* 右下の小型凡例 */
+    .corner-legend{
+      position:absolute; right:10px; bottom:10px; z-index:550;
+      background:rgba(255,255,255,.9); border:1px solid #e0e0e0; border-radius:8px;
+      padding:6px 8px; font-size:12px; line-height:1.6; box-shadow:0 1px 3px rgba(0,0,0,.08);
+    }
+    .sw{ display:inline-block; width:12px; height:12px; border-radius:2px; margin-right:6px; vertical-align:-2px; }
+    .floating-status{
+      position:absolute; left:8px; top:8px; z-index:500; background:rgba(255,255,255,.9);
+      border:1px solid #ddd; border-radius:6px; padding:6px 8px; font-size:12px; box-shadow:0 1px 4px rgba(0,0,0,.08);
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <h2 style="margin:6px 0 8px;">林道MAP</h2>
+
+    <!-- 表示モード / フィルタ / 密度 / 凡例 は削除。選択情報のみ残す -->
+    <div id="detail" style="margin-top:12px; font-size:13px;">
+      <div class="sec-title">選択中の林道</div>
+      <div id="detailBody" class="hint">地図で線やラベルをクリックしてください</div>
+    </div>
+  </aside>
+
+  <div style="position:relative;">
+    <div id="map"></div>
+
+    <!-- 右下の小型凡例（写真の内容に合わせて4項目） -->
+    <div class="corner-legend">
+      <div><span class="sw" style="background:#1e88e5; border:2px solid #fff; box-shadow:0 0 0 1px #1e88e5;"></span>seasonal/通常（青）</div>
+      <div><span class="sw" style="background:#ffb300;"></span>車両/一部規制（黄）</div>
+      <div><span class="sw" style="background:#e53935;"></span>通行止め（赤）</div>
+      <div><span class="sw" style="background:#5e35b1;"></span>お知らせ（紫）</div>
+    </div>
+  </div>
+</div>
+
+<div class="floating-status" id="status">読み込み中…</div>
+
+<script>
+(async function () {
+  // ==== 固定仕様用の定数 ====
+  const DENSITY = 120;          // ラベル密度を固定
+  const SHOW_LABELS = true;     // ラベルは常に表示
+  const MODE = 'rindo-only';    // 表示モード固定：林道のみ
+
+  // ==== 色・地図初期化 ====
+  const C = { normal:'#1e88e5', open:'#4caf50', restr:'#ffb300', closed:'#e53935', notice:'#5e35b1', roadbg:'#bdbdbd' };
+  const map = L.map('map', { preferCanvas:true }).setView([35.9, 139.1], 10);
+  const gsi = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', { attribution:'© GSI' }).addTo(map);
+  const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution:'© OpenStreetMap' });
+  L.control.layers({ 'GSI淡色': gsi, 'OSM': osm }, null, { collapsed:true }).addTo(map);
+
+  // ==== パネル/レンダラ ====
+  const basePane = map.createPane('rindo-base'); basePane.style.zIndex = 350;
+  const highlightPane = map.createPane('highlight'); highlightPane.style.zIndex = 600;
+  const hitPane = map.createPane('hit-proxy'); hitPane.style.zIndex = 380;
+  const canvasRenderer = L.canvas({ padding: 0.5 });
+
+  // ==== ハイライト（白ハロ＋シアン） ====
+  const highlightHalo = L.geoJSON(null,{pane:'highlight', renderer:canvasRenderer, style:{ color:'#fff', weight:11, opacity:0.9, lineCap:'round', lineJoin:'round' }}).addTo(map);
+  const highlightMain = L.geoJSON(null,{pane:'highlight', renderer:canvasRenderer, style:{ color:'#00bcd4', weight:7,  opacity:0.95, lineCap:'round', lineJoin:'round' }}).addTo(map);
+  function setHighlight(geo){ highlightHalo.clearLayers(); highlightMain.clearLayers(); if (geo) { highlightHalo.addData(geo); highlightMain.addData(geo);} }
+
+  // ==== 大きめ当たり判定（不可視の太線） ====
+  let hitProxies = [];
+  function clearHitProxies(){ hitProxies.forEach(h=>map.removeLayer(h)); hitProxies=[]; }
+  function addHitProxyFromLayer(layer, onClick){
+    try {
+      const proxy = L.polyline(layer.getLatLngs(), {pane:'hit-proxy', color:'#000', weight:16, opacity:0, interactive:true})
+        .on('click', onClick).addTo(map);
+      hitProxies.push(proxy);
+    } catch(e){}
+  }
+  map.on('zoomend', clearHitProxies);
+
+  // ==== ラベル用レイヤ ====
+  let midLabelLayer  = L.layerGroup().addTo(map);
+  let fullLabelLayer = L.layerGroup().addTo(map);
+  let labelIndex = null;
+  const $status = document.getElementById('status');
+  const $detail = document.getElementById('detailBody');
+  // ==== データ取得（林道のみ固定） ====
+  async function fetchFirst(paths, expectJson=true) {
+    const BUST = 'v=20250923';
+    for (const p of paths) {
+      const url = p + (p.includes('?') ? '&' : '?') + BUST;
+      try {
+        const r = await fetch(url, { cache: 'force-cache' });
+        if (r.ok) return expectJson ? r.json() : r.text();
+      } catch(e){}
+    }
+    return null;
+  }
+
+  const PATHS = {
+    rindo:['../data/out/rindo_master_lines.geojson','./data/out/rindo_master_lines.geojson'],
+    regA:['../data/out/reg_events.json','./data/out/reg_events.json'],
+    regB:['../data/out/reg_events_from_html.json','./data/out/reg_events_from_html.json'],
+    alias:['../data/aliases.json','./data/aliases.json'],
+    refs:['../data/refs.json','./data/refs.json'],
+  };
+
+  const [rindoGeo, regJsonA, regJsonB, aliases, refs] = await Promise.all([
+    fetchFirst(PATHS.rindo),
+    fetchFirst(PATHS.regA),
+    fetchFirst(PATHS.regB),
+    fetchFirst(PATHS.alias),
+    fetchFirst(PATHS.refs),
+  ]);
+  const REFS = refs || {};
+
+  // ==== フィット ====
+  try {
+    const bb = turf.bbox(rindoGeo);
+    map.fitBounds([[bb[1],bb[0]],[bb[3],bb[2]]], {padding:[20,20]});
+  } catch{}
+
+  // ==== 状態・色 ====
+  function normStatus(s=''){
+    const t=String(s).toLowerCase();
+    if(/closure|通行止|全面/.test(t)) return 'closed';
+    if(/restrict|規制|片側|一部|車両|大型/.test(t)) return 'restricted';
+    if(/open|解除/.test(t)) return 'open';
+    if(/season|冬期|季節/.test(t)) return 'seasonal';
+    if(/notice|お知らせ|注意/.test(t)) return 'notice';
+    return 'other';
+  }
+  const colorBy = st => st==='closed'?C.closed : st==='restricted'?C.restr : st==='open'?C.open : st==='seasonal'?C.normal : st==='notice'?C.notice : C.normal;
+
+  // ==== ベース林道 ====
+  const rindoBase = L.geoJSON(rindoGeo, { pane:'rindo-base', renderer:canvasRenderer, style:{ color:'#90a4ae', weight:1.4, opacity:0.7 } }).addTo(map);
+
+  // ==== ラベル用代表点 ====
+  const rindoLabelPts = { type:'FeatureCollection', features:
+    rindoGeo.features.map((f,i)=>{ const c=turf.pointOnFeature(f);
+      c.properties = { name:f.properties?.name||f.properties?.NAME||`林道 ${i+1}`, __len:(()=>{try{return turf.length(f,{units:'kilometers'})}catch{return 0}})() };
+      return c;
+    })
+  };
+
+  // ==== 規制イベント整形・突合 ====
+  const ALIAS = aliases || {};
+  function normName(s){
+    return (s||'').toString().normalize('NFKC')
+      .replace(/[ \u3000\t\r\n\-・_（）()【】\[\]<>『』「」,，．。/]/g,'')
+      .replace(/[ヶヵ]/g,'ケ')
+      .replace(/第?([0-9０-９一二三四五六七八九十]+)号線?$/,'$1')
+      .replace(/(国有|市道|町道|村道)?林道/g,'')
+      .replace(/(県|都|道|府|市|町|村|郡)(営)?/g,'')
+      .replace(/(本線|支線|林道|道路|路線|線)$/g,'')
+      .toLowerCase();
+  }
+  function candidatesFromProps(p={}){
+    const cand=new Set(), known=['name','NAME','Name','title','ref','道路名','路線名','路線','名称','名称1','林道名','林道名称','道路','路線名称','路線番号','RD_NAME','RDNAME'];
+    known.forEach(k=>p[k]&&cand.add(String(p[k])));
+    for (const [k,v] of Object.entries(p)) if (typeof v==='string' && (k.toLowerCase().includes('name') || /林道|路線|道路/.test(v) || /線$/.test(v))) cand.add(v);
+    return [...cand].map(s=>s.trim()).filter(s=>s.length>=2 && s.length<=40);
+  }
+  function extractEventNames(ev={}){
+    const res=new Set(); const push=s=>{ if(!s) return; const t=String(s).trim(); if(t && t.length>=2 && t.length<=40) res.add(t.replace(/^(路線名|道路名)\s*[:：]/,'')); };
+    push(ev.name); push(ev.road); push(ev.line);
+    if (ev.title && /(林道|線)/.test(ev.title)) push(ev.title);
+    const sn = ev.snippet||ev.note||ev.reason||'';
+    if (sn){
+      const s = String(sn).replace(/\s+/g,' ').trim();
+      s.split(/[／/]/).map(x=>x.trim()).forEach(part=>{ if (/(林道|線)/.test(part) && !/路線名|位置図|路線図|起点|終点|工区|区間/.test(part)) push(part); });
+      const m = s.match(/([^\s/]+?(?:林道)?[^\s/]*?線)(?!名)/); if (m) push(m[1]);
+    }
+    const arr=[...res]; for (const a of arr){ (ALIAS[a]||[]).forEach(x=>res.add(x)); }
+    for (const [k,vals] of Object.entries(ALIAS)) if (arr.includes(k)) vals.forEach(v=>res.add(v));
+    return [...res];
+  }
+  function flattenRegEvents(input){
+    if (!input) return []; if (Array.isArray(input)) return input; if (typeof input!=='object') return [];
+    if (Array.isArray(input.features)) return input.features.map(f=>f.properties||{});
+    if (Array.isArray(input.events)) return input.events;
+    if (Array.isArray(input.items)) return input.items;
+    const arr=[]; for (const v of Object.values(input)){
+      if (!v) continue;
+      if (Array.isArray(v)) arr.push(...v);
+      else if (typeof v==='object'){
+        if (Array.isArray(v.features)) arr.push(...v.features.map(f=>f.properties||{}));
+        else if (Array.isArray(v.events)) arr.push(...v.events);
+        else if (Array.isArray(v.items)) arr.push(...v.items);
+      }
+    } return arr;
+  }
+  function toEventObj(ev){
+    const status=normStatus(ev?.status||ev?.type||ev?.snippet||'');
+    const names=extractEventNames(ev);
+    const src=ev?.source||ev?.src||ev?.url||ev?.source_url||'';
+    const reason=ev?.reason||ev?.note||ev?.snippet||'';
+    const updated=ev?.updated_at||ev?.published_at||ev?.date||'';
+    const coord=(ev?.lng!=null&&ev?.lat!=null)?[ev.lng,ev.lat]:(Array.isArray(ev?.coordinates)?ev.coordinates:null);
+    return {names,status,reason,from:ev?.from||ev?.start||null,to:ev?.to||ev?.end||null,updated_at:updated,source:src,coord};
+  }
+
+  const rawA = flattenRegEvents(regJsonA).map(toEventObj);
+  const rawB = flattenRegEvents(regJsonB).map(toEventObj);
+  const allReg = [...rawA, ...rawB].filter(e=>e.names && e.names.length);
+
+  // ==== 最強ステータス採用 ====
+  const rank={closed:3, restricted:2, other:1, notice:0, open:0, seasonal:0};
+  const regMap=new Map();
+  for (const ev of allReg){
+    const keys=new Set();
+    for (const nm of ev.names){ keys.add(normName(nm)); (ALIAS[nm]||[]).forEach(a=>keys.add(normName(a))); }
+    ev._rank=rank[ev.status]??0;
+    for (const k of keys){
+      const cur=regMap.get(k);
+      if (!cur || ev._rank>cur._rank) regMap.set(k, ev);
+    }
+  }
+
+  // ==== rindo 名称インデックス ====
+  const featNameIndex=new Map(), featNameList=[];
+  rindoGeo.features.forEach((f,i)=>{
+    const raws=candidatesFromProps(f.properties||{}), norms=raws.map(normName).filter(Boolean);
+    featNameList.push({idx:i, norm:norms});
+    norms.forEach(n=>{ if(!featNameIndex.has(n)) featNameIndex.set(n,[]); featNameIndex.get(n).push(i); });
+  });
+
+  // ==== 規制を林道へ反映 ====
+  const rindoReg = JSON.parse(JSON.stringify(rindoGeo));
+  let matchedSegs = 0;
+  for (const [,ev] of regMap){
+    let idxs=[];
+    const keys = ev.names.map(normName);
+    for (const k of keys){ if (featNameIndex.has(k)) idxs.push(...featNameIndex.get(k)); }
+    if (!idxs.length){
+      const target = keys.find(k=>k.length>=3) || keys[0];
+      if (target){
+        for (const info of featNameList){
+          if (info.norm.some(n=>n&&(n.includes(target)||target.includes(n))&&Math.max(n.length,target.length)>=4)) idxs.push(info.idx);
+        }
+      }
+    }
+    idxs = Array.from(new Set(idxs)).slice(0,30);
+    if (!idxs.length) continue;
+    matchedSegs += idxs.length;
+    for (const i of idxs){
+      const p=rindoReg.features[i].properties||(rindoReg.features[i].properties={});
+      const curRank=(p.regulation==='closed')?3:(p.regulation==='restricted')?2:0;
+      if (ev._rank>=curRank){
+        p.regulation=ev.status; p.reg_reason=ev.reason; p.reg_from=ev.from; p.reg_to=ev.to; p.updated_at=ev.updated_at; p.source=ev.source;
+        p.name = p.name || p.NAME;
+      }
+    }
+  }
+
+  // ==== クリック可ラベルから詳細へ（林道のみ） ====
+  function handleLabelClick(name){
+    if (!name) return;
+    const key = normName(name);
+    if (featNameIndex.has(key)){
+      const idx = featNameIndex.get(key)[0];
+      const f = rindoReg.features[idx];
+      const props = {
+        name:f.properties?.name||f.properties?.NAME,
+        status:f.properties?.regulation,
+        note:f.properties?.reg_reason,
+        period:(f.properties?.reg_from||'—')+' 〜 '+(f.properties?.reg_to||'—'),
+        src:f.properties?.source,
+        last_seen:f.properties?.updated_at
+      };
+      setHighlight({ type:'Feature', geometry:f.geometry, properties:{} });
+      try { const c=turf.pointOnFeature(f); props.__lon=c.geometry.coordinates[0]; props.__lat=c.geometry.coordinates[1]; props.__geom=f.geometry; } catch(e){}
+      showDetailFromProps(props);
+    }
+  }
+
+  // ==== ラベル用クラスタ（フィルタ無し） ====
+  function buildClusterIndex(pointsFC){
+    return new Supercluster({ radius:60, maxZoom:16, map:(p)=>({name:p.name,len:p.__len||0}), reduce:(a,p)=>{ a.len=Math.max(a.len,p.len);} })
+      .load(pointsFC.features);
+  }
+
+  // ==== レイヤ構築（林道のみ表示） ====
+  let regOverlayLayer=null;
+
+  function rebuild(){
+    clearHitProxies();
+    if (regOverlayLayer) map.removeLayer(regOverlayLayer);
+
+    regOverlayLayer = L.geoJSON(rindoReg,{
+      renderer:canvasRenderer,
+      style:f=>({ color:colorBy(f.properties?.regulation||'other'), weight:(map.getZoom()>=13?3.8:2), opacity:0.95, lineCap:'round', lineJoin:'round' }),
+      onEachFeature:(f,layer)=>{
+        const onClick=()=>{
+          let lat=null, lon=null; try{ const c=turf.pointOnFeature(f); if(c){ lon=c.geometry.coordinates[0]; lat=c.geometry.coordinates[1]; } }catch(e){}
+          const props={ name:f.properties?.name||f.properties?.NAME, status:f.properties?.regulation, note:f.properties?.reg_reason,
+            period:(f.properties?.reg_from||'—')+' 〜 '+(f.properties?.reg_to||'—'), src:f.properties?.source, last_seen:f.properties?.updated_at,
+            __lat:lat, __lon:lon, __geom:f.geometry };
+          setHighlight({type:'Feature', geometry:f.geometry, properties:{}});
+          showDetailFromProps(props);
+        };
+        layer.on('click', onClick);
+        addHitProxyFromLayer(layer, onClick);
+      }
+    }).addTo(map);
+
+    labelIndex = buildClusterIndex(rindoLabelPts);
+    renderByZoom();
+  }
+
+  map.on('zoomend', rebuild);
+  rebuild();
+
+  // ステータス表示
+  const total = rindoGeo?.features?.length ?? 0;
+  const regs  = [...regMap.keys()].length;
+  $status.textContent = `rindo=${total} / reg_events=${allReg.length}（マッチsegments≈${matchedSegs}・names=${regs}） ｜ ${new Date().toISOString()}`;
+  // ==== ラベル描画（クリックで詳細へ） ====
+  function renderMidLabels(){
+    midLabelLayer.clearLayers();
+    if (!SHOW_LABELS || !labelIndex) return;
+    const z = map.getZoom();
+    if (z < 11 || z > 12) return;
+
+    const b = map.getBounds();
+    const bbox = [b.getWest(), b.getSouth(), b.getEast(), b.getNorth()];
+    const clusters = labelIndex.getClusters(bbox, z);
+
+    clusters
+      .sort((a,b)=>(b.properties?.len||0)-(a.properties?.len||0))
+      .slice(0, DENSITY) // ← 固定 120
+      .forEach(c=>{
+        const [lng,lat] = c.geometry.coordinates;
+        if (c.properties.cluster){
+          const el = L.divIcon({ html:`<span class="cluster">× ${c.properties.point_count_abbreviated}</span>`, className:'' });
+          L.marker([lat,lng], { icon:el, interactive:false }).addTo(midLabelLayer);
+        } else {
+          const m = L.circleMarker([lat,lng], { radius:3, opacity:0, fillOpacity:0, interactive:true });
+          m.on('click', ()=>handleLabelClick(c.properties.name));
+          m.bindTooltip(c.properties.name||'林道', { permanent:true, direction:'top', className:'rindo-label', interactive:true })
+           .addTo(midLabelLayer);
+        }
+      });
+  }
+
+  function renderFullLabels(){
+    fullLabelLayer.clearLayers();
+    if (!SHOW_LABELS || !labelIndex) return;
+    const z = map.getZoom();
+    if (z < 13) return;
+
+    const b = map.getBounds();
+    const bbox = [b.getWest(), b.getSouth(), b.getEast(), b.getNorth()];
+    const leaves = labelIndex.getClusters(bbox, 16).filter(c=>!c.properties.cluster);
+
+    leaves
+      .sort((a,b)=>(b.properties?.len||0)-(a.properties?.len||0))
+      .slice(0, 400) // 高ズームの上限
+      .forEach(pt=>{
+        const [lng,lat] = pt.geometry.coordinates;
+        const m = L.circleMarker([lat,lng], { radius:3, opacity:0, fillOpacity:0, interactive:true });
+        m.on('click', ()=>handleLabelClick(pt.properties.name));
+        m.bindTooltip(pt.properties.name||'林道', { permanent:true, direction:'center', className:'rindo-label', interactive:true })
+         .addTo(fullLabelLayer);
+      });
+  }
+
+  function renderByZoom(){
+    midLabelLayer.clearLayers();
+    fullLabelLayer.clearLayers();
+    const z = map.getZoom();
+    if (z <= 10) return;
+    if (z <= 12) renderMidLabels(); else renderFullLabels();
+  }
+
+  map.on('moveend', renderByZoom);
+
+  // ==== 詳細表示（写真 → 外部リンク（OSMなし） → 林道情報 → コメント） ====
+  function showDetailFromProps(p={}){
+    const name = p.name || p.NAME || '（不明）';
+    const stTxt = (()=>{ const t=String(p.status||p.regulation||'');
+      if (/closed|通行止/.test(t)) return '通行止め';
+      if (/restrict|規制|片側|一部|車両/.test(t)) return '車両/一部規制';
+      if (/open|解除/.test(t)) return '開通';
+      if (/season|冬期|季節/.test(t)) return '季節';
+      if (/notice|お知らせ|注意/.test(t)) return 'お知らせ';
+      return '—';
+    })();
+
+    // 代表座標（外部リンク用）
+    let lat = p.__lat, lon = p.__lon;
+    if ((lat==null || lon==null) && p.__geom){
+      try { const c=turf.pointOnFeature({type:'Feature', geometry:p.__geom}); lon=c.geometry.coordinates[0]; lat=c.geometry.coordinates[1]; } catch(e){}
+    }
+    const z = 14;
+    const gmap = (lat!=null&&lon!=null) ? `https://www.google.com/maps?q=${lat},${lon}&z=${z}` : null;
+    const ymap = (lat!=null&&lon!=null) ? `https://map.yahoo.co.jp/?lat=${lat}&lon=${lon}&z=${z}` : null;
+
+    // 参考ブログ（refs.json + ローカル）
+    const key = normName(name);
+    const fromFile = (typeof REFS!=='undefined' && REFS) ? (REFS[name] || REFS[key] || []) : [];
+    const fromLocal = JSON.parse(localStorage.getItem('refs:'+key) || '[]');
+    const blogLinks = [...fromFile, ...fromLocal];
+
+    // 写真（プロパティ＋ローカル）
+    const propPhotos = Array.isArray(p.photos) ? p.photos : (p.photo ? [p.photo] : []);
+    const localPhotos = JSON.parse(localStorage.getItem('photos:'+key) || '[]');
+    const photos = [...propPhotos, ...localPhotos];
+
+    // コメント
+    const comments = JSON.parse(localStorage.getItem('comments:'+key) || '[]'); // {text, ts}
+
+    // ① 写真
+    const photosHtml = `
+      <div class="card">
+        <h4>写真 ${photos.length?`<span class="badge">${photos.length}</span>`:''}</h4>
+        ${photos.length
+          ? `<div class="gallery">${photos.map(u=>`<img src="${u}" alt="photo">`).join('')}</div>`
+          : `<div class="hint">まだ写真がありません。<strong>現地写真を募集中</strong>です。提供いただける方は「写真を追加」からお願いします。</div>`}
+        <div style="margin-top:6px;">
+          <label class="btn"><input type="file" accept="image/*" style="display:none" id="add-photo-file">写真を追加</label>
+          <button class="btn" id="add-photo-url">URLから追加</button>
+        </div>
+      </div>`;
+
+    // ② 外部リンク（OSMなし）＋参考ブログ（ポリシー文言）
+    const linksHtml = `
+      <div class="card">
+        <h4>外部リンク</h4>
+        <div class="linkrow">
+          ${gmap?`<a href="${gmap}" target="_blank" rel="noopener">Googleマップ</a>`:''}
+          ${ymap?`<a href="${ymap}" target="_blank" rel="noopener">ヤフー地図</a>`:''}
+          ${(p.src||p.source)?`<a href="${p.src||p.source}" target="_blank" rel="noopener">公式情報</a>`:''}
+        </div>
+        <div style="margin-top:6px;">
+          <div style="font-weight:600; font-size:13px;">参考ブログ</div>
+          ${blogLinks.length
+            ? `<ul style="padding-left:18px;margin:6px 0;">${blogLinks.map(b=>`<li><a href="${b.url}" target="_blank" rel="noopener">${b.title||b.url}</a></li>`).join('')}</ul>`
+            : `<div class="hint"><strong>掲載募集中</strong>です。<br>※ ブログ管理者ご本人か、<strong>転載許可（ライセンス明記等）</strong>のあるサイトのみ受付します。</div>`}
+          <div style="margin-top:6px;"><button class="btn" id="add-ref">リンクを追加</button></div>
+        </div>
+      </div>`;
+
+    // ③ 林道情報
+    const infoRows = [
+      ['名称', name],
+      ['状態', stTxt],
+      ['備考', p.note || p.reason || p.reg_reason || '—'],
+      ['期間', p.period || ((p.reg_from||'—')+' 〜 '+(p.reg_to||'—'))],
+      ['ソース', (p.src||p.source) ? `<a href="${p.src||p.source}" target="_blank" rel="noopener">${p.src||p.source}</a>` : '—'],
+      ['最終更新', p.last_seen || p.updated_at || '—']
+    ].map(([k,v])=>`<tr><th style="text-align:left;white-space:nowrap;padding-right:8px;">${k}</th><td>${v}</td></tr>`).join('');
+    const infoHtml = `<div class="card"><h4>林道情報</h4><table>${infoRows}</table></div>`;
+
+    // ④ コメント
+    const commentsHtml = `
+      <div class="card">
+        <h4>コメント</h4>
+        <div id="comment-list">
+          ${comments.map(c=>`<div class="comment">${c.text} <span class="hint">(${new Date(c.ts).toLocaleString()})</span></div>`).join('')}
+        </div>
+        <div style="display:flex; gap:6px; margin-top:6px;">
+          <input id="comment-input" class="btn" style="flex:1; text-align:left; background:#fff;" placeholder="現地情報・補足など（ローカル保存）"/>
+          <button class="btn" id="comment-post">追加</button>
+        </div>
+      </div>`;
+
+    // 並び順は ① → ② → ③ → ④
+    document.getElementById('detailBody').innerHTML = photosHtml + linksHtml + infoHtml + commentsHtml;
+
+    // 写真追加（file）
+    const fileEl = document.getElementById('add-photo-file');
+    if (fileEl) fileEl.onchange = (e)=>{
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      const fr = new FileReader();
+      fr.onload = ()=> {
+        const arr = JSON.parse(localStorage.getItem('photos:'+key) || '[]');
+        arr.push(fr.result); localStorage.setItem('photos:'+key, JSON.stringify(arr));
+        showDetailFromProps(p);
+      };
+      fr.readAsDataURL(file);
+    };
+
+    // 写真追加（URL）
+    const addUrlBtn = document.getElementById('add-photo-url');
+    if (addUrlBtn) addUrlBtn.onclick = ()=>{
+      const url = prompt('画像URLを入力してください'); if (!url) return;
+      const arr = JSON.parse(localStorage.getItem('photos:'+key) || '[]');
+      arr.push(url); localStorage.setItem('photos:'+key, JSON.stringify(arr));
+      showDetailFromProps(p);
+    };
+
+    // 参考リンク追加（ポリシー注意）
+    const addRefBtn = document.getElementById('add-ref');
+    if (addRefBtn) addRefBtn.onclick = ()=>{
+      alert('※ ブログ管理者ご本人、または転載許可（ライセンス明記等）があるURLのみ追加してください。');
+      const url = prompt('参考リンクURL'); if (!url) return;
+      const title = prompt('タイトル（任意）') || url;
+      const arr = JSON.parse(localStorage.getItem('refs:'+key) || '[]');
+      arr.push({title, url}); localStorage.setItem('refs:'+key, JSON.stringify(arr));
+      showDetailFromProps(p);
+    };
+
+    // コメント投稿
+    const postBtn = document.getElementById('comment-post');
+    if (postBtn) postBtn.onclick = ()=>{
+      const input = document.getElementById('comment-input');
+      const text = (input.value||'').trim(); if (!text) return;
+      const arr = JSON.parse(localStorage.getItem('comments:'+key) || '[]');
+      arr.unshift({text, ts: Date.now()});
+      localStorage.setItem('comments:'+key, JSON.stringify(arr));
+      input.value=''; showDetailFromProps(p);
+    };
+  }
+
+  // 初回ラベル描画（rebuildの後も呼ばれる）
+  renderByZoom();
+
+})(); // end IIFE
+</script>
+</body>
+</html>
