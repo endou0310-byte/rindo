@@ -402,7 +402,7 @@ function buildExternalMapLinks(){
   }
 
   /* ---------------- データ読み込み ---------------- */
-  const ROADS_URL="./data/out/roads.geojson?v="+Date.now();
+  const ROADS_URL="/data/out/roads.geojson?v="+Date.now();
   fetch(ROADS_URL,{cache:"no-cache"})
     .then(r=>r.json())
     .then(geo=>{
@@ -531,6 +531,7 @@ const pts = buildUniqueLabelPoints(nameIndex);
       map.on("moveend", renderLabels);
     })
     .catch(err=>{ console.error("roads.geojson 読み込み失敗:",err); $status.textContent="データ読み込みに失敗しました。"; });
+    })();
 // === モバイルの“情報”ボタン → ボトムシート開閉 ===
 (function(){
   const btn = document.getElementById("btnTogglePanel");
@@ -545,7 +546,6 @@ const pts = buildUniqueLabelPoints(nameIndex);
 
   // 画面外領域をタップで閉じたい場合は、背景オーバーレイを別途足してもOK
   // ひとまずはヘッダーの「閉じる」で操作
-
 })();
 // ============ /RINDO MAP – ONE BLOCK ============
 </script>
