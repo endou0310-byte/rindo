@@ -402,7 +402,7 @@ function buildExternalMapLinks(){
   }
 
   /* ---------------- データ読み込み ---------------- */
-  const ROADS_URL="/data/out/roads.geojson?v="+Date.now();
+  const ROADS_URL="./data/out/roads.geojson?v="+Date.now();
   fetch(ROADS_URL,{cache:"no-cache"})
     .then(r=>r.json())
     .then(geo=>{
