@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!doctype html>
+<html lang="ja">
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="author" content="千葉県" />
+<meta name="viewport" content="width=device-width, maximum-scale=3.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta property="og:title" content="トップページ" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="http://www.pref.chiba.lg.jp/index.html" />
+<meta property="og:image" content="http://www.pref.chiba.lg.jp/shared/images/sns/logo.png" />
+<meta property="og:site_name" content="千葉県" />
+<meta property="og:locale" content="ja" />
+<meta name="pb:organization1_code" content="010" />
+<meta name="pb:organization2_code" content="17180" />
+<meta name="pb:page_title" content="トップページ" />
+<meta name="pb:publish_date" content="2025-09-17 17:33:00" />
+<meta name="keywords" content="" />
+<meta name="pb:page_id" content="1" >
+<meta name="pb:category2_code" content="" />
+<meta name="pb:search_type" content="0" />
+<script id="pt_loader" src="/shared/js/ewbc.min.js" ></script>
+<script>
+function readingAssistance() {
+    ptspkLoader('toggle');
+}
+</script>
+<link href="/shared/style/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/shared/style/shared.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/shared/images/favicon/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<link href="/shared/images/favicon/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed" />
+<script type="text/javascript" src="/shared/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/shared/js/jquery-migrate-git.min.js"></script>
+<script type="text/javascript" src="/shared/js/gd-3.6.0.js"></script>
+<script type="text/javascript" src="/shared/js/function.js"></script> <!--20200916　追加-->
+<script type="text/javascript" src="/shared/js/setting_head.js"></script>
+    <meta name="pb:open_flag" content="0" />
+    <link href="/shared/templates/top/style/edit.css?t=20221121" rel="stylesheet" type="text/css" media="all" />
+    <link href="/shared/style/smartphone.css?t=20221121" rel="stylesheet" media="only screen and (max-width : 540px)" type="text/css" id="tmp_smartphone_css" />
+    <link href="/homepage/kinkyu/kinkyu.xml" rel="alternate" type="application/rss+xml" title="緊急情報" />
+    <link href="/homepage/shinchaku/shinchaku.xml" rel="alternate" type="application/rss+xml" title="新着情報" />
+    <title>千葉県公式ホームページ</title>
+    <link href="/shared/templates/top/style/slick.css?t=20210524" rel="stylesheet" type="text/css" media="all" />
+    <!--
+    <script type="text/javascript" src="/shared/js/jquery.flexslider.js"></script>
+    -->
+    <script type="text/javascript" src="/shared/js/_will.js"></script>
+    <script type="text/javascript" src="/shared/js/_willbanner.js"></script>
+    <script type="text/javascript">
+      jQuery(function($) {
+          let now = _will.create_now_date("m");
+          let external = "<img alt=\"外部サイトへのリンク\" width=\"40\" height=\"13\" src=\"/shared/system/images/linkicon/icon_external.gif\" class=\"icon_external\" />";
+          // 防災ポータル・大気情報連携
+          $.ajax
+              ("/_public/cooperation.html?t=" + now)
+          .done(function(data) {
+              var list = "";
+              var work = $(data);
+              work.siblings().each(function() {
+                  if ($(this).is("#data0")) {
+                      let nowstr = now.substring(0, 4) + "/" + now.substring(4, 6) + "/" + now.substring(6, 8);
+                      let text = $(this).text().trim();
+                      if (text.length >= 10 && nowstr == text.substring(0, 10)) {
+                          list += "<li><a href=\"https://www.bousai.pref.chiba.lg.jp/portal/\" target=\"_blank\">防災情報</a>" + external + "</li>";
+                      }
+                  } else if ($(this).is("#data1")) {
+                      list += "<li><a href=\"http://www.air.taiki.pref.chiba.lg.jp\" target=\"_blank\">PM2.5注意喚起発令中</a>" + external + "</li>";
+                  } else if ($(this).is("#data2")) {
+                      list += "<li><a href=\"http://www.air.taiki.pref.chiba.lg.jp\" target=\"_blank\">光化学スモッグ注意報等発令中</a>" + external + "</li>";
+                  }
+              });
+              if (list && list != "") {
+                  $('.emergency_blk, .important_blk').each(function() {
+                      $(this).find('.contentFlat-data').prepend("<ul class=\"emergency_list\">" + list + "</ul>");
+                      $(this).css("display", "block");
+                  });
+              }
+          })
+          .fail(function(data) {
+          });
+          // 新着情報
+          $('#newsCat1 tbody').load('/homepage/shinchaku/newslist.html .top_table tbody tr');
+          // 報道発表一覧
+          $('#newsCat2 tbody').load('/shared/houdoulist/top.html');
+          // イベント情報
+          $('#newsCat3 tbody').load('/ml_calender.html #top_events tbody tr');
+          // バナー
+          $('#advert_area_0').load('/_will/bannerarea/1/top_bannerarea.html');
+      });
+
+      /*tab*/
+      jQuery(function($) {
+          tabSwitch({
+              area: '.tabBlk,.tabBlkSearch'
+          });
+          //タブメニュー
+          // ====================================
+          function tabSwitch(setting) {
+              if ($(setting.area).length) {
+                  var area = setting.area.split(',');
+                  var areaLength = area.length;
+                  for (i = 0; i < areaLength; i++) {
+                      if ($(area[i]).length) {
+                          //初期処理
+                          if (!$(area[i]).hasClass('tab_area')) {
+                              $(area[i]).addClass('tab_area');
+                              $(area[i]).find('.tab_content').hide();
+                              var initTab = $(area[i]).find('.tab_menu').filter(':first').addClass('active');
+                              var initA = $(area[i]).find('.tab_menu').filter(':first').find('.tab_switch').addClass('active');
+                              initTab.find('.tab_content').show();
+                          }
+                          $(area[i]).find('.tab_switch').on('click focus', function() {
+                              var self = $(this);
+                              var area = $(this).closest('.tab_area');
+                              var parent = self.closest('.tab_menu');
+                              if (!parent.hasClass('active')) {
+                                  area.find('.tab_menu').removeClass('active');
+                                  //初期化
+                                  area.find('.tab_menu').find('.tab_switch').removeClass('active');
+                                  parent.addClass('active');
+                                  parent.find('.tab_switch').addClass('active');
+                                  area.find('.tab_content').hide();
+                                  parent.find('.tab_content').show();
+                              }
+                              //aタグのリンクを無効に
+                              return false;
+                          });
+                      }
+                  }
+              }
+          }
+      });
+	  
+	  
+
+      /*tab　sp用　20200710　追加*/
+      jQuery(function($) {
+          tabSwitch_sp({
+              area: '.tabBlk_sp,.tabBlkSearch_sp'
+          });
+          //タブメニュー
+          // ====================================
+          function tabSwitch_sp(setting) {
+              if ($(setting.area).length) {
+                  var area = setting.area.split(',');
+                  var areaLength = area.length;
+                  for (i = 0; i < areaLength; i++) {
+                      if ($(area[i]).length) {
+                          //初期処理
+                          if (!$(area[i]).hasClass('tab_area')) {
+                              $(area[i]).addClass('tab_area');
+                              $(area[i]).find('.tab_content').hide();
+                              var initTab = $(area[i]).find('.tab_menu').filter(':first').addClass('active');
+                              var initA = $(area[i]).find('.tab_menu').filter(':first').find('.tab_switch').addClass('active');
+                              initTab.find('.tab_content').show();
+                          }
+                          $(area[i]).find('.tab_switch').on('click focus', function() {
+                              var self = $(this);
+                              var area = $(this).closest('.tab_area');
+                              var parent = self.closest('.tab_menu');
+                              if (!parent.hasClass('active')) {
+                                  area.find('.tab_menu').removeClass('active');
+                                  //初期化
+                                  area.find('.tab_menu').find('.tab_switch').removeClass('active');
+                                  parent.addClass('active');
+                                  parent.find('.tab_switch').addClass('active');
+                                  area.find('.tab_content').hide();
+                                  parent.find('.tab_content').show();
+                              }
+                              //aタグのリンクを無効に
+                              return false;
+                          });
+                      }
+                  }
+              }
+          }
+      });
+    </script>
+    
+  </head>
+  <body class="format_top no_javascript">
+    <div id="tmp_wrap_all">
+      <div id="tmp_wrapper">
+          <script type="text/javascript" src="/shared/js/setting_body.js"></script>
+<div id="blockskip">
+  <a href="#tmp_honbun">このページの本文へ移動</a>
+</div>
+<noscript>
+  <p>このサイトではJavaScriptを使用したコンテンツ・機能を提供しています。JavaScriptを有効にするとご利用いただけます。</p>
+</noscript>
+<div id="tmp_head_all">
+  <div id="tmp_head_wrap">
+    <div id="tmp_header">
+      <div id="tmp_hlogo"><a href="/index.html"><span>千葉県</span></a></div>
+      <ul id="tmp_hnavi_s">
+        <li id="tmp_hnavi_lmenu"><a href="javascript:void(0);"><span>検索・メニュー</span></a> </li>
+      </ul>
+    </div>
+  </div>
+  <div id="tmp_head_top">
+    <div id="tmp_head_top_cnt">
+      <ul id="tmp_hnavi">
+        <li class="func_language"><a lang="en" xml:lang="en" href="/international/index.html">Foreign Languages</a> </li>
+        <li class="func_fc"><a href="javascript:void(0);" id="pt_enable">閲覧補助機能</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="tmp_gnavi">
+  <ul id="globalNav-pc" class="gnavi_main">
+    <li id="tmp_gnavi00">
+      <a href="/index.html">ホーム</a>
+    </li>
+    <li id="tmp_gnavi01">
+      <a href="/cate/kfk/index.html" class="js-navToggle navToggle">くらし・福祉・健康</a>
+      <div class="drop_down_hidden navCategoryWrap">
+        <div class="inner_drop_down_hidden">
+          <div class="link_box">
+            <div class="category_top"><a href="/cate/kfk/index.html">くらし・福祉・健康トップページ</a></div>
+      <ul>
+                <li><a href="/cate/kfk/kurashi/index.html">くらし</a></li>
+                      <li><a href="/cate/kfk/kenzei/index.html">県税</a></li>
+                      <li><a href="/cate/kfk/jinken/index.html">多様性尊重・人権・男女共同参画・DV対策</a></li>
+                      <li><a href="/cate/kfk/fukushi/index.html">福祉・子育て</a></li>
+                      <li><a href="/cate/kfk/kenkou-iryou/index.html">健康・医療</a></li>
+              </ul>
+            </div>
+          <button class="js-navCloseToggle navCloseToggle" type="button"><span class="fa fa-times" aria-hidden="true"></span><span class="text">閉じる</span></button>
+        </div>
+      </div>
+    </li>
+    <li id="tmp_gnavi02">
+      <a href="/cate/kbs/index.html" class="js-navToggle navToggle">教育・文化・スポーツ</a>
+      <div class="drop_down_hidden navCategoryWrap">
+        <div class="inner_drop_down_hidden">
+          <div class="link_box">
+            <div class="category_top"><a href="/cate/kbs/index.html">教育・文化・スポーツトップページ</a></div>
+      <ul>
+                <li><a href="/cate/kbs/kyouiku/index.html">教育・健全育成</a></li>
+                      <li><a href="/cate/kbs/rekishi-bunka/index.html">歴史・文化</a></li>
+                      <li><a href="/cate/kbs/taiiku/index.html">体育・スポーツ</a></li>
+              </ul>
+            </div>
+          <button class="js-navCloseToggle navCloseToggle" type="button"><span class="fa fa-times" aria-hidden="true"></span><span class="text">閉じる</span></button>
+        </div>
+      </div>
+    </li>
+    <li id="tmp_gnavi03">
+      <a href="/cate/ssk/index.html" class="js-navToggle navToggle">しごと・産業・観光</a>
+      <div class="drop_down_hidden navCategoryWrap">
+        <div class="inner_drop_down_hidden">
+          <div class="link_box">
+            <div class="category_top"><a href="/cate/ssk/index.html">しごと・産業・観光トップページ</a></div>
+      <ul>
+                <li><a href="/cate/ssk/kankou/index.html">観光・特産品</a></li>
+                      <li><a href="/cate/ssk/kigyouyuuchi/index.html">企業誘致</a></li>
+                      <li><a href="/cate/ssk/nourinsuisan/index.html">農林水産業</a></li>
+                      <li><a href="/cate/ssk/shigoto/index.html">しごと・雇用</a></li>
+                      <li><a href="/cate/ssk/shoukougyou/index.html">商工業</a></li>
+              </ul>
+            </div>
+          <button class="js-navCloseToggle navCloseToggle" type="button"><span class="fa fa-times" aria-hidden="true"></span><span class="text">閉じる</span></button>
+        </div>
+      </div>
+    </li>
+    <li id="tmp_gnavi04">
+      <a href="/cate/km/index.html" class="js-navToggle navToggle">環境・まちづくり</a>
+      <div class="drop_down_hidden navCategoryWrap">
+        <div class="inner_drop_down_hidden">
+          <div class="link_box">
+            <div class="category_top"><a href="/cate/km/index.html">環境・まちづくりトップページ</a></div>
+      <ul>
+                <li><a href="/cate/km/kankyou/index.html">環境</a></li>
+                      <li><a href="/cate/km/machizukuri/index.html">まちづくり</a></li>
+              </ul>
+            </div>
+          <button class="js-navCloseToggle navCloseToggle" type="button"><span class="fa fa-times" aria-hidden="true"></span><span class="text">閉じる</span></button>
+        </div>
+      </div>
+    </li>
+    <li id="tmp_gnavi05">
+      <a href="/cate/kt/index.html" class="js-navToggle navToggle">県政情報・統計</a>
+      <div class="drop_down_hidden navCategoryWrap">
+        <div class="inner_drop_down_hidden">
+          <div class="link_box">
+            <div class="category_top"><a href="/cate/kt/index.html">>県政情報・統計トップページ</a></div>
+      <ul>
+                <li><a href="/cate/kt/gyouzaisei/index.html">組織・行財政</a></li>
+                      <li><a href="/cate/kt/kenminsanka/index.html">県政への参加・意見</a></li>
+                      <li><a href="/cate/kt/goannnai/index.html">県のご案内</a></li>
+                      <li><a href="/cate/kt/kouhou/index.html">広報</a></li>
+                      <li><a href="/cate/kt/koukai-privacy/index.html">情報公開・個人情報保護</a></li>
+                      <li><a href="/cate/kt/senkyo/index.html">選挙</a></li>
+                      <li><a href="/cate/kt/shokuinsaiyou/index.html">職員採用</a></li>
+                      <li><a href="/cate/kfk/kurashi/jouhouka/index.html">電子県庁・DX</a></li>
+                      <li><a href="/cate/kt/toukeidata/index.html">統計情報</a></li>
+                      <li><a href="/nyuu-kei/index.html">入札・契約</a></li>
+                      <li><a href="/cate/kt/tetsuzuki/index.html">行政手続案内</a></li>
+                      <li><a href="/shinsei/gyouseishobun/index.html">行政処分の基準</a></li>
+              </ul>
+            </div>
+          <button class="js-navCloseToggle navCloseToggle" type="button"><span class="fa fa-times" aria-hidden="true"></span><span class="text">閉じる</span></button>
+        </div>
+      </div>
+    </li>
+    <li id="tmp_gnavi06">
+      <a href="/cate/baa/index.html" class="js-navToggle navToggle">防災・安全・安心</a>
+      <div class="drop_down_hidden navCategoryWrap">
+        <div class="inner_drop_down_hidden">
+          <div class="link_box">
+            <div class="category_top"><a href="/cate/baa/index.html">>防災・安全・安心トップページ</a></div>
+      <ul>
+                <li><a href="/cate/baa/3-11/index.html">東日本大震災</a></li>
+                      <li><a href="/cate/baa/jishin-tsunami/index.html">地震・津波対策</a></li>
+                      <li><a href="/cate/baa/fuusuitou/index.html">風水害・大雪対策</a></li>
+                      <li><a href="/cate/baa/dosha/index.html">土砂災害対策</a></li>
+                      <li><a href="/cate/baa/higai-shien/index.html">被害状況・被災者支援</a></li>
+                      <li><a href="/cate/baa/sonae/index.html">災害への備え</a></li>
+                      <li><a href="/cate/baa/shou-kyuu/index.html">消防・救急</a></li>
+                      <li><a href="/cate/baa/lifeline/index.html">交通・ライフライン</a></li>
+                      <li><a href="/cate/baa/kokuho-kikikanri/index.html">武力攻撃・テロ攻撃など（国民保護）と危機管理</a></li>
+                      <li><a href="/cate/baa/housha/index.html">放射能・放射線関連情報</a></li>
+                      <li><a href="/cate/baa/kenkou/index.html">健康被害の防止</a></li>
+                      <li><a href="/cate/baa/bouhan/index.html">防犯・犯罪被害者支援</a></li>
+                      <li><a href="/cate/baa/koutsuuanzen/index.html">交通安全対策</a></li>
+                      <li><a href="/cate/baa/bouei/index.html">防衛施設関連</a></li>
+              </ul>
+            </div>
+          <button class="js-navCloseToggle navCloseToggle" type="button"><span class="fa fa-times" aria-hidden="true"></span><span class="text">閉じる</span></button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+        <div id="tmp_lcnt">
+          <div id="tmp_ltnavi"></div>
+        </div>
+        <div id="tmp_rcnt">
+          <div id="tmp_wrap_main" class="column_full">
+            <p id="tmp_honbun" class="skip">ここから本文です。</p>
+            <!--index_start-->   
+                         
+            
+            <div class="topClmWrap">
+            
+            
+              <!-- スマホ用検索　20200709　追加 -->
+              <div class="tabBlkSearch_sp pc_none"><!-- 20200819　編集 -->
+                <div class="tab_area">
+                  <div id="topSearch1_sp" class="tab_menu clearfix active">
+                    <div class="tab_tit mh">
+                      <p><a href="javascript:void(0);" class="tab_switch">サイト内検索</a></p>
+                    </div>
+                    <div class="tab_content">
+                      <div class="searchBox">
+                        <form id="tmp_gserach01_sp" method="get" action="/search/index.html">
+                          <label for="tmp_query_sp">サイト内検索</label> <input id="tmp_query_sp" size="31" name="keyword" placeholder="※キーワードを入力してください"> <input id="tmp_func_sch_btn01_sp"  type="submit" name="sa" value="検索"> 
+                        </form>
+                      </div>
+                      <div class="topSearch-key">
+                        <div class="topSearch-tit">
+                          <h2 class="iconTit">キーワード</h2>
+                        </div>
+                        <div class="topSearch-data">
+                            <ul>
+    <li><a href="/shippei/covid19-vaccine.html">ワクチン</a> </li>
+    <li><a href="/nyuu-kei/index.html">入札・契約情報</a> </li>
+    <li><a href="/cate/km/machizukuri/jigyousha/index.html">建築・建設・不動産事業者の方へ</a> </li>
+    <li><a href="/cate/kt/shokuinsaiyou/index.html">職員採用</a> </li>
+    <li><a href="/kokusai/passport/passport.html">パスポート</a> </li>
+    <li><a href="/cate/kt/gyouzaisei/kaikaku/zaisei/index.html">財政・県債・IR情報</a> </li>
+    <li><a href="/soudan-toiawase/faq/index.html">よくある質問から探す</a> </li>
+    <li><a href="/soudan-toiawase/soudan/index.html">相談・問い合わせ窓口</a> </li>
+    <li><a href="/cate/kt/tetsuzuki/index.html">手続・様式を探す</a> </li>
+    <li><a href="/suidou/gyoumu/otoiawase.html">千葉県営水道をお使いのお客様へ</a> </li>
+</ul>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div id="topSearch2_sp" class="tab_menu clearfix">
+                    <div class="tab_tit mh">
+                      <p><a href="javascript:void(0);" class="tab_switch">ページ番号検索</a></p>
+                    </div>
+                    <div class="tab_content">
+                      <form id="tmp_gserach02_sp" method="get" action="/search/index.html">
+                        <label for="tmp_query_num">ページ番号検索</label> <input class="tmp_query tmp_query_num" size="31" name="page_id" placeholder="※ページ番号"> <input id="tmp_func_sch_btn02_sp"  type="submit" name="sap" value="検索"> 
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            
+
+              <!-- メインビジュアル -->
+              <div class="topClmL">
+                                <div class="topSpot">
+                  <div class="topSpotImg">
+                    <img src="/images/r7maruchiba-main.jpg"  alt="秋の観光キャンペーン"/>
+                  </div>
+                  <div class="topSpotText">
+                                          <a href="https://maruchiba.jp/topics/detail_157.html">
+                                        秋の観光キャンペーン<img alt="外部サイトへのリンク" width="40" height="13" src="/shared/system/images/linkicon/icon_external.gif" class="icon_external" />                    </a>
+                  </div>
+                </div>
+                              </div>
+          
+              <!-- 千葉県トピックス -->
+              <div id="chibaTopics" class="topClmR">
+                <div class="topTopics">
+                  <h2 class="iconTit">千葉県のトピックス</h2>
+                  <div class="topslider">
+                    <div class="flex-container">
+                      <div class="flexslider">
+                        <ul class="slides">
+                            <?xml version="1.0" encoding="utf-8"?>
+    <li>
+    <a href="/toukei/toukeidata/kokuseichousa/r07/r07dayori-index.html" >
+      <img src="/images/r7kokuseityousa.jpg" alt="令和7年国勢調査を実施します。のバナー画像">
+    </a>
+    <span class="flex-caption">
+      <a href="/toukei/toukeidata/kokuseichousa/r07/r07dayori-index.html" >
+        <span class="flex-title">令和7年国勢調査を実施します。</span>
+      </a>
+      <span class="flex-txt">令和7年10月1日現在で、日本に住んでいるすべての人(外国人の方も含みます)と世帯を対象とした国勢調査を実施します。回答は、スマートフォンやパソコンから、かんたん便利なインターネット回答をご利用ください(郵送も可)。</span>
+    </span>
+  </li>
+    <li>
+    <a href="https://nashi.chibajisan.jp" >
+      <img src="/images/nihonnashi.jpg" alt="【千葉自賛】特設サイト／千葉の梨は日本一のバナー画像">
+    </a>
+    <span class="flex-caption">
+      <a href="https://nashi.chibajisan.jp" >
+        <span class="flex-title">【千葉自賛】特設サイト／千葉の梨は日本一<img height="13" alt="外部サイトへのリンク" width="40" src="/shared/system/images/linkicon/icon_external.gif" class="icon_external" /></span>
+      </a>
+      <span class="flex-txt">千葉県は、江戸時代から続く梨の産地で、生産量(収穫量)・栽培面積・産出額ともに日本一を誇ります。(農林水産統計(令和5年産))
+千葉の梨の旬は8月から9月ですが、7月下旬から10月上旬まで、時期によって出回る梨の品種が替わりますので、様々な味を楽しむことができます。</span>
+    </span>
+  </li>
+    <li>
+    <a href="/kuushin/narita/dai2nokaiko.html" >
+      <img src="/images/dai2kaiko.png" alt="成田空港「第2の開港」を起点とするアクションパッケージのバナー画像">
+    </a>
+    <span class="flex-caption">
+      <a href="/kuushin/narita/dai2nokaiko.html" >
+        <span class="flex-title">成田空港「第2の開港」を起点とするアクションパッケージ</span>
+      </a>
+      <span class="flex-txt">成田空港の第3滑走路の新設や、旅客ターミナルの再構築などの「成田空港第2の開港プロジェクト」を起点として、空港周辺地域では、空港アクセスの充実・強化や物流・産業拠点の形成、エアポートシティの実現に向けた取組が進んでいます。こうした「第2の開港」に向けた様々なプロジェクトをご紹介します！</span>
+    </span>
+  </li>
+    <li>
+    <a href="/doukei/aqualine/aqualine-shakaijikken.html" >
+      <img src="/images/aqua-etc.jpg" alt="東京湾アクアラインETC時間帯別料金の社会実験のバナー画像">
+    </a>
+    <span class="flex-caption">
+      <a href="/doukei/aqualine/aqualine-shakaijikken.html" >
+        <span class="flex-title">東京湾アクアラインETC時間帯別料金の社会実験</span>
+      </a>
+      <span class="flex-txt">交通需要の偏在等による混雑の緩和を図ることを目的に、特定の時間帯の割引料金を変動させるETC時間帯別料金の社会実験を実施しています。</span>
+    </span>
+  </li>
+  
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+
+            <div class="topClmWrap">
+
+              <div class="topClmL">
+                            <!-- 重要なお知らせ -->
+              <div class="important_blk" >
+                <div class="contentFlat">
+                  <div class="contentFlat-tit">
+                    <h2 class="iconTit">お知らせ</h2>
+                  </div>
+                  <div class="contentFlat-data">
+                    <div class="col2L"> 
+ <ul> 
+  <li><strong><strong><a href="/seikouan/bouhan/anzen/renzokugoutou2410.html">不審な訪問や電話での調査にご注意ください</a></strong></strong></li> 
+  <li><strong><a href="/toukei/toukeidata/jouhou/katarityuui.html">統計調査を装う「かたり調査」にご注意ください</a></strong></li> 
+  <li><a href="/keisei/zaisei/kanzei.html"><strong>米国における関税措置への対応（相談窓口・支援制度等）</strong></a></li> 
+  <li><strong><a href="/bousai/kouikiouen/r6noto-earthquake.html">令和6年能登半島地震への千葉県の対応</a></strong></li> 
+  <li><a href="/kakan/dosya/chatobot.html">土砂災害AIチャットボット</a></li> 
+  <li><a href="/kenshidou/types/welfarechatbot.html">いつでも福祉相談サポット</a></li> 
+  <li><a href="/eiken/c-idsc/index.html">感染症情報</a></li> 
+  <li><a href="/kokusai/english/information/residents/hello/index.html">せいかつガイド（外国人 の みなさん へ）</a></li> 
+ </ul> 
+</div>
+                  </div>
+                </div>
+              </div>
+                      
+                            <!-- 知事のページ -->
+              <div class="chiji_blk">
+                <div class="contentFlat">
+                  <div class="contentFlat-tit">
+                    <h2 class="iconTit"><a href="/cate/kt/goannnai/chijishitsu/index.html">知事のページ</a></h2>
+                  </div>
+                  <div class="contentFlat-data">
+                    <ul>
+                                            <li>
+                                                <a href="/cate/kt/goannnai/chijishitsu/ugoki/index.html">
+                                                知事の動き
+                        </a>
+                      </li>
+                                            <li>
+                                                <a href="/cate/kt/goannnai/chijishitsu/teirei/index.html">
+                                                記者会見
+                        </a>
+                      </li>
+                                            <li>
+                                                <a href="/cate/kt/kouhou/tv-radio/chiji-shutsuen/index.html">
+                                                出演番組
+                        </a>
+                      </li>
+                                          </ul>
+                  </div>
+                </div>
+              </div>
+                      
+                            <!-- 注目情報 -->
+              <div class="chumoku_blk">
+                <div class="contentFlat">
+                  <div class="contentFlat-tit">
+                    <h2 class="iconTit">注目情報</h2>
+                  </div>
+                  <div class="contentFlat-data">
+                    <ul> 
+ <li><a href="https://www.sushitop.io/6web3layer/chibabu-pref-chiba/index.html">若者の仲間づくり支援事業（ミラチバプロジェクト）<img alt="外部サイトへのリンク" class="icon_external" height="13" width="40" src="/shared/system/images/linkicon/icon_external.gif"></a></li> 
+ <li><a href="https://kuro-ajillo.jp/">「黒アヒージョ」公式WEBサイト<img alt="外部サイトへのリンク" class="icon_external" height="13" width="40" src="/shared/system/images/linkicon/icon_external.gif"></a></li> 
+ <li><a href="https://as.chizumaru.com/evchiba/listMap?account=evchiba&amp;accmd=0&amp;x=504380.000&amp;y=126608.395&amp;lscl=83000&amp;lrot=0">南房総エリアにおける「電気自動車（EV）充電観光マップ」<img alt="外部サイトへのリンク" class="icon_external" height="13" width="40" src="/shared/system/images/linkicon/icon_external.gif"></a></li> 
+ <li><a href="http://chiba-sensei.com/">「千の葉の先生になる」教員採用情報サイト<img alt="外部サイトへのリンク" class="icon_external" height="13" width="40" src="/shared/system/images/linkicon/icon_external.gif"></a></li> 
+ <li><a href="/kyouiku/soumu/press/2025/touitsudaiyaru202506.html">千葉県教育庁統一ダイヤルの開設について</a></li> 
+ <li><a href="/sanjin/kunren/senmonkou/kyoudoupanfu.html">「ものづくりを学ぼう！」テクノスクール・工業系高校共同パンフレット</a></li> 
+</ul>
+                  </div>
+                </div>
+              </div>
+                      
+              <!-- 千葉県からのおすすめ情報 -->
+              <div class="topReco">
+                <h2>千葉県からのおすすめ情報</h2>
+                <ul>
+                  <li><a href="/cate/kt/kouhou/kenmindayori/index.html"><img src="/shared/templates/top/images/topReco_tayori.png" alt="ちば県民だより"/></a></li>
+                  <li><a href="/net-tv/index.html"><img src="/shared/templates/top/images/topReco_tv.png" alt="ちばコレchannel"/></a></li>
+                  <li><a href="/kouhou/homepage/socialmedia.html"><img src="/shared/templates/top/images/topReco_sns.png" alt="ソーシャルメディア"/></a></li>
+                  <li><a href="/kouhou/kids/chi-bakun/index.html"><img src="/shared/templates/top/images/topReco_kids.png" alt="キッズページ"/></a></li>
+                  <li><a href="/kouhou/miryoku/chi-ba-kun/index.html"><img src="/shared/templates/top/images/topReco_chi-ba.png" alt="チーバくんの広場"/></a></li>
+                </ul>
+              </div>
+
+              <div class="tabBlk">
+                <div class="tab_area">
+                  <div id="newsCat1" class="tab_menu clearfix active">
+                    <div class="tab_tit mh">
+                      <p><a href="javascript:void(0);" class="tab_switch">新着情報</a></p>
+                    </div>
+                    <div class="tab_content">
+                      <table class="list_table">
+                        <caption>新着情報の一覧</caption>
+                        <tbody></tbody> 
+                      </table>
+                      <div class="btnList">
+                        <ul>
+                          <li><a href="/homepage/shinchaku/index.html" class=" ico_list">新着情報一覧</a></li>
+                          <li><a href="/homepage/shinchaku/shinchaku.xml" class=" ico_rss">新着情報RSS</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="newsCat2" class="tab_menu clearfix">
+                    <div class="tab_tit mh">
+                      <p><a href="javascript:void(0);" class="tab_switch">報道発表</a></p>
+                    </div>
+                    <div class="tab_content">
+                     <table class="list_table">
+                        <caption>報道発表の一覧</caption>
+                        <tbody></tbody>
+                      </table>
+                      <div class="btnList">
+                        <ul>
+                          <li><a href="/cate/kt/kouhou/houdou/ichiran/index.html" class=" ico_list">報道発表一覧</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="newsCat3" class="tab_menu clearfix">
+                    <div class="tab_tit mh">
+                      <p><a href="javascript:void(0);" class="tab_switch">イベント情報</a></p>
+                    </div>
+                    <div class="tab_content">
+                      <table class="list_table">
+                        <caption>イベント情報の一覧</caption>
+                        <tbody></tbody>
+                      </table>
+                      <div class="btnList">
+                        <ul>
+                          <li><a href="/event_cal.html" class=" ico_list">イベント情報一覧</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+                
+            </div>
+
+            <div class="topClmR">
+
+              <div class="tabBlkSearch sp_none"><!--20200819　編集-->
+                <div class="tab_area">
+                  <div id="topSearch1" class="tab_menu clearfix active">
+                    <div class="tab_tit mh">
+                      <p><a href="javascript:void(0);" class="tab_switch">サイト内検索</a></p>
+                    </div>
+                    <div class="tab_content">
+                      <div class="searchBox">
+                        <form id="tmp_gserach01" method="get" action="/search/index.html">
+                          <label for="tmp_query">サイト内検索</label> <input id="tmp_query" size="31" name="keyword" placeholder="※キーワードを入力してください"> <input id="tmp_func_sch_btn01"  type="submit" name="sa" value="検索"> 
+                        </form>
+                      </div>
+                      <div class="topSearch-key">
+                        <div class="topSearch-tit">
+                          <h2 class="iconTit">キーワード</h2>
+                        </div>
+                        <div class="topSearch-data">
+                            <ul>
+    <li><a href="/shippei/covid19-vaccine.html">ワクチン</a> </li>
+    <li><a href="/nyuu-kei/index.html">入札・契約情報</a> </li>
+    <li><a href="/cate/km/machizukuri/jigyousha/index.html">建築・建設・不動産事業者の方へ</a> </li>
+    <li><a href="/cate/kt/shokuinsaiyou/index.html">職員採用</a> </li>
+    <li><a href="/kokusai/passport/passport.html">パスポート</a> </li>
+    <li><a href="/cate/kt/gyouzaisei/kaikaku/zaisei/index.html">財政・県債・IR情報</a> </li>
+    <li><a href="/soudan-toiawase/faq/index.html">よくある質問から探す</a> </li>
+    <li><a href="/soudan-toiawase/soudan/index.html">相談・問い合わせ窓口</a> </li>
+    <li><a href="/cate/kt/tetsuzuki/index.html">手続・様式を探す</a> </li>
+    <li><a href="/suidou/gyoumu/otoiawase.html">千葉県営水道をお使いのお客様へ</a> </li>
+</ul>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div id="topSearch2" class="tab_menu clearfix">
+                    <div class="tab_tit mh">
+                      <p><a href="javascript:void(0);" class="tab_switch">ページ番号検索</a></p>
+                    </div>
+                    <div class="tab_content">
+                      <form id="tmp_gserach02" method="get" action="/search/index.html">
+                        <label for="tmp_query_num">ページ番号検索</label> <input class="tmp_query tmp_query_num" size="31" name="page_id" placeholder="※ページ番号"> <input id="tmp_func_sch_btn02"  type="submit" name="sap" value="検索"> 
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+
+
+                            <!-- 防災・安全・安心情報 -->
+              <div class="topBosai">
+                <h2 class="iconTit"><a href="/homepage/kinkyuu/index.html">防災・安全・安心情報</a></h2>
+                <div class="topBosaiInner">
+                  <ul>
+                                                                  <li>
+                                                    <a href="https://www.bousai.pref.chiba.lg.jp/portal/">
+                                                    <img src="/shared/templates/top/images/topbousai_portal.png" alt="防災ポータルサイト" />
+                          </a>
+                        </li>
+                                                                                        <li>
+                                                    <a href="/ontai/necchusho/index.html">
+                                                    <img src="/shared/templates/top/images/topbousai_necchuushou.png" alt="熱中症に注意" />
+                          </a>
+                        </li>
+                                                                                        <li>
+                                                    <a href="/eishi/press/2025/keihou-r07.html">
+                                                    <img src="/shared/templates/top/images/topbousai_shoku.png" alt="食中毒警報を発令しました" />
+                          </a>
+                        </li>
+                                                                                        <li>
+                                                    <a href="/seikouan/bouhan/anzen/stop-ddsagi.html">
+                                                    <img src="/shared/templates/top/images/topbousai_sagi.png" alt="STOP! 電話de詐欺" />
+                          </a>
+                        </li>
+                                                                                        <li>
+                                                    <a href="/dankyou/dv/soudan.html">
+                                                    <img src="/shared/templates/top/images/topbousai_dv.png" alt="千葉県内のDV相談窓口" />
+                          </a>
+                        </li>
+                                                                                        <li>
+                                                    <a href="/jika/soudan/jidou/gyakutai.html">
+                                                    <img src="/shared/templates/top/images/topbousai_gyakutai.png" alt="虐待かもと思ったら189(いちはやく)番へ" />
+                          </a>
+                        </li>
+                                                                                        <li>
+                                                    <a href="/bousaik/jibun/jibunbousai.html">
+                                                    <img src="/shared/templates/top/images/jibunbousaiicon.png" alt="防災啓発サイトじぶん防災へのアイコン" />
+                          </a>
+                        </li>
+                                                            </ul>
+                </div>
+              </div>
+              
+
+             <!--20200626　移設-->      
+              <!-- よく見られているページ --> 
+                                            <div class="topSearch-rank">
+                        <div class="topSearch-tit">
+                          <h2 class="iconTit">よく見られているページ</h2>
+                        </div>
+                        <div class="topSearch-data">
+                          <ul>
+                                                    <li>
+                                                        <a href="/keisei/cashless/r7cashless-campaign.html">
+                                                        県内消費喚起対策事業（ポイント還元キャンペーン）
+                            </a>
+                          </li>
+                                                    <li>
+                                                        <a href="/kouhou/map.html">
+                                                        市町村マップ
+                            </a>
+                          </li>
+                                                    <li>
+                                                        <a href="/koyou/roudoumondai/kanrenhouki/saiteichingin.html">
+                                                        千葉県最低賃金改正のお知らせ（千葉労働局）
+                            </a>
+                          </li>
+                                                    <li>
+                                                        <a href="/kyouiku/shidou/nyuushi/koukou/r8/index.html">
+                                                        令和8年度(令和7年度実施)高等学校入学者選抜情報
+                            </a>
+                          </li>
+                                                    <li>
+                                                        <a href="/cate/kt/goannnai/kokusaikouryuu/passport/index.html">
+                                                        パスポートに関する情報
+                            </a>
+                          </li>
+                                                    </ul>
+                        </div>
+                      </div>
+                                    
+              
+              
+
+              <!-- 県の組織から探す -->
+              <div class="topSoshiki">
+                <h2 class="iconTit">県の組織から探す</h2>
+                <ul>
+                  <li><a href="/cate/kt/gyouzaisei/soshiki/soshiki/index.html"><img src="/shared/templates/top/images/topsohiki_kikan.png" alt="県の機関一覧"/></a></li>
+                  <li><a href="/gikai/index.html"><img src="/shared/templates/top/images/topsohiki_gikai.png" alt="県議会"/></a></li>
+                  <li><a href="/kyouiku/index.html"><img src="/shared/templates/top/images/topsohiki_edu.png" alt="教育委員会"/></a></li>
+                  <li><a href="/suidou/index.html"><img src="/shared/templates/top/images/topsohiki_suido.png" alt="千葉県営水道"/></a></li>
+                  <li><a href="/byouin/index.html"><img src="/shared/templates/top/images/topsohiki_byouin.png" alt="病院局"/></a></li>
+                  <li><a href="http://www.police.pref.chiba.jp/"><img src="/shared/templates/top/images/topsohiki_kenkei.png" alt="千葉県警"/></a></li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+          <!--index_end-->
+              
+        </div>
+      </div>
+
+      <div class="topFoot">
+        <div class="topFootInner">
+          
+          <div class="topFootClm">
+            <p>千葉県の基本情報</p>
+                        <ul>
+                            <li>
+                                <a href="/cate/kt/goannnai/profile/index.html">
+                                千葉県のプロフィール
+                </a>
+              </li>
+                            <li>
+                                <a href="/cate/kt/gyouzaisei/soshiki/soshiki/index.html">
+                                県庁各機関一覧（県庁電話帳）
+                </a>
+              </li>
+                            <li>
+                                <a href="/kouhou/access/annaizu.html">
+                                県庁舎のアクセス
+                </a>
+              </li>
+                            <li>
+                                <a href="/kouhou/ichiran.html">
+                                市町村一覧
+                </a>
+              </li>
+                            <li>
+                                <a href="/kouhou/map.html">
+                                市町村マップ
+                </a>
+              </li>
+                          </ul>
+                      </div>
+
+          <div class="topFootClm">
+            <p><a href="/cate/kfk/kurashi/jouhouka/index.html">電子県庁・DX</a></p>
+                        <ul>
+                            <li>
+                                <a href="/dejisen/dxportal/index.html">
+                                ちばDXポータル
+                </a>
+              </li>
+                            <li>
+                                <a href="/jousei/kensetsukouji/system/index.html">
+                                ちば電子調達システム
+                </a>
+              </li>
+                            <li>
+                                <a href="/jousei/tetsuzuki/denshishinsei.html">
+                                ちば電子申請サービス
+                </a>
+              </li>
+                            <li>
+                                <a href="/jousei/yoyaku/index.html">
+                                ちば施設予約サービス
+                </a>
+              </li>
+                            <li>
+                                <a href="/jousei/chibamap/index.html">
+                                地図から探す（ちば情報マップ)
+                </a>
+              </li>
+                            <li>
+                                <a href="https://ops-jg.d1-law.com/opensearch/SrMjF01/init?jctcd=8A8006EF9A">
+                                千葉県法規集
+                </a>
+              </li>
+                            <li>
+                                <a href="/gyoukaku/opendata/index.html">
+                                千葉県オープンデータサイト
+                </a>
+              </li>
+                          </ul>
+                      </div>
+
+          <div class="topFootClm">
+            <p><a href="/cate/kt/kenminsanka/index.html">県政へ参加しよう</a></p>
+                        <ul>
+                            <li>
+                                <a href="/kouhou/goiken/chiji.html">
+                                わたしの提言
+                </a>
+              </li>
+                            <li>
+                                <a href="/form/b_kouhou_center_teian-j/form.html">
+                                ご意見・ご質問
+                </a>
+              </li>
+                            <li>
+                                <a href="/cate/kt/kenminsanka/ikenboshuu/iken/index.html">
+                                パブリックコメント
+                </a>
+              </li>
+                            <li>
+                                <a href="/cate/kt/kenminsanka/enquete/index.html">
+                                広聴の実施結果
+                </a>
+              </li>
+                            <li>
+                                <a href="/event-koubo/index.html">
+                                各種公募・募集情報
+                </a>
+              </li>
+                          </ul>
+                      </div>
+        </div>
+
+      </div>
+          
+      <!-- サービス停止情報 -->
+      <div id="tmp_service_stop">
+        <div id="tmp_service_stopInner">
+          <p class="title">サービス停止情報</p>
+                      <p>現在、情報はありません。</p>
+                  </div>
+      </div>
+        
+      <div id="tmp_idx_publicity">
+        <div id="tmp_idx_publicityInner">
+          <div id="tmp_idx_publicity_ttl">
+            <p class="ban_rec">
+              <a href="/kouhou/banner/index.html">バナー広告掲載について</a>
+            </p>
+          </div>
+          <div id="tmp_idx_publicity_cnt">
+            <div id="advert_area_0" class="banner"></div>
+          </div>
+        </div>
+      </div>
+        <div id="tmp_footer">
+      <p id="page_top"><a href="#blockskip"><span><img src="/shared/images/footer/pagetop.png"  alt="ページの先頭へ戻る"/></span></a></p>
+  <div id="tmp_fcnt">
+    <ul id="tmp_fnavi">
+      <li><a href="/homepage/about-site/index.html">このホームページ（ウェブサイト）について</a> </li>
+      <li><a href="/homepage/about-site/link.html">リンク・著作権・プライバシー・免責事項等</a> </li>
+      <li><a href="/homepage/about-site/ac-gl/index.html">サイト運営の考え方</a> </li>
+      <li><a href="/homepage/about-site/keitai.html">携帯サイトのご案内</a> </li>
+    </ul>
+    <address><span class="fcnt_ttl">千葉県庁</span><span class="fcnt_cnt"><span>〒260-8667 千葉市中央区市場町1-1 </span><span>電話番号：043-223-2110（代表） </span><span>法人番号：4000020120006</span></span></address>
+  </div>
+  <div id="tmp_copyright">
+    <p lang="en" xml:lang="en">Copyright &copy; Chiba Prefectural Government. All rights reserved.</p>
+  </div>
+  <div id="tmp_model_change_pub"></div>
+  <script>
+      jQuery(function($) {
+        if (location.pathname.indexOf("/preview/") == 0) {
+          $('#tmp_gserach01').submit(function () {
+            return false;
+          });
+          $('#tmp_gserach02').submit(function () {
+            return false;
+          });
+          $('#tmp_gserach01_sp').submit(function () {
+            return false;
+          });
+          $('#tmp_gserach02_sp').submit(function () {
+            return false;
+          });
+          $('#tmp_gserach').submit(function () {
+            return false;
+          });
+          $("#tmp_query, #tmp_query_sp, .tmp_query_num").on("keydown", function(e) {
+            if ((e.which && e.which === 13) || (e.keyCode && e.keyCode === 13)) {
+              return false;
+            } else {
+              return true;
+            }
+          });
+          $('#tmp_inquiry_cnt form').submit(function () {
+            return false;
+          });
+          $('#tmp_feedback_cnt .submit input').removeAttr("onclick");
+        }
+      });
+  </script>
+</div>
+
+    </div>
+    </div>
+    <script type="text/javascript" src="/shared/js/easing.js"></script>
+    <script type="text/javascript" src="/shared/js/timers.js"></script>
+    <script type="text/javascript" src="/shared/js/gallery-3.6.0.js"></script>
+    <script type="text/javascript" src="/shared/js/dropdownmenu.js"></script>
+    <script type="text/javascript" src="/shared/js/plugin.js"></script>
+    <script type="text/javascript" src="/shared/js/setting_responsive-3.6.0.js?t=20221121"></script>
+    <script type="text/javascript" src="/shared/js/setting_onload-3.6.0.js"></script>
+    <script type="text/javascript" src="/shared/js/slick.min.js"></script>
+    <script type="text/javascript">
+// 注目のトピックススライダー
+jQuery(function($) {
+$('.slides').slick({
+  autoplay: true,
+  autoplaySpeed: 5000,
+  speed: 500,
+  dots: true,
+  infinite: true,
+  arrows: false,
+  fade: true,
+  swipe: true
+	});
+	
+var stopBtn = $('<button id="tglBtn"><span id="startBtn">再生</span><span id="stopBtn">停止</span></button>');
+stopBtn.insertBefore('.slides .slick-dots');
+$('#startBtn').hide();
+var flg = "play";
+$('#tglBtn').click(function(){
+  
+  $('#startBtn').toggle();
+  
+  if(flg == "play") {
+    $('#startBtn').show().css('display','inline-block');
+    $('#stopBtn').hide().css('display','none');
+    flg = "stop";
+    $('.slides').slick('slickPause');
+  } else {
+    $('#startBtn').hide().css('display','none');
+    $('#stopBtn').show().css('display','inline-block');
+    flg = "play";
+    $('.slides').slick('slickPlay');
+  }
+});
+});
+</script>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=142163032" async></script></body>
+</html>
+

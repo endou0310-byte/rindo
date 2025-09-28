@@ -1,0 +1,62 @@
+[
+  {
+    "pref": "埼玉県",
+    "agency_type": "prefecture",
+    "site": "https://www.pref.saitama.lg.jp/",
+    "extra_domains": ["www1.pref.saitama.lg.jp"]
+  },
+  {
+    "pref": "埼玉県",
+    "agency_type": "city",
+    "city": "秩父市",
+    "site": "https://www.city.chichibu.lg.jp/"
+  },
+  {
+    "pref": "埼玉県",
+    "agency_type": "town",
+    "city": "横瀬町",
+    "site": "https://www.town.yokoze.saitama.jp/"
+  },
+  {
+    "pref": "埼玉県",
+    "agency_type": "town",
+    "city": "皆野町",
+    "site": "https://www.town.minano.saitama.jp/"
+  },
+  {
+    "pref": "埼玉県",
+    "agency_type": "town",
+    "city": "長瀞町",
+    "site": "https://www.town.nagatoro.saitama.jp/"
+  },
+  {
+    "pref": "埼玉県",
+    "agency_type": "town",
+    "city": "小鹿野町",
+    "site": "https://www.town.ogano.lg.jp/"
+  },
+  {
+    "pref": "埼玉県",
+    "agency_type": "city",
+    "city": "飯能市",
+    "site": "https://www.city.hanno.lg.jp/"
+  },
+  {
+    "pref": "埼玉県",
+    "agency_type": "town",
+    "city": "寄居町",
+    "site": "https://www.town.yorii.saitama.jp/"
+  },
+  {
+    "pref": "埼玉県",
+    "agency_type": "town",
+    "city": "ときがわ町",
+    "site": "https://www.town.tokigawa.lg.jp/"
+  },
+  {
+    "pref": "埼玉県",
+    "agency_type": "town",
+    "city": "越生町",
+    "site": "https://www.town.ogose.saitama.jp/"
+  }
+]

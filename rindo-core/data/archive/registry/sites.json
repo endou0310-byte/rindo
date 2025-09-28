@@ -1,0 +1,15 @@
+[
+  {
+    "pref": "11",
+    "owner": "埼玉県",
+    "domain": "https://www.pref.saitama.lg.jp",
+    "seeds": ["/"],                 
+    "site_search": [                
+      "/search/?q={q}"
+    ],
+    "queries": ["林道 通行", "林道 規制", "林道 通行止め"],
+    "max_pages": 600,               
+    "allow_paths": ["/b0902/", "/b0904/"],  
+    "deny_ext": [".zip",".xls",".ppt",".mp4"]
+  }
+]

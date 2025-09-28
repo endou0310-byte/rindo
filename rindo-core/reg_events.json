@@ -1,0 +1,24 @@
+{
+  "11": [
+    {
+      "pref": "11",
+      "name": "林道岩井沢線",
+      "status": "open",
+      "reason": "森林管理道（林道）の通行止め情報 - 埼玉県 …",
+      "from": null,
+      "to": null,
+      "updated_at": "2025-09-25T18:39:27.338880",
+      "source": "https://www.pref.saitama.lg.jp/b0902/forestry/road-closed.html"
+    },
+    {
+      "pref": "11",
+      "name": "林道永井谷線",
+      "status": "restricted",
+      "reason": "テスト表示",
+      "from": null,
+      "to": null,
+      "updated_at": "2025-09-25T00:00:00",
+      "source": "manual"
+    }
+  ]
+}

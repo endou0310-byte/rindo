@@ -1,0 +1,139 @@
+[
+  {
+    "pref": "埼玉県",
+    "agency_type": "prefecture",
+    "domains": ["www.pref.saitama.lg.jp","www1.pref.saitama.lg.jp"],
+    "watch": [
+      "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html",
+      "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html"
+    ],
+    "watch_patterns": [
+      "/b0923/tuukoudome(?:/\\d{2,4})?\\.html$",
+      "/b0904/.*\\.(?:html|pdf)$"
+    ],
+    "crawl": {
+      "same_domain": true,
+      "max_depth": 2,
+      "allow": ["\\.html?$","\\.(?:pdf|jpe?g|png)$"],
+      "deny": []
+    }
+  },
+{
+  "pref": "山梨県",
+  "agency_type": "prefecture",
+  "domains": ["www.pref.yamanashi.jp", "pref.yamanashi.jp"],
+  "watch": [
+    "https://www.pref.yamanashi.jp/rindoujyouhou/",
+    "https://www.pref.yamanashi.jp/rindoujyouhou/list.php",
+    "https://www.pref.yamanashi.jp/rindoujyouhou/main.php"
+  ],
+  "watch_patterns": [
+    "/rindoujyouhou/(?:index|list|main)\\.php$",
+    "/rindoujyouhou/kisei\\.php\\?id=\\d+$"
+  ],
+  "crawl": {
+    "same_domain": true,
+    "max_depth": 3,
+    "allow": [
+      "/rindoujyouhou/?$",
+      "/rindoujyouhou/(?:index|list|main)\\.php$",
+      "/rindoujyouhou/kisei\\.php\\?id=\\d+$"
+    ],
+    "deny": [
+      "/rindoujyouhou/file/.*\\.pdf$"
+    ]
+  }
+}
+,
+
+  {
+    "pref": "東京都",
+    "agency_type": "prefecture",
+    "domains": ["www.metro.tokyo.lg.jp"],
+    "auto_seeds": ["https://www.metro.tokyo.lg.jp/"],
+    "watch_patterns": [],
+    "crawl": {
+      "same_domain": true,
+      "max_depth": 2,
+      "allow": ["\\.html?$","\\.(?:pdf|jpe?g|png)$"],
+      "deny": [],
+      "keywords": ["林道","森林","通行止","規制","道路","交通規制","災害"],
+      "path_hints": ["/rindou","/rindo","/forest","/ringyo","/road","/kisei","/bosai","/news","/oshirase"]
+    }
+  },
+  {
+    "pref": "神奈川県",
+    "agency_type": "prefecture",
+    "domains": ["www.pref.kanagawa.jp"],
+    "auto_seeds": ["https://www.pref.kanagawa.jp/"],
+    "watch_patterns": [],
+    "crawl": {
+      "same_domain": true,
+      "max_depth": 2,
+      "allow": ["\\.html?$","\\.(?:pdf|jpe?g|png)$"],
+      "deny": [],
+      "keywords": ["林道","森林","通行止","規制","道路","交通規制","災害"],
+      "path_hints": ["/rindou","/rindo","/forest","/ringyo","/road","/kisei","/bosai","/news","/oshirase"]
+    }
+  },
+  {
+    "pref": "千葉県",
+    "agency_type": "prefecture",
+    "domains": ["www.pref.chiba.lg.jp"],
+    "auto_seeds": ["https://www.pref.chiba.lg.jp/"],
+    "watch_patterns": [],
+    "crawl": {
+      "same_domain": true,
+      "max_depth": 2,
+      "allow": ["\\.html?$","\\.(?:pdf|jpe?g|png)$"],
+      "deny": [],
+      "keywords": ["林道","森林","通行止","規制","道路","交通規制","災害"],
+      "path_hints": ["/rindou","/rindo","/forest","/ringyo","/road","/kisei","/bosai","/news","/oshirase"]
+    }
+  },
+  {
+    "pref": "茨城県",
+    "agency_type": "prefecture",
+    "domains": ["www.pref.ibaraki.jp"],
+    "auto_seeds": ["https://www.pref.ibaraki.jp/"],
+    "watch_patterns": [],
+    "crawl": {
+      "same_domain": true,
+      "max_depth": 2,
+      "allow": ["\\.html?$","\\.(?:pdf|jpe?g|png)$"],
+      "deny": [],
+      "keywords": ["林道","森林","通行止","規制","道路","交通規制","災害"],
+      "path_hints": ["/rindou","/rindo","/forest","/ringyo","/road","/kisei","/bosai","/news","/oshirase"]
+    }
+  },
+  {
+    "pref": "栃木県",
+    "agency_type": "prefecture",
+    "domains": ["www.pref.tochigi.lg.jp"],
+    "auto_seeds": ["https://www.pref.tochigi.lg.jp/"],
+    "watch_patterns": [],
+    "crawl": {
+      "same_domain": true,
+      "max_depth": 2,
+      "allow": ["\\.html?$","\\.(?:pdf|jpe?g|png)$"],
+      "deny": [],
+      "keywords": ["林道","森林","通行止","規制","道路","交通規制","災害"],
+      "path_hints": ["/rindou","/rindo","/forest","/ringyo","/road","/kisei","/bosai","/news","/oshirase"]
+    }
+  },
+  {
+    "pref": "群馬県",
+    "agency_type": "prefecture",
+    "domains": ["www.pref.gunma.jp"],
+    "auto_seeds": ["https://www.pref.gunma.jp/"],
+    "watch_patterns": [],
+    "crawl": {
+      "same_domain": true,
+      "max_depth": 2,
+      "allow": ["\\.html?$","\\.(?:pdf|jpe?g|png)$"],
+      "deny": [],
+      "keywords": ["林道","森林","通行止","規制","道路","交通規制","災害"],
+      "path_hints": ["/rindou","/rindo","/forest","/ringyo","/road","/kisei","/bosai","/news","/oshirase"]
+    }
+  }
+]

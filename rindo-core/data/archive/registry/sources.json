@@ -1,0 +1,33 @@
+[
+  {
+    "pref": "11",
+    "owner": "埼玉県",
+    "muni": null,
+    "url": "https://www.pref.saitama.lg.jp/b0904/tokosei/rindo_info.html",
+    "kind": "html",                       
+    "keywords": ["林道", "通行", "規制"],  
+    "list_selector": "main a",            
+    "item": {                            
+      "name_regex": "(林道[^\\s　、。]+線)",
+      "status_map": {
+        "通行止": "closed",
+        "規制": "restricted",
+        "解除": "open",
+        "注意|お知らせ": "notice"
+      },
+      "date_regex": "(20\\d{2}[./-]\\d{1,2}[./-]\\d{1,2})"
+    },
+    "notes": "県土整備の林道ページ。PDFリンクあり"
+  },
+  {
+    "pref": "18",
+    "owner": "福井県",
+    "muni": null,
+    "url": "https://www.pref.fukui.lg.jp/doc/xxx/rindo.html",
+    "kind": "list",
+    "keywords": ["林道", "通行"],
+    "list_selector": ".content a[href$='.pdf'], .content a[href*='pdf']",
+    "item": { "name_regex": "(林道[^\\s　、。]+線)" },
+    "notes": "PDFの一覧（毎月更新）"
+  }
+]

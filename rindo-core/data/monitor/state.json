@@ -1,0 +1,2032 @@
+﻿{
+  "https://www.pref.saitama.lg.jp/b0923/tuukoudome.html": {
+    "etag": "W/\"60b8-63a9129a29e41\"",
+    "last_modified": "Wed, 23 Jul 2025 04:30:03 GMT",
+    "length": 24760,
+    "sha1": "ebc18b2694353112169fd061d7c2b5c116c878b8",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/index.html": {
+    "etag": "W/\"585b-63f1f813fc20c\"",
+    "last_modified": "Fri, 19 Sep 2025 04:00:05 GMT",
+    "length": 22619,
+    "sha1": "4a0fb3d0ecd797878cd0131788f86758dcfed7a7",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/b0904/tukoseigen/index.html": {
+    "etag": "W/\"7b98-638c2e6a76e35\"",
+    "last_modified": "Mon, 30 Jun 2025 05:00:04 GMT",
+    "length": 31640,
+    "sha1": "178753587fa196e6861d755b5c32f91625dcc581",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyousya/index.html": {
+    "etag": "W/\"5fbf-63f1f8121e183\"",
+    "last_modified": "Fri, 19 Sep 2025 04:00:03 GMT",
+    "length": 24511,
+    "sha1": "8c1eb2abe203fa66857b6c1c1dd36b749688bbef",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyousya/hojokin.html": {
+    "etag": "W/\"5011-63cc46d2116b2\"",
+    "last_modified": "Wed, 20 Aug 2025 04:30:02 GMT",
+    "length": 20497,
+    "sha1": "9705f801dd104fd651088e3411be125075d46886",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/syuugyou/syuugyou.html": {
+    "etag": "W/\"5e57-63eece55976c5\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 24151,
+    "sha1": "aaa04e0310cb662f249181ba830c8ff9a03785ae",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/b0904/saiyou.html": {
+    "etag": "W/\"5109-63eece558e254\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 20745,
+    "sha1": "ebbaff1ce86a6290cc7a1f18c07057749578ac00",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/oshirase/green.html": {
+    "etag": "W/\"549e-63eece54bda59\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 21662,
+    "sha1": "45edbe3df1e57e1e237cd6ff2a4f2ecf72c3a1b9",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/oshirase/nenyukoutou.html": {
+    "etag": "W/\"3a71-612a77ab8195d\"",
+    "last_modified": "Sat, 02 Mar 2024 06:19:47 GMT",
+    "length": 14961,
+    "sha1": "25d41c7040435a94942e7f7a8836884b8087f3ba",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/oshirase/koubai.html": {
+    "etag": "W/\"4dc3-62ef4500eee2d\"",
+    "last_modified": "Tue, 25 Feb 2025 09:45:10 GMT",
+    "length": 19907,
+    "sha1": "f070092d21605eb00b9b9281c2d11f6ed343f60b",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/oshirase/csf.html": {
+    "etag": "W/\"4f66-63eece54ab948\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 20326,
+    "sha1": "560fd52664887234cbce932803ddb0e4057c30b2",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/chiki-wadai/index.html": {
+    "etag": "W/\"596f-63eece55cf550\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 22895,
+    "sha1": "f4d61107b4ae2e514b32a8aa03081d39785985fd",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/seido/seido.html": {
+    "etag": "W/\"5630-63eece5499067\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 22064,
+    "sha1": "8967637f275ccdf3db2569f5c5acf1702edd02c0",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/kouhoushi/kouhoushi.html": {
+    "etag": "W/\"5068-63eece54a1d07\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 20584,
+    "sha1": "45f0e7856f596fa27537aca019f106f8ce439481",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/youkou/youkou.html": {
+    "etag": "W/\"4e89-63eece54e4773\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 20105,
+    "sha1": "557d5d9f5d6ae59945798130247332ada14ff19b",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/keikaku/chichibu-keikaku.html": {
+    "etag": "W/\"5091-63eece5558ad9\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 20625,
+    "sha1": "fd34206be14b49d6bed2b7f000f3869fabcb2590",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyou/index.html": {
+    "etag": "W/\"ad90-63eece55c60df\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 44432,
+    "sha1": "ea79705bfd0def9638a245d97ba1ee3d026701b1",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyou/kankonogyo.html": {
+    "etag": "W/\"50c1-63eece55b208e\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 20673,
+    "sha1": "c7158270d99fc92d1148f32368af684f5c34025c",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyou/syokuhinindex.html": {
+    "etag": "W/\"51f0-63eece55bad2e\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 20976,
+    "sha1": "ebf387b1e10fdc6b8923ef568fbf0bdf9e2d8eee",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyou/20180411nougyonousonseibi.html": {
+    "etag": "W/\"510b-63eece557c52b\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 20747,
+    "sha1": "0115a7197913e98ccff5160a06fcf52cd19cf9b2",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyou/nochimizu.html": {
+    "etag": "W/\"5173-63eece55734a3\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 20851,
+    "sha1": "d5938f65ec5acdb1219a0aaf2fc8524d7131f2d6",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyou/tameike.html": {
+    "etag": "W/\"4cd5-63eece54dbad2\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 19669,
+    "sha1": "f3084f87ac9e50de6b26efb5c7c165bc97a1cd13",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/ringyou.html": {
+    "etag": "W/\"512c-63353ec7f1693\"",
+    "last_modified": "Tue, 22 Apr 2025 01:30:03 GMT",
+    "length": 20780,
+    "sha1": "d329899738625fad18f70eecba27744f50780000",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/topics.html": {
+    "etag": "W/\"569d-63eece553dd28\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 22173,
+    "sha1": "3273d534611ec4639d03d2ef1c2e3d5b133cce13",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/index.html": {
+    "etag": "W/\"50f1-63eece554fe39\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 20721,
+    "sha1": "183fb50054f878e6673f19ca51c2bd7c678765f0",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/rinpatu.html": {
+    "etag": "W/\"4601-612a71cc61b90\"",
+    "last_modified": "Sat, 02 Mar 2024 05:53:31 GMT",
+    "length": 17921,
+    "sha1": "c9025422045fedccae4c0af96a99c06420c05bc5",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/syoukai/syoukai.html": {
+    "etag": "W/\"5a17-63eece552bc17\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 23063,
+    "sha1": "114d655e29b782dbc6027cf8c2c743051f218f8f",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/syoukai/access.html": {
+    "etag": "W/\"4ce1-63eece5519b06\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 19681,
+    "sha1": "193663166f16df3ee03aadb818890bbb35aeeca7",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/link/link.html": {
+    "etag": "W/\"5589-63eece548ffde\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 21897,
+    "sha1": "a0670eb32440edf567e82d2a306055a48ccc9502",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/rindo.html": {
+    "etag": "W/\"6dcc-6359b183701a6\"",
+    "last_modified": "Wed, 21 May 2025 01:15:02 GMT",
+    "length": 28108,
+    "sha1": "7fefbabb1dcb44670421c7b6b69e8a7b4e77885a",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyousya/houjinka.html": {
+    "etag": "W/\"4fad-63eece54ed413\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 20397,
+    "sha1": "fbe4abe650d6ea80bca077072e4075eed5950304",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyousya/cyoujyuugai.html": {
+    "etag": "W/\"57cd-63eece54f60b4\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 22477,
+    "sha1": "8afed13b958cbebf023f456cf89f56c18bdb5439",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyousya/tannkibakuro.html": {
+    "etag": "W/\"57e5-63eece5547198\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 22501,
+    "sha1": "2a3ecfb6c386208a1bc12d04287bc4b42e90f58c",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/syoukai/nouson_seibibu.html": {
+    "etag": "W/\"508b-63eece5522b8e\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 20619,
+    "sha1": "932693a7ecc59b45b765d78d19040a6ed46a5306",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/syoukai/ringyoubu.html": {
+    "etag": "W/\"56ff-63eece5510e65\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 22271,
+    "sha1": "e405f9d69452e6f7d383b56b477cd12f4d1b1971",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/syoukai/nougyou_shienbu.html": {
+    "etag": "W/\"4f93-63eece5507ddd\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 20371,
+    "sha1": "76d31349baaccb6df8cf96296cbc89270bc86b88",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyou/h24-6jisanngyousyouhinn.html": {
+    "etag": "W/\"5993-63eece54ff13c\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 22931,
+    "sha1": "97d8695e68c3c5c2e9382ee0302f489625f9d98e",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/seido/ninsyosyokuhin.html": {
+    "etag": "W/\"4fad-63eece5486f56\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 20397,
+    "sha1": "77a9d7f8a60be440ae616d58704ae6cc175df4ff",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyou/ryouri.html": {
+    "etag": "W/\"622b-63eece5534c9f\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 25131,
+    "sha1": "7d60cfae62206b6a89c5f52f4bbaf2d4b340914a",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/chiki-wadai/2019121302.html": {
+    "etag": "W/\"4faf-63eece54d2e32\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 20399,
+    "sha1": "a33db6ff175c833c5fd3c77d34671166679f8cb8",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/oshirase/20200521.html": {
+    "etag": "W/\"55f3-63eece54b45e8\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 22003,
+    "sha1": "ebf095711ed31831f1747db37c1b4b3a6c91024e",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/oshirase/bosyuu20210806.html": {
+    "etag": "W/\"499c-63eece556a802\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 18844,
+    "sha1": "e25c796bda684b47a6fecdcaaa010b836c4b4753",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyousya/bakuonki.html": {
+    "etag": "W/\"4ece-63eece54c9daa\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:20 GMT",
+    "length": 20174,
+    "sha1": "d22da943ca1b4d65c966829c44bec73e498f631f",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/b0904/soum/jidouhanbaiki.html": {
+    "etag": "W/\"41d9-62e14b964fd9b\"",
+    "last_modified": "Fri, 14 Feb 2025 07:00:04 GMT",
+    "length": 16857,
+    "sha1": "1191c951343a642f421f0e9e81493adf63479557",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/b0904/tukoseigen/20250130.html": {
+    "etag": "W/\"4fb7-63eece5561b62\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 20407,
+    "sha1": "13775d7818ea224f6c16bef5c493f6ca76b514e8",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyou/kanko.html": {
+    "etag": "W/\"5025-63eece55a0365\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 20517,
+    "sha1": "76f7799e8fe574789e232f3891c7d87efd09451f",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/nougyou/kakou.html": {
+    "etag": "W/\"518e-63eece55a93ee\"",
+    "last_modified": "Tue, 16 Sep 2025 15:37:21 GMT",
+    "length": 20878,
+    "sha1": "1d1d3ef29f132fd1d7bf4db1a6566a972c51b1ad",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/midorinokikin.html": {
+    "etag": "W/\"4c22-614aff26bf053\"",
+    "last_modified": "Thu, 28 Mar 2024 03:16:19 GMT",
+    "length": 19490,
+    "sha1": "364a6783274b176f177e9472bcb95f5aa8c168c8",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/moritsukuri.html": {
+    "etag": "W/\"4410-614afef095daa\"",
+    "last_modified": "Thu, 28 Mar 2024 03:15:22 GMT",
+    "length": 17424,
+    "sha1": "7130ad23e853489fe47deb300d5e20feb0cf45f2",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/kanbatsu.html": {
+    "etag": "W/\"4c23-614aff34a1054\"",
+    "last_modified": "Thu, 28 Mar 2024 03:16:33 GMT",
+    "length": 19491,
+    "sha1": "84f86613c2f787d927ad61f7718d99ea8650adab",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/keneirin.html": {
+    "etag": "W/\"5526-63bb3dff077fc\"",
+    "last_modified": "Wed, 06 Aug 2025 15:20:02 GMT",
+    "length": 21798,
+    "sha1": "36b2e6ff7f86c3e672a6dc97ac940be0d090ecc3",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/morinoshisetsu.html": {
+    "etag": "W/\"56b9-614afee6ad336\"",
+    "last_modified": "Thu, 28 Mar 2024 03:15:12 GMT",
+    "length": 22201,
+    "sha1": "33ad2afbbf24e5ceec22e8cedb4a210bf34ee50c",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/hoanrin.html": {
+    "etag": "W/\"49c2-614afeea0a0d3\"",
+    "last_modified": "Thu, 28 Mar 2024 03:15:15 GMT",
+    "length": 18882,
+    "sha1": "e7e94f17f8a394c3e3993def922744905af91a9a",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/hoanrinyoshiki.html": {
+    "etag": "W/\"7d0f-62920555aa0ff\"",
+    "last_modified": "Fri, 13 Dec 2024 05:45:07 GMT",
+    "length": 32015,
+    "sha1": "8303d68ca1b8a3d770eda12c9951487663d1a7ea",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/yamakaji.html": {
+    "etag": "W/\"4742-614afeed4f387\"",
+    "last_modified": "Thu, 28 Mar 2024 03:15:19 GMT",
+    "length": 18242,
+    "sha1": "34b08be47aa97df6a7c8dd871a2536f082512105",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/sanchisaigai.html": {
+    "etag": "W/\"4322-614afee040a61\"",
+    "last_modified": "Thu, 28 Mar 2024 03:15:05 GMT",
+    "length": 17186,
+    "sha1": "ef48bd114b52a65edc65066e607946442dd4fd52",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/20171225koujihyousyou.html": {
+    "etag": "W/\"5990-62b528d22d3ae\"",
+    "last_modified": "Fri, 10 Jan 2025 04:30:15 GMT",
+    "length": 22928,
+    "sha1": "13036d364edefd51c346c4066ca91dd80dd5c3c8",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.pref.saitama.lg.jp/soshiki/b0904/ringyou/gijutsukento.html": {
+    "etag": "W/\"444a-612a74dc9c8fa\"",
+    "last_modified": "Sat, 02 Mar 2024 06:07:14 GMT",
+    "length": 17482,
+    "sha1": "ad81dbfd55a9db31636660cb4927aea196627827",
+    "checked_at": "2025-09-28T17:57:42+09:00"
+  },
+  "https://www.metro.tokyo.lg.jp/": {
+    "etag": null,
+    "last_modified": null,
+    "length": 836546,
+    "sha1": "3a5418ba720292cbd4c2e5715ca241406af6b666",
+    "checked_at": "2025-09-28T18:37:31+09:00"
+  },
+  "https://www.pref.kanagawa.jp/": {
+    "etag": null,
+    "last_modified": "Thu, 25 Sep 2025 10:54:20 GMT",
+    "length": 27315,
+    "sha1": "1a16212cd787ea6db90826ef11bdcdc9590b6107",
+    "checked_at": "2025-09-28T17:58:05+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/j8g/bousai/1_3244_9_12.html": {
+    "etag": null,
+    "last_modified": "Thu, 25 Sep 2025 12:37:51 GMT",
+    "length": 26566,
+    "sha1": "0e6e6ab0b06237a968cbbfdc9eb77cd2a1b3f9d2",
+    "checked_at": "2025-09-28T17:58:05+09:00"
+  },
+  "https://www.pref.kanagawa.jp/news/index.html": {
+    "etag": null,
+    "last_modified": "Sun, 28 Sep 2025 04:30:10 GMT",
+    "length": 21730,
+    "sha1": "8c1be3f07209bdb945a4a05f257041da31a251e9",
+    "checked_at": "2025-09-28T17:58:05+09:00"
+  },
+  "https://www.pref.kanagawa.jp/menu/1/4/21/index.html": {
+    "etag": null,
+    "last_modified": "Tue, 16 Sep 2025 08:00:31 GMT",
+    "length": 9458,
+    "sha1": "f0ba4b412ebb5595ea430a1632cb77e376b732b0",
+    "checked_at": "2025-09-28T17:58:05+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/j8g/cnt/taiken/index.html": {
+    "etag": null,
+    "last_modified": "Tue, 01 Jul 2025 01:45:02 GMT",
+    "length": 11434,
+    "sha1": "395de4735a095a356daac47b31f37c875ab38124",
+    "checked_at": "2025-09-28T17:58:05+09:00"
+  },
+  "https://www.pref.kanagawa.jp/translate.html?p=/news/index.html": {
+    "etag": null,
+    "last_modified": "Thu, 11 May 2023 06:25:51 GMT",
+    "length": 23917,
+    "sha1": "84ee241b3ff2e318a3701eeaf2cf45e3c464d528",
+    "checked_at": "2025-09-28T17:58:05+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/jy2/prs/r5380824.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 08:00:10 GMT",
+    "length": 16212,
+    "sha1": "55a5e908d8307d6a7ace9a428f4fb8bafcf35a24",
+    "checked_at": "2025-09-28T17:58:05+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/i6k/cnt/f617/kyukei1/siteinikakarutorikumijoukyou.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 06:00:25 GMT",
+    "length": 20785,
+    "sha1": "ec4e608a73d9197111b1b7e4822e0d81180d098c",
+    "checked_at": "2025-09-28T17:58:05+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/wk7/cnt/f12688/5001.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 05:30:04 GMT",
+    "length": 21160,
+    "sha1": "b1de43a7936e6a73c1902e11aad0388994ad96fd",
+    "checked_at": "2025-09-28T17:58:05+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/i6k/cnt/f617/kanazawa_kouhoku.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 05:00:27 GMT",
+    "length": 13761,
+    "sha1": "7bf6e6b9ab81550003b5044a5594bd9d86f77559",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/i6k/cnt/f617/sakae.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 05:00:16 GMT",
+    "length": 12692,
+    "sha1": "89819f2bd9dd7c031883aa4b5edc33824b2db6ea",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/i6k/cnt/f617/kounan.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 05:00:19 GMT",
+    "length": 13665,
+    "sha1": "d11fcd8915bfe065238428dfdbbb9ed5a2d1de27",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/i6k/cnt/f617/kohoku.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 05:00:29 GMT",
+    "length": 12716,
+    "sha1": "8bc842581c0ad6a727c3f0bc88fb976348069383",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/i6k/cnt/f617/nishi.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 05:00:31 GMT",
+    "length": 10921,
+    "sha1": "14aa1e030b69b32df7232b18aaef0efa89a21077",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/i6k/cnt/f617/naka.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 05:00:14 GMT",
+    "length": 11534,
+    "sha1": "7da13de964a3ee573cc52c7e2851e776104b142e",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/i6k/cnt/f617/asahi.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 05:00:25 GMT",
+    "length": 12041,
+    "sha1": "01dfd1be51373ec7c932a1a926dd578d2bc853e4",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/i6k/cnt/f617/izumi.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 05:00:34 GMT",
+    "length": 11372,
+    "sha1": "cb034be3885f62029c7a51a66149db563a8cf20b",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/i6k/cnt/f617/seya.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 05:00:32 GMT",
+    "length": 11044,
+    "sha1": "ea6f4de12aff1bff39a1dc5ee69e017388598d5e",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/i6k/cnt/f617/p1152889.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 05:00:39 GMT",
+    "length": 15530,
+    "sha1": "02768f4217bdf1a314d21dec8c3188afbce43d1c",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.kanagawa.jp/docs/e8z/kanagawa-microchip.html": {
+    "etag": null,
+    "last_modified": "Fri, 26 Sep 2025 04:15:09 GMT",
+    "length": 22548,
+    "sha1": "dafe6e5bf471ecd7c438ce41443a811800968ae5",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.chiba.lg.jp/": {
+    "etag": "\"d321-63f5f7b7f52d4\"",
+    "last_modified": "Mon, 22 Sep 2025 08:19:46 GMT",
+    "length": 54182,
+    "sha1": "dacb2761572d37d24ad432c9774e0d168f1190f8",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.chiba.lg.jp/cate/baa/dosha/index.html": {
+    "etag": "\"5cf3-63412e55a658f\"",
+    "last_modified": "Thu, 01 May 2025 13:20:22 GMT",
+    "length": 23929,
+    "sha1": "9838556b1f9c73da7338da87df1d96032b171e70",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.chiba.lg.jp/cate/baa/sonae/index.html": {
+    "etag": "\"5a9b-6341385794c31\"",
+    "last_modified": "Thu, 01 May 2025 14:05:08 GMT",
+    "length": 23329,
+    "sha1": "74feff7f1aafe95ac9a8655059d5d1bf7e0b4c04",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.chiba.lg.jp/kakan/dosya/chatobot.html": {
+    "etag": "\"5f04-63a578d8a0278\"",
+    "last_modified": "Sun, 20 Jul 2025 07:46:11 GMT",
+    "length": 24456,
+    "sha1": "9999994281caac5c0a948bc903b995bb9f03daf2",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.chiba.lg.jp/cate/baa/dosha/gaiyou/index.html": {
+    "etag": "\"5102-6341e3893ce49\"",
+    "last_modified": "Fri, 02 May 2025 02:51:03 GMT",
+    "length": 20872,
+    "sha1": "8b93088e3d93221ab16e2af5470e46c7000e71a4",
+    "checked_at": "2025-09-28T17:58:06+09:00"
+  },
+  "https://www.pref.chiba.lg.jp/cate/baa/dosha/keikai/index.html": {
+    "etag": "\"5320-6341e38fa0e7e\"",
+    "last_modified": "Fri, 02 May 2025 02:51:09 GMT",
+    "length": 21414,
+    "sha1": "74a4e7fa922d2d12b41a48de9e2f855121575f85",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.chiba.lg.jp/cate/baa/dosha/kyuukeisha/index.html": {
+    "etag": "\"5864-6341e37600fc1\"",
+    "last_modified": "Fri, 02 May 2025 02:50:42 GMT",
+    "length": 22762,
+    "sha1": "8eac195838ae41b017cf098bc51fab2a06b60b3e",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/": {
+    "etag": "\"897e-63fd90385131a\"",
+    "last_modified": "Sun, 28 Sep 2025 09:19:19 GMT",
+    "length": 35198,
+    "sha1": "3c29e2b5f85dc6513b12697dacf83f0074cfa4e1",
+    "checked_at": "2025-09-28T18:37:31+09:00"
+  },
+  "https://www.pref.ibaraki.jp/bousaikiki/bousaikiki/bousai/ibarakipresaigaiinf.html": {
+    "etag": "\"4f10-63e0808bbaf64\"",
+    "last_modified": "Fri, 05 Sep 2025 06:34:47 GMT",
+    "length": 20240,
+    "sha1": "0936703544ddf9221a2bf6f81872da07d83ec804",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/news.html": {
+    "etag": "\"5ee8-63fd90377d85a\"",
+    "last_modified": "Sun, 28 Sep 2025 09:19:18 GMT",
+    "length": 24296,
+    "sha1": "a7212d0307edef3e6807931c7c4fc2cbf3277e81",
+    "checked_at": "2025-09-28T18:37:31+09:00"
+  },
+  "https://www.pref.ibaraki.jp/bugai/koho/kenmin/category/news.html": {
+    "etag": "\"3d59-62e74d32947aa\"",
+    "last_modified": "Wed, 19 Feb 2025 01:39:14 GMT",
+    "length": 15705,
+    "sha1": "8f1c83e806f96587209fa84ce18c7cf6e37e5609",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/bousaianzen/bosai/index.html": {
+    "etag": "\"5413-63f9d3c3449cc\"",
+    "last_modified": "Thu, 25 Sep 2025 10:00:12 GMT",
+    "length": 21523,
+    "sha1": "ff1c3cc83597ed181b4906e3d0d54f1076159f32",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/bousaianzen/bosai/bosai-saigaikanrijoho/index.html": {
+    "etag": "\"656b-63fab7c8923c4\"",
+    "last_modified": "Fri, 26 Sep 2025 03:00:21 GMT",
+    "length": 25963,
+    "sha1": "14225cb94930da39c06581eadbaf55a8b84e5263",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/bousaikiki/bousaikiki/bousai/20230602ooamekouzui/20230602ooamekouzui_top.html": {
+    "etag": "\"6888-63494885362d2\"",
+    "last_modified": "Thu, 08 May 2025 00:00:07 GMT",
+    "length": 26760,
+    "sha1": "48c96791f1f2c0b99fbffb6d88fbc2a5a938be71",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/seikatsukankyo/bousaikiki/bousai/bosai24.4.10/higashinihon-gijiroku/higashinihon-gijiroku.html": {
+    "etag": "\"4947-63263c90a83c7\"",
+    "last_modified": "Thu, 10 Apr 2025 03:00:16 GMT",
+    "length": 18759,
+    "sha1": "5da19b5214545c2526bf3f697621e4a5ecd004f0",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/seikatsukankyo/bousaikiki/bousai/bosai/mail/bosai.html": {
+    "etag": "\"6da4-63e0808b8e48b\"",
+    "last_modified": "Fri, 05 Sep 2025 06:34:47 GMT",
+    "length": 28068,
+    "sha1": "b957de728966f2703fc48cb2413733c415c827ae",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/seikatsukankyo/bousaikiki/bousai/bosaikeikaku.html": {
+    "etag": "\"6c66-63e0808be7a3e\"",
+    "last_modified": "Fri, 05 Sep 2025 06:34:47 GMT",
+    "length": 27750,
+    "sha1": "46c106893187911b6f5db90b1c3f892d97e6373c",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/seikatsukankyo/bousaikiki/saishinjyoho/saishinhigai.html": {
+    "etag": "\"4fed-63e0808b16a76\"",
+    "last_modified": "Fri, 05 Sep 2025 06:34:46 GMT",
+    "length": 20461,
+    "sha1": "7908a7c552916a044f704f27e0e8199ddb92bb13",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/seikatsukankyo/bousaikiki/saishinjyoho/saigainisonaete.html": {
+    "etag": "\"552d-63e0808b9bb63\"",
+    "last_modified": "Fri, 05 Sep 2025 06:34:47 GMT",
+    "length": 21805,
+    "sha1": "af2ffd9eba9519ad67ef3cf59022fd52a40448d5",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/bousaianzen/bosai/kokuminhogo/index.html": {
+    "etag": "\"375e-63f23b317adc8\"",
+    "last_modified": "Fri, 19 Sep 2025 09:00:21 GMT",
+    "length": 14174,
+    "sha1": "6480ca11974db5729498a31cc152ff57ab3f3aa2",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/bousaikiki/bousaikiki/kiki/saigaitaiken/saigaitaiken.html": {
+    "etag": "\"53d4-63e0808c1b278\"",
+    "last_modified": "Fri, 05 Sep 2025 06:34:47 GMT",
+    "length": 21460,
+    "sha1": "e947425ee2b73be82c5f0bdc90a32eba26f690c6",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/bousaikiki/bousaikiki/kiki/saigaitaiousharyou.html": {
+    "etag": "\"4920-63e0808bffcf7\"",
+    "last_modified": "Fri, 05 Sep 2025 06:34:47 GMT",
+    "length": 18720,
+    "sha1": "0dd68f660ac309a1f22a645ce2289b3c8c3afb68",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.ibaraki.jp/kurasu/news.html": {
+    "etag": "\"5d0f-63fca7f9e185a\"",
+    "last_modified": "Sat, 27 Sep 2025 16:00:17 GMT",
+    "length": 23823,
+    "sha1": "7b68b9463796b1438da5aaf58da1f589e5e87828",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/": {
+    "etag": "\"9828\"",
+    "last_modified": "Sat, 27 Sep 2025 13:35:30 GMT",
+    "length": 38952,
+    "sha1": "a58f1793668f87fab42917e3a16e3a9a8c419e6d",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/kurashi/bousai/index.html": {
+    "etag": "\"469d\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:51 GMT",
+    "length": 18077,
+    "sha1": "216803ce36ea1521ae5acb5875b01a7d48c18bb0",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/g01/houdou/houdou/2025september_toppu_kouhyou_jourei_henkou.html": {
+    "etag": "\"4085\"",
+    "last_modified": "Fri, 26 Sep 2025 08:35:10 GMT",
+    "length": 16517,
+    "sha1": "9d4d1f844e7e35e09ce71b41e65dff83d096e2ae",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/oshirase/index.html": {
+    "etag": "\"4b2d\"",
+    "last_modified": "Fri, 19 Sep 2025 04:35:57 GMT",
+    "length": 19245,
+    "sha1": "28b236a204a8bec397a5d5dcaa9fb2fc0ff9a3d3",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/kensei/kouhou/news/news.html": {
+    "etag": "\"7eac\"",
+    "last_modified": "Thu, 25 Sep 2025 02:27:38 GMT",
+    "length": 32428,
+    "sha1": "92c397aca541e2cb87ad7a7a4501dfce39b54ac7",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/e02/welfare/iryou/ippan/20250814emis.html": {
+    "etag": "\"70ba\"",
+    "last_modified": "Wed, 24 Sep 2025 08:36:10 GMT",
+    "length": 28858,
+    "sha1": "b73421251f8ed91324d8605415734b58c6dc3ed5",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/kurashi/bousai/news/index.html": {
+    "etag": "\"78d8\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:50 GMT",
+    "length": 30936,
+    "sha1": "9b660f817db987c1643aa0d3c9f62a90f70c862c",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/kurashi/bousai/kakosiryou/totigikensaigaisiryou.html": {
+    "etag": "\"5043\"",
+    "last_modified": "Wed, 03 Sep 2025 00:35:28 GMT",
+    "length": 20547,
+    "sha1": "195bac887fe8fdcff3de17c89010dbe126f6cf37",
+    "checked_at": "2025-09-28T17:58:07+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/kensei/kouhou/news/index.html": {
+    "etag": "\"36ec\"",
+    "last_modified": "Mon, 25 Aug 2025 05:35:47 GMT",
+    "length": 14060,
+    "sha1": "e91cb45add6e1b0d297a2d1220c9b57a1925cdc6",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/h07/r1_kyukyume-ru.html": {
+    "etag": "\"407e\"",
+    "last_modified": "Wed, 13 Aug 2025 03:53:49 GMT",
+    "length": 16510,
+    "sha1": "7a0b7dc23a6b94c45ac7fe44b37e0f95fde123fb",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/d08/kouhou/20250210suigentijyorei_shuchi.html": {
+    "etag": "\"38fc\"",
+    "last_modified": "Wed, 13 Aug 2025 03:54:20 GMT",
+    "length": 14588,
+    "sha1": "09d724cb1054470f5e4ba16c1dfa61783d033501",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/h05/kinnkyuuline.html": {
+    "etag": "\"3a46\"",
+    "last_modified": "Wed, 13 Aug 2025 03:54:03 GMT",
+    "length": 14918,
+    "sha1": "f03a9e6bf92b1c74db4f238a605d714d53271081",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250902.html": {
+    "etag": "\"4f7d\"",
+    "last_modified": "Thu, 25 Sep 2025 00:35:15 GMT",
+    "length": 20349,
+    "sha1": "09d8da3cf8df7f0d2d1d62e575a4719127861edb",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250909.html": {
+    "etag": "\"54a4\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:37 GMT",
+    "length": 21668,
+    "sha1": "4421798104dcc4cce0278d17dc6e0884e173638d",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250913.html": {
+    "etag": "\"50f6\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:37 GMT",
+    "length": 20726,
+    "sha1": "c39d97a98f7c87a81a4e64c7645ad4cd2137381c",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250823_2.html": {
+    "etag": "\"57be\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:37 GMT",
+    "length": 22462,
+    "sha1": "5fc799321f875c902fbe7ed0e40cc9f2cb37f2eb",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250823_1.html": {
+    "etag": "\"51fb\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:37 GMT",
+    "length": 20987,
+    "sha1": "98ca73107422e2a6f4d375c277738b5c0f23bb39",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250822.html": {
+    "etag": "\"5601\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:36 GMT",
+    "length": 22017,
+    "sha1": "ea774cd743b029491ba04d813ca1d4b6247266b0",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250808.html": {
+    "etag": "\"53e6\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:36 GMT",
+    "length": 21478,
+    "sha1": "4956f001f63e0891f3b4925754db00f50cc2500c",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250807.html": {
+    "etag": "\"5022\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:36 GMT",
+    "length": 20514,
+    "sha1": "3d2e064eb992917ca25dab8b66df3bc3a7331cd0",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250806.html": {
+    "etag": "\"5274\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:36 GMT",
+    "length": 21108,
+    "sha1": "ec20464324af66a77cb40cea88abd8d12b231342",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250805.html": {
+    "etag": "\"5145\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:36 GMT",
+    "length": 20805,
+    "sha1": "99160fea5182548f05384a70f2e43c87d1411357",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250714.html": {
+    "etag": "\"526d\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:36 GMT",
+    "length": 21101,
+    "sha1": "80450b9cfa014973815234fd477acdd248f9a11c",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250712.html": {
+    "etag": "\"5150\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:35 GMT",
+    "length": 20816,
+    "sha1": "db892eb20f1fcfb9665eb4602f7cc398603843b0",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250707.html": {
+    "etag": "\"526b\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:35 GMT",
+    "length": 21099,
+    "sha1": "fd37d796384d9618d04b81a7fb8d70a1619795b5",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250703.html": {
+    "etag": "\"4f8d\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:36 GMT",
+    "length": 20365,
+    "sha1": "99177f73f6525253f9aa0d2c990247db678842b5",
+    "checked_at": "2025-09-28T17:58:08+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250630.html": {
+    "etag": "\"52eb\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:35 GMT",
+    "length": 21227,
+    "sha1": "11d4ced2a9a21a144e400df114eb48569c0d9b7a",
+    "checked_at": "2025-09-28T17:58:09+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250627.html": {
+    "etag": "\"5559\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:35 GMT",
+    "length": 21849,
+    "sha1": "32bad9545e40ea2e56828f3a13e639543b5f9f1c",
+    "checked_at": "2025-09-28T17:58:09+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250620.html": {
+    "etag": "\"545a\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:35 GMT",
+    "length": 21594,
+    "sha1": "8afa3b9085eb83c5292a2a1b59e5425a31e1c1bd",
+    "checked_at": "2025-09-28T17:58:09+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250619.html": {
+    "etag": "\"51a1\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:34 GMT",
+    "length": 20897,
+    "sha1": "e58a7027aa1029d7859315b20e38e1d85bb70a2d",
+    "checked_at": "2025-09-28T17:58:09+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250618.html": {
+    "etag": "\"55c2\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:34 GMT",
+    "length": 21954,
+    "sha1": "225706ad5273c5ced95f569721f11ac250b5d3e8",
+    "checked_at": "2025-09-28T17:58:09+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250615.html": {
+    "etag": "\"56eb\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:34 GMT",
+    "length": 22251,
+    "sha1": "ecc6802e77a37e642efc7541db4ff589df3d6abe",
+    "checked_at": "2025-09-28T17:58:09+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250613.html": {
+    "etag": "\"5314\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:34 GMT",
+    "length": 21268,
+    "sha1": "d61f2fd3501548afacb136f657f3fc9c5c5a43ef",
+    "checked_at": "2025-09-28T17:58:09+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250605.html": {
+    "etag": "\"53be\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:35 GMT",
+    "length": 21438,
+    "sha1": "65fe23915b553120b1fece88dc31d0d4449dda85",
+    "checked_at": "2025-09-28T17:58:09+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250531_2.html": {
+    "etag": "\"523f\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:34 GMT",
+    "length": 21055,
+    "sha1": "7913aea32207bc6513cfb33b675d5cf5ceaaea02",
+    "checked_at": "2025-09-28T17:58:09+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250531.html": {
+    "etag": "\"551e\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:34 GMT",
+    "length": 21790,
+    "sha1": "89bcc655a1ff36f8f40c1a02ee67bfedfcfe80ee",
+    "checked_at": "2025-09-28T17:58:09+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250525.html": {
+    "etag": "\"566a\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:33 GMT",
+    "length": 22122,
+    "sha1": "5cfe4bc04f62c08d5e593d277f120ff328647932",
+    "checked_at": "2025-09-28T17:58:09+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250517.html": {
+    "etag": "\"54cb\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:34 GMT",
+    "length": 21707,
+    "sha1": "0e49b2fe120e9b88860decc51cb1c579ae34a3a1",
+    "checked_at": "2025-09-28T17:58:09+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250507.html": {
+    "etag": "\"541f\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:33 GMT",
+    "length": 21535,
+    "sha1": "9a8e62afb1e4449ec6f14c188c9b9f8ac9561df0",
+    "checked_at": "2025-09-28T17:58:09+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250418.html": {
+    "etag": "\"4f97\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:33 GMT",
+    "length": 20375,
+    "sha1": "d3bb205f23f258c2658164bf1f5bb272e0c2a6fb",
+    "checked_at": "2025-09-28T17:58:10+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250417.html": {
+    "etag": "\"5365\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:33 GMT",
+    "length": 21349,
+    "sha1": "58f970d4663a45804ed799ddc3ba4a750851a359",
+    "checked_at": "2025-09-28T17:58:10+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250416.html": {
+    "etag": "\"5273\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:33 GMT",
+    "length": 21107,
+    "sha1": "b1cc6a9a361b810d628548514e81d9b099d3592b",
+    "checked_at": "2025-09-28T17:58:10+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20270410_1.html": {
+    "etag": "\"5264\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:33 GMT",
+    "length": 21092,
+    "sha1": "76e7f7e2e44b3dff6ce76d74fadbd5b1f3c14402",
+    "checked_at": "2025-09-28T17:58:10+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20240409.html": {
+    "etag": "\"5304\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:32 GMT",
+    "length": 21252,
+    "sha1": "1460d4211e643a912c3e8b9f4421957ea87a80fd",
+    "checked_at": "2025-09-28T17:58:10+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250401.html": {
+    "etag": "\"4e43\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:32 GMT",
+    "length": 20035,
+    "sha1": "3c4d5d6661915621ee8861c14c3078e236fc2594",
+    "checked_at": "2025-09-28T17:58:10+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250407.html": {
+    "etag": "\"54bb\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:32 GMT",
+    "length": 21691,
+    "sha1": "ea8ef33d009363d99dd4afffdf34e91b5cfea36e",
+    "checked_at": "2025-09-28T17:58:10+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250317.html": {
+    "etag": "\"548e\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:32 GMT",
+    "length": 21646,
+    "sha1": "02acc2d00229de917ee09701127294ef04ae4905",
+    "checked_at": "2025-09-28T17:58:10+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250319.html": {
+    "etag": "\"54f2\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:32 GMT",
+    "length": 21746,
+    "sha1": "55a338d74628a29df3b4b2376a7558845845fdc2",
+    "checked_at": "2025-09-28T17:58:10+09:00"
+  },
+  "https://www.pref.tochigi.lg.jp/c05/kensei/kouhou/news/20250312.html": {
+    "etag": "\"57a3\"",
+    "last_modified": "Wed, 24 Sep 2025 08:35:32 GMT",
+    "length": 22435,
+    "sha1": "b497672c632f1bde18f22ac86eb5e849ce454a56",
+    "checked_at": "2025-09-28T17:58:10+09:00"
+  },
+  "https://www.pref.gunma.jp/": {
+    "etag": null,
+    "last_modified": "Sun, 28 Sep 2025 09:33:54 GMT",
+    "length": 33212,
+    "sha1": "92f72233093025c4526532abc3efd21ba710a564",
+    "checked_at": "2025-09-28T18:37:31+09:00"
+  },
+  "https://www.pref.gunma.jp/page/8125.html": {
+    "etag": "\"1808448c\"",
+    "last_modified": "Sun, 21 Sep 2025 17:11:58 GMT",
+    "length": 46183,
+    "sha1": "955c2d5c4bc5e12e43209ce40015951175912ac4",
+    "checked_at": "2025-09-28T18:37:31+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/": {
+    "etag": null,
+    "last_modified": null,
+    "length": 3606,
+    "sha1": "29bf2661fd38aaed80b5b4a8fb3e92ebb2ce2a9f",
+    "checked_at": "2025-09-28T17:57:43+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/main.php": {
+    "etag": null,
+    "last_modified": null,
+    "length": 12318,
+    "sha1": "26078a04a39e97f13c546f949a494566451749cc",
+    "checked_at": "2025-09-28T17:57:57+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/index.php": {
+    "etag": null,
+    "last_modified": null,
+    "length": 3606,
+    "sha1": "29bf2661fd38aaed80b5b4a8fb3e92ebb2ce2a9f",
+    "checked_at": "2025-09-28T17:57:57+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/list.php": {
+    "etag": null,
+    "last_modified": null,
+    "length": 32884,
+    "sha1": "1d6ef24f6d2a1907e457ac2e93dfa4feaa66b9f2",
+    "checked_at": "2025-09-28T17:57:57+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=1": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6277,
+    "sha1": "6273671d2cbe11281aa73f5a87b33f88eb766fbd",
+    "checked_at": "2025-09-28T17:57:57+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=2": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6620,
+    "sha1": "568e004de713ba595c5bcaf26c6f7f4602ad747f",
+    "checked_at": "2025-09-28T17:57:57+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=3": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5866,
+    "sha1": "30d100ac4be320abbbc2df5a486884beebb64f07",
+    "checked_at": "2025-09-28T17:57:57+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=4": {
+    "etag": null,
+    "last_modified": null,
+    "length": 9814,
+    "sha1": "b057f8c871833d54a94b7a97d9d2e2e03046d8e2",
+    "checked_at": "2025-09-28T17:57:57+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=6": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6095,
+    "sha1": "0a47ed8a4bfaf28e611fa3c86b9d8d664dcaf1e5",
+    "checked_at": "2025-09-28T17:57:57+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=7": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6181,
+    "sha1": "d0b1deb41c35cb9efb643f10cda7344396e4c62b",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=8": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5969,
+    "sha1": "a03cccc7b62edd067c025735ebf107284cf48723",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=9": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4770,
+    "sha1": "f57de59132215baa9445871918b1c5ba52a0658b",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=10": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4441,
+    "sha1": "54f9283fc44393246c66cb2c21ede7130001b5f4",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=11": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6352,
+    "sha1": "5a65f1f15cf0271bfbca86568354b7a42bbee77c",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=12": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6333,
+    "sha1": "947feb003f382bb01126fbe499b2b02d7a49654c",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=13": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6302,
+    "sha1": "955de623ecc866a447b23625b93faf6730f1d16c",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=14": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6221,
+    "sha1": "636fe75dd9ab74de9b114d69ed675ac10ebcfa43",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=15": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6181,
+    "sha1": "db4432c7729ef7b58ff8b6fc2cb831c51010f59b",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=16": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6710,
+    "sha1": "8e554882350a1d5756c00d97e1b2c128709c1995",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=17": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6690,
+    "sha1": "cf7fe88a27cc36c53bf340401559d5a6ae5ba63b",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=18": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5050,
+    "sha1": "0681b302c7a1bfa4d492bede050b78bb80f94cd1",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=19": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6052,
+    "sha1": "839ee88fd627b7120778b5f9dab3615163e15c5a",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=20": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5053,
+    "sha1": "2c44c749bec569e9ad7f319ab107b6ae72e1e2ec",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=21": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4938,
+    "sha1": "d2130982fd2f99d9ddb55f3010ca6ede7611271f",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=22": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5952,
+    "sha1": "0369006fbb2beb95c01fb6915095ba852f19b2e4",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=23": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6177,
+    "sha1": "9ce6e25220773a7d7a9a3fb099839f147226443f",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=24": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6261,
+    "sha1": "676504ae0c2003a5d8e17ab90ae9775070435f07",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=25": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6163,
+    "sha1": "214a2f53773513c6907d00706a672e2cdd4f0f07",
+    "checked_at": "2025-09-28T17:57:58+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=26": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6233,
+    "sha1": "a442113365c1b11878d951b6d41a51352b78dc63",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=27": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4835,
+    "sha1": "b0b87abcec9c1dd1c814d28ee5035ff9c2131a25",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=28": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4837,
+    "sha1": "feac14aad57de7267f9d6f36a0f94aeead690aab",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=29": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5561,
+    "sha1": "e79a2945234e4476932751b4f3bf44281e7d092c",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=30": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4837,
+    "sha1": "da40817b9ad453c16b2bc3356bcc9a02e28cfa19",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=31": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4446,
+    "sha1": "235066cd15779103ebe2cd6acd571a88fea8d865",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=32": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5926,
+    "sha1": "3edf10032832309d72a7029f1093884fb340d8cd",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=33": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5813,
+    "sha1": "e13dfc26753769b344ebca7d7b9c454978560669",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=34": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6005,
+    "sha1": "43c65a28439862a7fe70824e548cdb4447c9d2c2",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=35": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4191,
+    "sha1": "5ac3ebe6a740e724d1a748322813a3afd726b6c6",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=36": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4464,
+    "sha1": "c8fe67bc6fa4c6bbc8d550222504b1f48c5baea2",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=37": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4404,
+    "sha1": "00edc38fe74b1d0c719a2536bac86e331c1f7dbc",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=38": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5941,
+    "sha1": "f24e1ca73ca70f7418844d11413400163e9b67ac",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=39": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6593,
+    "sha1": "61c6d2403a606bb0a57d689a5de37891d34c82cc",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=40": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5999,
+    "sha1": "4057b27f669f326fc89985e02f01c44aa76a90fe",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=41": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4437,
+    "sha1": "78f6fe43af3eab5200ceaa1dee656ef0f8cd4c4f",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=42": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4755,
+    "sha1": "e9ebcf6e396d227688cdec42fa4f944dd3ea9eca",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=43": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5920,
+    "sha1": "d97c34033f7a6cec3c5fd179f0d5c653cd3bf744",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=44": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4316,
+    "sha1": "eb544f52ff9dd0b07f9f72dc081130e85b1d969b",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=45": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5934,
+    "sha1": "00099afc5060d051f8673b47a15bf13a940b1d74",
+    "checked_at": "2025-09-28T17:57:59+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=46": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5977,
+    "sha1": "15021b11903fde1163bd3931ed7f11a24e26d011",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=47": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4116,
+    "sha1": "c63e540d966e728de76c73776a8b974764406609",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=48": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6342,
+    "sha1": "a7a9201588703e8e17ea0a42869ea942e85e1364",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=49": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6275,
+    "sha1": "fe516c25aa91b660fce7019770a60b1e817c3709",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=50": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5719,
+    "sha1": "f64c5b0bcd5a3f548f7b302ff9cbfa4ed88785b6",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=51": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4819,
+    "sha1": "4dba52a74240dd68dd138bda62ffd078ce7539d7",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=52": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5814,
+    "sha1": "002330e65aed302c41ec457e3e778f9cda74d5cf",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=53": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6120,
+    "sha1": "17d451a03a49467030cdb6685989f1f7a18e8119",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=54": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5810,
+    "sha1": "10c2f58dc3a7129c97fa70a230ec2d9825b96323",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=55": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4861,
+    "sha1": "d3ca01032287942b1549548dd596a4ea39c9b916",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=56": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5782,
+    "sha1": "b27e501bf200a6c599bac4bffbcc76fdd9238d10",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=57": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6214,
+    "sha1": "a80de3dfe4befdbe0266307cbbf5c5a19161c5c5",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=58": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5812,
+    "sha1": "4bd71d103f01989f586aee7dd577e1f5bfe56505",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=61": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5063,
+    "sha1": "2a13ec020a9ac939d757ecd42885b63d2414bc13",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=63": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4636,
+    "sha1": "be06fb8841d0204ea3ad68520bb1c8e53c5ba44e",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=64": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4512,
+    "sha1": "b47045f3e25f010fcb61865547f2a9cdeb38a529",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=65": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4571,
+    "sha1": "d2d784a17cd439279245e195b990a78e8e93363c",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=66": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5922,
+    "sha1": "7864b612904d726aa5e0a2d0c292d7ad968790c2",
+    "checked_at": "2025-09-28T17:58:00+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=67": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4653,
+    "sha1": "5bf94066ea2f1e9f379e09b945d6e0e883069916",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=68": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4617,
+    "sha1": "9d48a57399468e5a4256d6129a8f788412be545b",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=69": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4651,
+    "sha1": "ffc0be0178dee3de066703c1e5da501067281b5d",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=70": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4624,
+    "sha1": "b2d41324de178710d609b437d4aaed950e78108c",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=71": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4973,
+    "sha1": "c0e6551d6b9ac2128494d291afc6390c3f84efaf",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=72": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4747,
+    "sha1": "de9123743099b4373b7284202cada4a915032e8f",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=73": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5130,
+    "sha1": "463185459323faca267bab3526b5907f5cb2490e",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=74": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5206,
+    "sha1": "00d5486ee4633d7ea2798f10a5ade16da5ccbdda",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=75": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6063,
+    "sha1": "3c921bf1219e01fe32381a8a38be1b006fca7eaf",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=76": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6166,
+    "sha1": "a359a7857ed52fc34cf6e7168caa5392a2c630c9",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=129": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6168,
+    "sha1": "f918f1a2211bb645b028a2e8824238460800481e",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=77": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5024,
+    "sha1": "8dba848275d6b2f853289eecd38ac20af1e90ba0",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=78": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5486,
+    "sha1": "b07b242b8fcdbc4436f7a406bb9745cccda5d9c1",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=80": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4922,
+    "sha1": "2c20be25c4a1351b07b848c0f18e04c70ccea967",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=81": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4444,
+    "sha1": "d5a01c4c6d7e3d433ce02f1248496509a010be9c",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=82": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5280,
+    "sha1": "c7fe154bb09cbc5a2bd8b43fc0359a5e9205c240",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=83": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5229,
+    "sha1": "894ed598989d02d3c2d84305c2208b5b627f6250",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=84": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5067,
+    "sha1": "377b2932d70b8f84de4098d2044f0128fce4e50e",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=85": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4646,
+    "sha1": "455589285a325ae4e0810f728c2ff5cd93dd88d5",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=86": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4608,
+    "sha1": "36d6b8ac4e8b13005667d6da92eb9017d6668887",
+    "checked_at": "2025-09-28T17:58:01+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=87": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4947,
+    "sha1": "24cf3d482ed4fc4d5602158583682617e5491269",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=88": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5011,
+    "sha1": "17702a4f702e4bc9908654b0d98f4808cf89bdc1",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=89": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4550,
+    "sha1": "50ca61909eb6dc5b19c7f1ae21f2de51b1a638b4",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=90": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4964,
+    "sha1": "a91772ca4baefb855ba137415790d6dac68da89d",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=91": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5342,
+    "sha1": "fd1a2276bc51844e3e71c89fc1b28e8e05e499e1",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=92": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5268,
+    "sha1": "83fd4eda04746810272db519cac0c929afa55720",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=93": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5268,
+    "sha1": "1fd80aa2de9466bb9a377044bc6c4d4e7723b0d0",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=94": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5216,
+    "sha1": "e1c34b8c7907592b438755eecf4269535825b4df",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=95": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6137,
+    "sha1": "ad4e5d7c09fd74f49a39ffa07a5a24fe557b2a03",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=96": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4463,
+    "sha1": "10d75c4a739c2ea7c5c03d327d414f659fd59a5a",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=97": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4409,
+    "sha1": "442b2091dbb02e759d884f20d2cdbd99c73d6b2a",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=98": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4605,
+    "sha1": "ebc96f89b62e67d0f3e5ab04770c10d1173066fe",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=99": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4792,
+    "sha1": "702bb9b502d1567a98fea3f969054168ad0aebbc",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=100": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5172,
+    "sha1": "5a1b8adc7776cc035f6f1d5c1d9ddfa4a44223d5",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=101": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5065,
+    "sha1": "095d5980f986865c5145fa7426155018cbfd45db",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=103": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4178,
+    "sha1": "060413983e5ed9d1d6fc67b1121e3e4b1a582f5d",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=104": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5871,
+    "sha1": "76b2090f98d58a731990320a78ce18b94ba38097",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=105": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6006,
+    "sha1": "95625fc45fc3bb18356da45223115781a44cb869",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=106": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5958,
+    "sha1": "4b7ad855eadc5adabec26e47100c69ae55145ca2",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=107": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4705,
+    "sha1": "9ed9a41973ce4c4cbe0ff61ae60b0c9ffe45bac9",
+    "checked_at": "2025-09-28T17:58:02+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=108": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4925,
+    "sha1": "4fcbcce9e4d6055e30cf51946561374042bea18d",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=109": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4641,
+    "sha1": "400e4b3a414d20fd1c698e6a8e13cdc393bd2f9d",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=110": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5505,
+    "sha1": "bfda5bbb1597a81b2fdaf31daf685e12d1f837c0",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=111": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4424,
+    "sha1": "70a119eb72214d79bf573391f780ed23b6f400a7",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=112": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4427,
+    "sha1": "4307419946459e83f00fdb9dec82e2bbccad5c09",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=113": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5069,
+    "sha1": "be870169614ff76b5b2bf08e0a916510f98a0374",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=114": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4489,
+    "sha1": "2fb163a7c2d01b477624aadd3b70d19fd375efec",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=115": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4433,
+    "sha1": "7ccb53299528376f9f594357288fc4c7ca801607",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=116": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4384,
+    "sha1": "6c7136235bd95c1b5fe50b3fb1b11274d72d3863",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=117": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4511,
+    "sha1": "a745b55566e3728f341d797adacd2186e451b256",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=118": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6228,
+    "sha1": "f605b2c735237f181f45eb8055a1ce0ccd475ed0",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=119": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5481,
+    "sha1": "d15160d343a030634abb7029f5d696c63f203593",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=120": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4636,
+    "sha1": "4a19c2260c9b188de8ef9387a2da1ce66d0a3132",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=121": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4459,
+    "sha1": "16b33ad4ecf3139dc185888b866be80b859e0c2d",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=128": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4993,
+    "sha1": "e5706fd24ca7a82595e16e0329a62226f129d742",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=122": {
+    "etag": null,
+    "last_modified": null,
+    "length": 6339,
+    "sha1": "79b15511458fb5e5c2b7cc137737ffd61a6f76e9",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=123": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5765,
+    "sha1": "122dd105aa1aceb409f96fe9a558e0031c3cb625",
+    "checked_at": "2025-09-28T17:58:03+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=124": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5590,
+    "sha1": "9e496f310f724fc9eea4b8b85138f1aafe027cf3",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=125": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5715,
+    "sha1": "414b3b0fce6565424c9d75551a0f4c6e46efca44",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=126": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4503,
+    "sha1": "4819eafc1a4c98be1cb83866f431a0c6ce70afc4",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=127": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5548,
+    "sha1": "7fc82b66cecf196fe8f2cfc18f4a8505bbdf9790",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=130": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5533,
+    "sha1": "b7b9662614bcce19358def3ac0f17b2c0b977165",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=131": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5578,
+    "sha1": "4f421af26c3b3b78f365f7b82d40f85549acf1d1",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=134": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4385,
+    "sha1": "ac0172d31ec157118456bc7853255411dfafa3a7",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=135": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4093,
+    "sha1": "880f8759589e2062b5450fdb1bfd087b2d593f77",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=136": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5658,
+    "sha1": "e948502e62bbe6b7d6e12adf1d69077d159bbf3f",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=137": {
+    "etag": null,
+    "last_modified": null,
+    "length": 5564,
+    "sha1": "73f9f49e6e9190865ac2e25bb7ae124b192c4c8f",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=138": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4645,
+    "sha1": "a0c991a2032ac005a4f4f5d63fc5145a5bbdf4d2",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=139": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4117,
+    "sha1": "969fa36de39b1a6865dbc7e16d0b3c31a735a53d",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=140": {
+    "etag": null,
+    "last_modified": null,
+    "length": 3796,
+    "sha1": "e0f57caf63c29cc556daa8c2d5459cc37db91c91",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  },
+  "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=156": {
+    "etag": null,
+    "last_modified": null,
+    "length": 4173,
+    "sha1": "1770e4da82edeccad18f6e92e2831ab6695c777d",
+    "checked_at": "2025-09-28T17:58:04+09:00"
+  }
+}

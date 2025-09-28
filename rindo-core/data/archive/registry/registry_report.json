@@ -1,0 +1,18 @@
+[
+  {
+    "pref": "11",
+    "url": "https://www.pref.saitama.lg.jp/b0904/tokosei/rindo_info.html",
+    "status": "ERR:HTTPError",
+    "kind": "html",
+    "found_events": 0,
+    "found_links": 0
+  },
+  {
+    "pref": "18",
+    "url": "https://www.pref.fukui.lg.jp/doc/xxx/rindo.html",
+    "status": "ERR:HTTPError",
+    "kind": "list",
+    "found_events": 0,
+    "found_links": 0
+  }
+]

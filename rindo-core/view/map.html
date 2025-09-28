@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>林道MAP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="%231e88e5"/><path d="M14 38c8-8 14-8 22 0 6 6 10 6 14 0" stroke="%23fff" stroke-width="6" fill="none" stroke-linecap="round"/></svg>' />
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- VectorGrid + geojson-vt（クライアント側でタイル化） -->
+  <script src="https://unpkg.com/geojson-vt@3.2.1/geojson-vt.js"></script>
+  <script src="https://unpkg.com/leaflet.vectorgrid@1.3.0/dist/Leaflet.VectorGrid.bundled.js"></script>
+
+  <!-- Turf / Supercluster -->
+  <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+  <script src="https://unpkg.com/supercluster@8.0.1/dist/supercluster.min.js"></script>
+
+  <style>
+    html, body, #app { height:100%; margin:0; }
+    #app { display:grid; grid-template-columns:320px 1fr; }
+    #sidebar {
+      padding:12px 12px 16px; border-right:1px solid #e0e0e0; background:#fafafa; overflow:auto;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;
+    }
+    #map { height:100%; width:100%; }
+    .sec-title { font-weight:700; margin:10px 0 6px; }
+    .hint { color:#666; font-size:12px; }
+
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; margin:10px 0;}
+    .card h4 { margin:0 0 6px; font-size:14px; }
+    .badge { display:inline-block; font-size:11px; padding:2px 6px; border-radius:999px; background:#eef2ff; color:#3730a3; }
+    .btn { display:inline-block; font-size:12px; padding:6px 8px; border:1px solid #ddd; border-radius:6px; background:#fafafa; cursor:pointer; }
+    .btn + .btn { margin-left:6px; }
+    .linkrow a { margin-right:10px; }
+    .comment { font-size:12px; border-left:3px solid #eee; padding:4px 8px; margin:4px 0; }
+    .gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; }
+    .gallery img { width:100%; height:70px; object-fit:cover; border-radius:6px; border:1px solid #eee; }
+
+    /* ラベルは透明背景＋白フチ。クリックできるようにする */
+    .rindo-label .leaflet-tooltip{
+      background:transparent; border:0; box-shadow:none;
+      padding:0 2px; font-size:12px; color:#111;
+      text-shadow:0 0 3px #fff,0 0 3px #fff;
+      pointer-events:auto;
+      cursor:pointer;
+    }
+
+    /* 右下の小型凡例 */
+    .corner-legend{
+      position:absolute; right:10px; bottom:10px; z-index:550;
+      background:rgba(255,255,255,.9); border:1px solid #e0e0e0; border-radius:8px;
+      padding:6px 8px; font-size:12px; line-height:1.6; box-shadow:0 1px 3px rgba(0,0,0,.08);
+    }
+    .sw{ display:inline-block; width:12px; height:12px; border-radius:2px; margin-right:6px; vertical-align:-2px; }
+    .floating-status{
+      position:absolute; left:8px; top:8px; z-index:500; background:rgba(255,255,255,.9);
+      border:1px solid #ddd; border-radius:6px; padding:6px 8px; font-size:12px; box-shadow:0 1px 4px rgba(0,0,0,.08);
+    }
+
+
+    /* === モバイル最適化（画面幅 ≤ 768px） === */
+@media (max-width: 768px){
+  #app{ grid-template-columns: 1fr; }
+  #sidebar{ display:none; }        /* サイドバーは隠す（ボトムシートに置換） */
+  #map{ height:100vh; }           /* 画面全体で地図を表示 */
+}
+
+/* フローティングの「情報」ボタン（モバイル用） */
+.mob-fab{
+  position:fixed; right:12px; bottom:12px; z-index:600;
+  border:1px solid #ddd; border-radius:999px; padding:10px 14px;
+  background:#fff; font-size:14px; box-shadow:0 2px 8px rgba(0,0,0,.15);
+  display:none; cursor:pointer;
+}
+@media (max-width:768px){ .mob-fab{ display:inline-block; } }
+
+/* モバイルのボトムシート（詳細パネル） */
+#mobilePanel{
+  position:fixed; left:0; right:0; bottom:-80vh; height:70vh; z-index:650;
+  background:#fff; border-top-left-radius:14px; border-top-right-radius:14px;
+  box-shadow:0 -6px 16px rgba(0,0,0,.2);
+  transition:bottom .25s ease;
+  display:block; /* 初期は非表示だが位置で隠す */
+}
+#mobilePanel.open{ bottom:0; }
+#mobilePanel .panel-header{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 14px; border-bottom:1px solid #eee; font-weight:600;
+}
+#mobilePanel .panel-body{
+  padding:10px 12px; height:calc(70vh - 48px); overflow:auto; font-size:14px;
+}
+#btnClosePanel{ border:1px solid #ddd; background:#fafafa; border-radius:8px; padding:6px 10px; }
+
+  </style>
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <h2 style="margin:6px 0 8px;">林道MAP</h2>
+
+    <!-- 選択情報のみ -->
+    <div id="detail" style="margin-top:12px; font-size:13px;">
+      <div class="sec-title">選択中の林道</div>
+      <div id="detailBody" class="hint">地図で線やラベルをクリックしてください</div>
+    </div>
+  </aside>
+
+  <div style="position:relative;">
+    <div id="map"></div>
+  <button id="btnTogglePanel" class="mob-fab">情報</button>
+<div id="mobilePanel" aria-hidden="true">
+  <div class="panel-header">
+    <div>選択中の林道</div>
+    <button id="btnClosePanel">閉じる</button>
+  </div>
+  <div id="mobileDetail" class="panel-body">
+    地図で線やラベルをタップしてください
+  </div>
+</div>
+  
+
+  </div>
+</div>
+
+<div class="floating-status" id="status">読み込み中…</div>
+
+<script>
+// ============ RINDO MAP – ONE BLOCK (ext map links & UI tweaks) ============
+(function(){
+  /* ---------------- 基本設定 ---------------- */
+  const INIT_CENTER=[36.0,139.2], INIT_ZOOM=10;
+  // open(緑)は使わず normal(青)に統合
+  const COLORS={ normal:"#1e88e5", regulated:"#f59e0b", closed:"#e53935", hiHalo:"#ffffff", hiLine:"#00c2ff" };
+
+  const $status=document.getElementById("status");
+  const $detail=document.getElementById("detailBody");
+  const jp = s => (s==null ? "" : String(s));
+
+  const normName = s => jp(s)
+    .replace(/\s+/g,"").replace(/[　]/g,"")
+    .replace(/(林道|森林管理道)/g,"")
+    .replace(/(線|せん|道)$/,"")
+    .replace(/[（）()・･‐\-—―ｰ]/g,"")
+    .toLowerCase();
+
+  const statusFromProps = p => {
+    const s = jp(p.status||p.status_jp||p.regulation).toLowerCase();
+    if(/closed|通行止/.test(s)) return "closed";
+    if(/regulated|規制|片側|一部/.test(s)) return "regulated";
+    return "normal"; // open/解除/開通 → normal
+  };
+
+  // ★赤=closed / 黄=regulated / 青=normal
+  const colorFromProps = p => {
+    const st = statusFromProps(p);
+    if (st === "closed")    return COLORS.closed;
+    if (st === "regulated") return COLORS.regulated;
+    return COLORS.normal;
+  };
+
+  /* ---------------- 地図 ---------------- */
+  const map=L.map("map",{preferCanvas:true}).setView(INIT_CENTER,INIT_ZOOM);
+  window._map = map;  // ← 追加：コンソールから openOn(window._map) 等で確実に Leaflet の map を参照
+  const osm=L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"© OpenStreetMap"}).addTo(map);
+  const gsi=L.tileLayer("https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png",{attribution:"© GSI"});
+  L.control.layers({ "OSM":osm, "GSI淡色":gsi }, null, {collapsed:true}).addTo(map);
+  L.control.scale({imperial:false}).addTo(map);
+
+  /* ---------------- UI微調整（レイアウト） ---------------- */
+  (function injectUiFixes(){
+    if (document.getElementById("rindo-ui-fixes")) return;
+    const css = `
+      #detailBody .card { margin:10px 8px; }
+      #detailBody .card h4 { margin:0 0 6px; font-weight:600; }
+      #detailBody input { height:28px; padding:4px 6px; }
+      #detailBody button { height:28px; padding:0 10px; margin-left:6px; vertical-align:middle; }
+      #detailBody ul { list-style:none; padding-left:0; margin:0 0 6px; }
+      #detailBody .card table th, #detailBody .card table td { padding:2px 0; }
+    `;
+    const s=document.createElement("style"); s.id="rindo-ui-fixes"; s.textContent=css;
+    document.head.appendChild(s);
+  })();
+
+  /* ---------------- 凡例（タイトル無し / 3項目） ---------------- */
+  (function(){
+    // 既存の凡例や重複を除去（右下の corner-legend も消す）
+    document.querySelectorAll('.legend,[data-rindo-legend],.corner-legend').forEach(n => n.remove());
+
+    const box=document.createElement("div");
+    box.setAttribute("data-rindo-legend","1");
+    box.style.cssText="position:absolute;right:12px;bottom:12px;background:#fff;padding:8px 10px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.2);font:12px/1.4 sans-serif;z-index:700";
+    box.innerHTML = `
+      <div><span style="display:inline-block;width:16px;height:3px;background:${COLORS.closed};margin-right:6px;vertical-align:middle"></span>通行止</div>
+      <div><span style="display:inline-block;width:16px;height:3px;background:${COLORS.regulated};margin-right:6px;vertical-align:middle"></span>規制</div>
+      <div><span style="display:inline-block;width:16px;height:3px;background:${COLORS.normal};margin-right:6px;vertical-align:middle"></span>通常</div>`;
+    document.body.appendChild(box);
+  })();
+
+  /* ---------------- ハイライト（同名全セグメント / 自動ズームなし） ---------------- */
+  const hiPane=map.createPane("highlight"); hiPane.style.zIndex=650;
+  const hiHalo=L.geoJSON(null,{pane:"highlight",style:{color:COLORS.hiHalo,weight:10,opacity:.8}}).addTo(map);
+  const hiLine=L.geoJSON(null,{pane:"highlight",style:{color:COLORS.hiLine,weight:5,opacity:.95}}).addTo(map);
+
+  function setHighlightByFeatures(arr, { color=null, zoom=false } = {}) {
+    hiHalo.clearLayers(); hiLine.clearLayers();
+    if (!arr || !arr.length) return;
+    hiHalo.addData(arr);
+    hiLine.addData(arr);
+    if (color) { try { hiLine.setStyle({ color }); } catch(e){} }
+    if (zoom) {
+      try { const g=L.featureGroup([hiLine]); map.fitBounds(g.getBounds().pad(0.2)); } catch(e){}
+    }
+  }
+
+  let nameIndex=new Map();
+  let _currentAnchor = null; // クリックした路線にスナップした座標（lat,lng）を保持
+  const highlightByName = raw => {
+    const k=normName(raw);
+    const feats=nameIndex.get(k)||[];
+    const col = feats[0] ? colorFromProps(feats[0].properties||{}) : COLORS.normal;
+    setHighlightByFeatures(feats, { color: col, zoom:false });  // ★ズームしない
+    if(feats[0]) showDetail(feats[0].properties||{});
+    try{
+  const grp=L.featureGroup(feats.map(f=>L.geoJSON(f)));
+  const c=grp.getBounds().getCenter();
+  _currentAnchor={lat:c.lat,lng:c.lng};
+  window.currentName = raw || "";
+}catch(_){}
+
+  };
+  /* ---------------- クリック時（ポップアップ＋左パネル＋ハイライト） ---------------- */
+  // クリック位置を最も近いLineString上にスナップして _currentAnchor に保存
+function setAnchorByClick(e, feats){
+  try{
+    if (e?.latlng && window.turf && feats?.length){
+      const pt = turf.point([e.latlng.lng, e.latlng.lat]);
+      let best=null;
+      for (const f of feats){
+        if (!f?.geometry) continue;
+        const snap = turf.nearestPointOnLine(f, pt, {units:"meters"});
+        if (!best || (snap?.properties?.dist ?? Infinity) < (best?.properties?.dist ?? Infinity)){
+          best = snap;
+        }
+      }
+      if (best){
+        _currentAnchor = { lat: best.geometry.coordinates[1], lng: best.geometry.coordinates[0] };
+        return;
+      }
+    }
+  }catch(_){}
+  // フォールバック：クリック位置 → ハイライト中心 → 地図中心
+  if (e?.latlng){ _currentAnchor = { lat:e.latlng.lat, lng:e.latlng.lng }; return; }
+  try{ const c=hiLine.getBounds().getCenter(); _currentAnchor={lat:c.lat,lng:c.lng}; return; }catch(_){}
+  const m=map.getCenter(); _currentAnchor={lat:m.lat,lng:m.lng};
+}
+
+  const bindClick = () => {
+    return e => {
+      // GeoJSON / VectorGrid の双方から properties を安全に拾う
+      const p = (e && (e.layer?.properties || e.propagatedFrom?.feature?.properties || e.sourceTarget?.feature?.properties)) || {};
+      const name = p.name || p.NAME || "";
+      const col  = colorFromProps(p);
+
+      // 同名の全セグメントをハイライト（ズームなし）
+      if (name) {
+        const feats = nameIndex.get(normName(name)) || [];
+        setHighlightByFeatures(feats, { color: col, zoom: false });
+        setAnchorByClick(e, feats); window.currentName = name || "";
+      }
+
+      // 左パネル更新（既存の showDetail を使用）
+      showDetail(p);
+
+      // 山梨県公式リンクがある場合は、クリック位置にポップアップを出す
+      try {
+        const yn = p?.official?.yamanashi;
+        if (yn?.url && e?.latlng) {
+          const html = `<div style="font:13px/1.4 sans-serif">
+            <div style="font-weight:600;margin:0 0 4px">${p.name || "(名称不明)"}</div>
+            <a href="${yn.url}" target="_blank" rel="noopener">山梨県公式：${yn.name || p.name || ""}</a>
+          </div>`;
+          L.popup({ autoPan: true, maxWidth: 320 })
+            .setLatLng(e.latlng).setContent(html).openOn(map);
+        }
+      } catch (_) {}
+    };
+  };
+
+  /* ---------------- 左パネル：上から「写真 → コメント → 参考リンク → 選択中の林道」 ---------------- */
+
+  const statusTextJP = p => ({closed:"通行止め", regulated:"車両/一部規制"}[statusFromProps(p)] || "—");
+
+  // 備考：期間（なければ当分の間）＋ 理由 ＋ ステータス を1行に
+  function buildBikou(p){
+    const st = statusFromProps(p);
+    if (st!=="closed" && st!=="regulated") return "—";
+    const reason = jp(p.reg_reason || p.reason || "");
+    let period  = (p.reg_from || p.reg_to) ? `${jp(p.reg_from||"—")}〜${jp(p.reg_to||"—")}` : "当分の間";
+    const tail  = statusTextJP(p);
+    return `${period}${reason ? " " + reason : ""} ${tail}`.trim();
+  }
+
+// ★Google / Yahoo! 地図リンク：優先＝“路線上アンカー”→ハイライト中心→地図中心
+function buildExternalMapLinks(){
+  let c = _currentAnchor;
+  if (!c){
+    try{ const b=hiLine.getBounds().getCenter(); c={lat:b.lat,lng:b.lng}; }catch(_){}
+  }
+  if (!c){ const m=map.getCenter(); c={lat:m.lat,lng:m.lng}; }
+
+  const lat = c.lat.toFixed(6), lon = c.lng.toFixed(6);
+  const gmap = `https://www.google.com/maps/search/?api=1&query=${lat},${lon}`;
+  const ymap = `https://map.yahoo.co.jp/maps?lat=${lat}&lon=${lon}&z=17`;
+
+  return `<a href="${gmap}" target="_blank" rel="noopener">Google Maps</a> / <a href="${ymap}" target="_blank" rel="noopener">Yahoo!地図</a>`;
+}
+
+
+  function buildDetailCard(p){
+    const yn = p?.official?.yamanashi; // ★山梨の公式リンク（あるときだけ表示）
+
+    const rows=[
+      ["名称", jp(p.name)||"(名称不明)"],
+      ["状態", statusTextJP(p)],
+      ["備考", buildBikou(p)],
+      // ▼公式リンク（pref関係なく、yn があれば出す）
+      ["公式（山梨県）", yn?.url ? `<a href="${yn.url}" target="_blank" rel="noopener">${yn.name || p.name}</a>` : "—"],
+      ["外部地図", buildExternalMapLinks()],
+      ["ソース", p.source_url?`<a href="${p.source_url}" target="_blank" rel="noopener">${p.source_url}</a>`:"—"],
+      ["最終更新", jp(p.updated_at||"—")]
+    ].map(([k,v])=>`<tr><th style="text-align:left;white-space:nowrap;padding-right:8px">${k}</th><td>${v}</td></tr>`).join("");
+
+    return `<div class="card"><h4>選択中の林道</h4><table>${rows}</table></div>`;
+  }
+
+  const LINKS_NOTE = `<p style="margin:4px 0 0;color:#666;font-size:12px">
+参考リンクは、<b>管理者本人</b>または<b>転載許可のあるもの</b>のみ登録してください。</p>`;
+
+  const store={
+    k:(t,k)=>`RMAP:${t}:${k}`,
+    read:(t,k)=>{ try{ return JSON.parse(localStorage.getItem(store.k(t,k))||"[]"); }catch(e){ return []; } },
+    write:(t,k,a)=>localStorage.setItem(store.k(t,k),JSON.stringify(a))
+  };
+  function showDetail(p){
+    const key = normName(p.name||"");
+    const phs = store.read("photos",key);
+    const lnks= store.read("links",key);
+    const cms = store.read("comments",key);
+
+    const photosHTML = `
+      <div class="card">
+        <h4>写真</h4>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          ${phs.map(u=>`<a href="${u}" target="_blank" rel="noopener"><img src="${u}" style="width:84px;height:56px;object-fit:cover;border-radius:6px;border:1px solid #ddd"></a>`).join('') || '<div style="color:#777">（未登録）</div>'}
+        </div>
+        <div><input id="inPhotoUrl" placeholder="画像URLを貼り付け" style="width:70%"><button id="btnAddPhoto">追加</button></div>
+      </div>`;
+
+    const commentsHTML = `
+      <div class="card">
+        <h4>コメント</h4>
+        <ul style="margin:0 0 6px 1em;padding:0;">
+          ${cms.map(c=>`<li>${c}</li>`).join('') || '<li style="color:#777">（未登録）</li>'}
+        </ul>
+        <div><input id="inComment" placeholder="メモを入力" style="width:70%"><button id="btnAddComment">追加</button></div>
+      </div>`;
+
+    const linksHTML = `
+      <div class="card">
+        <h4>参考リンク</h4>
+        <ul style="margin:0 0 6px 1em;padding:0;">
+          ${lnks.map(u=>`<li><a href="${u}" target="_blank" rel="noopener">${u}</a></li>`).join('') || '<li style="color:#777">（未登録）</li>'}
+        </ul>
+        ${LINKS_NOTE}
+        <div style="margin-top:6px"><input id="inLinkUrl" placeholder="URLを貼り付け" style="width:70%"><button id="btnAddLink">追加</button></div>
+      </div>`;
+
+    // 並び順：写真 → コメント → 参考リンク → 選択中の林道
+    $detail.innerHTML = photosHTML + commentsHTML + linksHTML + buildDetailCard(p);
+    { const md=document.getElementById("mobileDetail"); if(md) md.innerHTML = photosHTML + commentsHTML + linksHTML + buildDetailCard(p); }
+
+    // 追記ハンドラ
+    const addPhoto=document.getElementById("btnAddPhoto"), inPhoto=document.getElementById("inPhotoUrl");
+    if(addPhoto) addPhoto.onclick=()=>{ const u=(inPhoto.value||'').trim(); if(!u) return; phs.push(u); store.write('photos',key,phs); highlightByName(p.name||''); };
+
+    const addCmt=document.getElementById("btnAddComment"), inCmt=document.getElementById("inComment");
+    if(addCmt) addCmt.onclick=()=>{ const t=(inCmt.value||'').trim(); if(!t) return; cms.push(t); store.write('comments',key,cms); highlightByName(p.name||''); };
+
+    const addLink=document.getElementById("btnAddLink"), inLink=document.getElementById("inLinkUrl");
+    if(addLink) addLink.onclick=()=>{ const u=(inLink.value||'').trim(); if(!u) return; lnks.push(u); store.write('links',key,lnks); highlightByName(p.name||''); };
+    // モバイルなら自動でボトムシートを開く
+  try{
+    if (window.matchMedia && window.matchMedia("(max-width: 768px)").matches){
+      const sheet=document.getElementById("mobilePanel");
+      if(sheet){ sheet.classList.add("open"); sheet.setAttribute("aria-hidden","false"); }
+    }
+  }catch(_){}
+
+  }
+
+  /* ---------------- データ読み込み ---------------- */
+  const ROADS_URL="/data/out/roads.geojson?v="+Date.now();
+  fetch(ROADS_URL,{cache:"no-cache"})
+    .then(r=>r.json())
+    .then(geo=>{
+      window._roads = geo;                      // ★ コンソール確認用に保持
+      const feats = geo.features || [];
+      let closed=0, regulated=0;
+      for(const f of feats){ const st=statusFromProps(f.properties||{}); if(st==="closed") closed++; else if(st==="regulated") regulated++; }
+      $status.textContent=`segments=${feats.length} closed=${closed} regulated=${regulated} ｜ ${new Date().toISOString()}`;
+
+      // nameIndex 構築
+      nameIndex=new Map();
+      for(const f of feats){
+        const n=jp((f.properties||{}).name||(f.properties||{}).NAME||"");
+        const k=normName(n); if(!k) continue;
+        if(!nameIndex.has(k)) nameIndex.set(k,[]);
+        nameIndex.get(k).push(f);
+      }
+
+      // 線の描画（VectorGrid 優先）
+      if (L.vectorGrid && L.vectorGrid.slicer){
+        const vg=L.vectorGrid.slicer(geo,{
+          rendererFactory:L.canvas.tile,
+          interactive:true,
+          vectorTileLayerStyles:{
+            sliced:(props,z)=>({ stroke:true, color:colorFromProps(props||{}), weight:(z>=14?3.5:z>=12?3:2), opacity:.95 })
+          },
+          getFeatureId:f=>f.id || (f.properties && f.properties.id) || undefined
+        }).addTo(map);
+        vg.on("click", bindClick());
+      } else {
+        const g=L.geoJSON(geo,{ style:f=>({ color:colorFromProps(f.properties||{}), weight:3, opacity:.95 }) }).addTo(map);
+        g.eachLayer(l=>l.on("click", ()=>bindClick()({ sourceTarget:l, layer:l.feature })));
+      }
+
+      // 初期ズーム：規制/通行止があればそこへ寄せる
+      try{
+        const bad=feats.filter(f=>["closed","regulated"].includes(statusFromProps(f.properties||{})));
+        if(bad.length){ const grp=L.featureGroup(bad.map(f=>L.geoJSON(f))); map.fitBounds(grp.getBounds().pad(.2)); }
+      }catch(e){}
+
+/* --------- ラベル：同名は1つに集約（※物理的に離れた“別線”は別ラベル） --------- */
+function getFirstCoord(f){
+  const coords=f.geometry && f.geometry.coordinates;
+  return Array.isArray(coords)
+    ? (f.geometry.type==="LineString" ? coords[0] : (Array.isArray(coords[0]) ? coords[0][0] : null))
+    : null;
+}
+function distanceMeters(a,b){
+  const R=6371000, dlat=(a.lat-b.lat)*Math.PI/180, dlon=(a.lng-b.lng)*Math.PI/180;
+  const mlat=((a.lat+b.lat)/2)*Math.PI/180;
+  const x=dlon*Math.cos(mlat), y=dlat;
+  return Math.sqrt(x*x+y*y)*R;
+}
+function buildUniqueLabelPoints(nameIndex){
+  const OUT=[];
+  const SPLIT_THRESHOLD_M=1500; // ←“別線”とみなす距離（1.5km）。必要なら調整OK
+  for (const [key, group] of nameIndex.entries()){
+    // 各セグメントの代表点を作成
+    const centers = group.map(f=>{
+      let c=null;
+      try{ if(window.turf && f.geometry){ c=turf.pointOnFeature(f).geometry.coordinates; } }catch(_){}
+      if(!c){ c=getFirstCoord(f); }
+      if(!c){ return null; }
+      return { lng:c[0], lat:c[1], f };
+    }).filter(Boolean);
+
+    // 近いもの同士を素朴にまとめる（クラスタリング）
+    const clusters=[];
+    centers.forEach(p=>{
+      let placed=false;
+      for (const cl of clusters){
+        if (cl.some(q=>distanceMeters(p,q) < SPLIT_THRESHOLD_M)){ cl.push(p); placed=true; break; }
+      }
+      if(!placed) clusters.push([p]);
+    });
+
+    // 各クラスタの代表ラベルポイント
+    clusters.forEach((cl,idx)=>{
+      const lon = cl.reduce((s,p)=>s+p.lng,0)/cl.length;
+      const lat = cl.reduce((s,p)=>s+p.lat,0)/cl.length;
+      const name = jp((cl[0].f.properties||{}).name||(cl[0].f.properties||{}).NAME||"");
+      OUT.push({
+        type:"Feature",
+        geometry:{ type:"Point", coordinates:[lon,lat] },
+        properties:{ name, key, part: idx+1, parts: clusters.length }
+      });
+    });
+  }
+  return OUT;
+}
+const pts = buildUniqueLabelPoints(nameIndex);
+
+
+      const labelsPane=map.createPane("labels"); labelsPane.style.zIndex=680;
+      const labelLayer=L.layerGroup([], {pane:"labels"}).addTo(map);
+
+      let index=null;
+      if (window.Supercluster){
+        index=new Supercluster({ radius:60, maxZoom:17 });
+        index.load(pts.map(p=>({ type:"Feature", geometry:p.geometry, properties:{ name:p.properties.name, key:p.properties.key } })));
+      } else {
+        index={ getClusters:(bbox,z)=> z>=13 ? pts.map(p=>({ geometry:p.geometry, properties:p.properties })) : [] };
+      }
+
+      function renderLabels(){
+        labelLayer.clearLayers();
+        const b=map.getBounds(); const bbox=[b.getWest(),b.getSouth(),b.getEast(),b.getNorth()]; const z=map.getZoom();
+        const clusters=index.getClusters(bbox,z);
+        for(const c of clusters){
+          const [lng,lat]=c.geometry.coordinates;
+          const isCluster=!!(c.properties && (c.properties.cluster||c.properties.point_count));
+          if(isCluster){
+            const count=c.properties.point_count || c.properties.point_count_abbreviated || "?";
+            const html=`<div style="background:#fff;border:1px solid #bbb;border-radius:12px;padding:2px 6px;font:11px/1.2 sans-serif;box-shadow:0 1px 3px rgba(0,0,0,.2)">${count}</div>`;
+            L.marker([lat,lng],{pane:"labels",icon:L.divIcon({className:"cluster-chip",html}),interactive:true})
+              .addTo(labelLayer).on("click",()=>map.flyTo([lat,lng],Math.min(z+2,17))); // クラスタのみズーム
+          } else {
+            const name=c.properties?.name; if(!name) continue;
+            const html=`<div style="color:#111;background:rgba(255,255,255,.7);padding:2px 8px;border-radius:10px;border:1px solid rgba(0,0,0,.2);font:12px/1.3 sans-serif;white-space:nowrap;text-shadow:0 1px 0 #fff">${name}</div>`;
+            L.marker([lat,lng],{pane:"labels",icon:L.divIcon({className:"rindo-label",html}),interactive:true})
+              .addTo(labelLayer).on("click",()=>highlightByName(name)); // ラベルはズームしない
+          }
+        }
+      }
+      renderLabels();
+      map.on("moveend", renderLabels);
+    })
+    .catch(err=>{ console.error("roads.geojson 読み込み失敗:",err); $status.textContent="データ読み込みに失敗しました。"; });
+// === モバイルの“情報”ボタン → ボトムシート開閉 ===
+(function(){
+  const btn = document.getElementById("btnTogglePanel");
+  const sheet = document.getElementById("mobilePanel");
+  const closeBtn = document.getElementById("btnClosePanel");
+
+  function openSheet(){ if(sheet){ sheet.classList.add("open"); sheet.setAttribute("aria-hidden","false"); } }
+  function closeSheet(){ if(sheet){ sheet.classList.remove("open"); sheet.setAttribute("aria-hidden","true"); } }
+
+  if(btn) btn.addEventListener("click", openSheet);
+  if(closeBtn) closeBtn.addEventListener("click", closeSheet);
+
+  // 画面外領域をタップで閉じたい場合は、背景オーバーレイを別途足してもOK
+  // ひとまずはヘッダーの「閉じる」で操作
+
+})();
+// ============ /RINDO MAP – ONE BLOCK ============
+</script>
+
+</body>
+</html>

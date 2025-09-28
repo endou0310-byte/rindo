@@ -1,0 +1,11 @@
+﻿# env & caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+# big map dumps
+*.pbf
+*.osm.pbf
+# OS cruft
+.DS_Store
+Thumbs.db
