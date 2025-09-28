@@ -1,0 +1,1298 @@
+{
+  "source": "https://www.pref.yamanashi.jp/rindoujyouhou/list.php",
+  "generated": true,
+  "by_norm": {
+    "小武川": [
+      {
+        "id": "1",
+        "name": "小武川【ｺﾑｶﾜ】線",
+        "norm": "小武川",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=1",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "2",
+        "name": "小武川【ｺﾑｶﾜ】線",
+        "norm": "小武川",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=2",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "39",
+        "name": "小武川支【ｺﾑｶﾜｼ】線",
+        "norm": "小武川",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=39",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "本谷釜瀬": [
+      {
+        "id": "3",
+        "name": "本谷釜瀬【ﾎﾝﾀﾆｶﾏｾ】線",
+        "norm": "本谷釜瀬",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=3",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "南アルプス": [
+      {
+        "id": "4",
+        "name": "南アルプス線",
+        "norm": "南アルプス",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=4",
+        "status": "closed",
+        "reg_from": "2025-11-04",
+        "reg_to": "2025-09-24",
+        "reg_reason": "台風"
+      }
+    ],
+    "御岳": [
+      {
+        "id": "6",
+        "name": "御岳【ﾐﾀｹ】線",
+        "norm": "御岳",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=6",
+        "status": "closed",
+        "reg_reason": "工事"
+      }
+    ],
+    "櫛形山": [
+      {
+        "id": "7",
+        "name": "櫛形山【ｸｼｶﾞﾀﾔﾏ】線",
+        "norm": "櫛形山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=7",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "8",
+        "name": "櫛形山【ｸｼｶﾞﾀﾔﾏ】線",
+        "norm": "櫛形山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=8",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "雨乞尾白川": [
+      {
+        "id": "9",
+        "name": "雨乞尾白川【ｱﾏｺﾞｲｵｼﾞﾛｶﾜ】線",
+        "norm": "雨乞尾白川",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=9",
+        "status": "closed",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "10",
+        "name": "雨乞尾白川【ｱﾏｺﾞｲｵｼﾞﾛ】線",
+        "norm": "雨乞尾白川",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=10",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "御庵沢小武川": [
+      {
+        "id": "11",
+        "name": "御庵沢小武川【ｺﾞｱﾝｻﾞﾜｺﾑｶﾜ】線",
+        "norm": "御庵沢小武川",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=11",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "12",
+        "name": "御庵沢小武川【ｺﾞｱﾝｻﾞﾜｺﾑｶﾜ】線",
+        "norm": "御庵沢小武川",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=12",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "精進ケ滝": [
+      {
+        "id": "13",
+        "name": "精進ヶ滝【ｼｮｳｼﾞｶﾀｷ】線",
+        "norm": "精進ケ滝",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=13",
+        "status": "closed",
+        "reg_reason": "工事"
+      }
+    ],
+    "鈴嵐": [
+      {
+        "id": "14",
+        "name": "鈴嵐【ｽｽﾞｱﾗｼ】線",
+        "norm": "鈴嵐",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=14",
+        "status": "closed",
+        "reg_reason": "工事"
+      }
+    ],
+    "清哲": [
+      {
+        "id": "15",
+        "name": "清哲【ｾｲﾃﾂ】線",
+        "norm": "清哲",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=15",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "小森川": [
+      {
+        "id": "16",
+        "name": "小森川【ｺﾓﾘｶﾜ】線",
+        "norm": "小森川",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=16",
+        "status": "closed",
+        "reg_reason": "工事"
+      }
+    ],
+    "荒川": [
+      {
+        "id": "17",
+        "name": "荒川【ｱﾗｶﾜ】線",
+        "norm": "荒川",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=17",
+        "status": "closed",
+        "reg_from": "2025-08-25",
+        "reg_to": "2025-10-31",
+        "reg_reason": "工事"
+      }
+    ],
+    "芦安": [
+      {
+        "id": "18",
+        "name": "芦安【ｱｼﾔｽ】線",
+        "norm": "芦安",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=18",
+        "status": "closed",
+        "reg_reason": "台風"
+      }
+    ],
+    "野猿谷": [
+      {
+        "id": "19",
+        "name": "野猿谷【ﾔｴﾝﾀﾞﾆ】線",
+        "norm": "野猿谷",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=19",
+        "status": "closed",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "130",
+        "name": "野猿谷【ﾔｴﾝﾀﾞﾆ】線",
+        "norm": "野猿谷",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=130",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "沓沢": [
+      {
+        "id": "20",
+        "name": "沓沢【ｸﾂｻﾞﾜ】線",
+        "norm": "沓沢",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=20",
+        "status": "closed",
+        "reg_reason": "台風"
+      }
+    ],
+    "大樺沢": [
+      {
+        "id": "21",
+        "name": "大樺沢【ｵｵｶﾝﾊﾞｻﾞﾜ】線",
+        "norm": "大樺沢",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=21",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "奥仙丈": [
+      {
+        "id": "22",
+        "name": "奥仙丈【ｵｸｾﾝｼﾞｮｳ】線",
+        "norm": "奥仙丈",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=22",
+        "status": "closed",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "137",
+        "name": "奥仙丈線",
+        "norm": "奥仙丈",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=137",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "小字沢": [
+      {
+        "id": "23",
+        "name": "小字沢【ｺｱｻﾞｻﾜ】線",
+        "norm": "小字沢",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=23",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "24",
+        "name": "小字沢【ｺｱｻﾞｻﾜ】線",
+        "norm": "小字沢",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=24",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "御座石": [
+      {
+        "id": "25",
+        "name": "御座石【ｺﾞｻﾞｲｼ】線",
+        "norm": "御座石",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=25",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "26",
+        "name": "御座石【ｺﾞｻﾞｲｼ】線",
+        "norm": "御座石",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=26",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "高須": [
+      {
+        "id": "27",
+        "name": "高須【ﾀｶｽ】線",
+        "norm": "高須",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=27",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "28",
+        "name": "高須【ﾀｶｽ】線",
+        "norm": "高須",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=28",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "前山": [
+      {
+        "id": "29",
+        "name": "前山【ﾏｴﾔﾏ】線",
+        "norm": "前山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=29",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "三沢": [
+      {
+        "id": "30",
+        "name": "三沢【ﾐｻﾜ】線",
+        "norm": "三沢",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=30",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "塔岩": [
+      {
+        "id": "31",
+        "name": "塔岩【ﾄｳｲﾜ】線",
+        "norm": "塔岩",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=31",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "南高尾山": [
+      {
+        "id": "32",
+        "name": "南高尾山【ﾐﾅﾐﾀｶｵ】線",
+        "norm": "南高尾山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=32",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "136",
+        "name": "南高尾山線",
+        "norm": "南高尾山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=136",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "池の平": [
+      {
+        "id": "33",
+        "name": "池の平【ｲｹﾉﾀｲﾗ】線",
+        "norm": "池の平",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=33",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "34",
+        "name": "池の平【ｲｹﾉﾀｲﾗ】線",
+        "norm": "池の平",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=34",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "滝戸山": [
+      {
+        "id": "35",
+        "name": "滝戸山【ﾀｷﾄﾞﾔﾏ】線",
+        "norm": "滝戸山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=35",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "大鳥居": [
+      {
+        "id": "36",
+        "name": "大鳥居【ｵｵﾄﾘｲ】線",
+        "norm": "大鳥居",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=36",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "37",
+        "name": "大鳥居【ｵｵﾄﾘｲ】線",
+        "norm": "大鳥居",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=37",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "高尾山": [
+      {
+        "id": "38",
+        "name": "高尾山【ﾀｶｵｻﾝ】線",
+        "norm": "高尾山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=38",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "桃ノ木鳩打": [
+      {
+        "id": "40",
+        "name": "桃ノ木鳩打【ﾓﾓﾉｷﾊﾄｳﾁ】線",
+        "norm": "桃ノ木鳩打",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=40",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "比志海岸寺": [
+      {
+        "id": "41",
+        "name": "比志海岸寺【ﾋｼｶｲｶﾞﾝｼﾞ】線",
+        "norm": "比志海岸寺",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=41",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "42",
+        "name": "比志海岸寺【ﾋｼｶｲｶﾞﾝｼﾞ】線",
+        "norm": "比志海岸寺",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=42",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "甲西": [
+      {
+        "id": "43",
+        "name": "甲西【ｺｳｻｲ】線",
+        "norm": "甲西",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=43",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "片山": [
+      {
+        "id": "44",
+        "name": "片山【ｶﾀﾔﾏ】線",
+        "norm": "片山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=44",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "高尾伊奈ケ湖": [
+      {
+        "id": "45",
+        "name": "高尾伊奈ケ湖【ﾀｶｵｲﾅｶﾞｺ】線",
+        "norm": "高尾伊奈ケ湖",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=45",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "伊奈ケ湖大久保平": [
+      {
+        "id": "46",
+        "name": "伊奈ケ湖大久保平【ｲﾅｶﾞｺｵｵｸﾎﾞﾀﾞｲﾗ】線",
+        "norm": "伊奈ケ湖大久保平",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=46",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "井富": [
+      {
+        "id": "47",
+        "name": "井富【ｲﾄﾐ】線",
+        "norm": "井富",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=47",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "塩沢": [
+      {
+        "id": "48",
+        "name": "塩沢【ｼｵｻﾞﾜ】線",
+        "norm": "塩沢",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=48",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "49",
+        "name": "塩沢【ｼｵｻﾞﾜ】線",
+        "norm": "塩沢",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=49",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "みずがき": [
+      {
+        "id": "50",
+        "name": "みずがき線",
+        "norm": "みずがき",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=50",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "三沢高須": [
+      {
+        "id": "51",
+        "name": "三沢高須【ﾐｻﾜﾀｶｽ】線",
+        "norm": "三沢高須",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=51",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "大明神": [
+      {
+        "id": "52",
+        "name": "大明神【ﾀﾞｲﾐｮｳｼﾞﾝ】線",
+        "norm": "大明神",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=52",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "樫山": [
+      {
+        "id": "53",
+        "name": "樫山【ｶｼﾔﾏ】線",
+        "norm": "樫山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=53",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "131",
+        "name": "樫山【ｶｼﾔﾏ】線",
+        "norm": "樫山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=131",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "小川山": [
+      {
+        "id": "54",
+        "name": "小川山【ｵｶﾞﾜﾔﾏ】線",
+        "norm": "小川山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=54",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "横尾山": [
+      {
+        "id": "55",
+        "name": "横尾山【ﾖｺｵﾔﾏ】線",
+        "norm": "横尾山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=55",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "松平": [
+      {
+        "id": "56",
+        "name": "松平【ﾏﾂﾀﾞｲﾗ】線",
+        "norm": "松平",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=56",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "観音峠大野山": [
+      {
+        "id": "57",
+        "name": "観音峠大野山【ｶﾝﾉﾝﾄｳｹﾞｵｵﾉﾔﾏ】線",
+        "norm": "観音峠大野山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=57",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "前山大明神": [
+      {
+        "id": "58",
+        "name": "前山大明神【ﾏｴﾔﾏﾀﾞｲﾐｮｳｼﾞﾝ】線",
+        "norm": "前山大明神",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=58",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "川上牧丘": [
+      {
+        "id": "61",
+        "name": "川上牧丘【ｶﾜｶﾐﾏｷｵｶ】線",
+        "norm": "川上牧丘",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=61",
+        "status": "regulated",
+        "reg_reason": "落石"
+      }
+    ],
+    "村道川上牧丘": [
+      {
+        "id": "63",
+        "name": "村道川上牧丘(大弛峠)線",
+        "norm": "村道川上牧丘",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=63",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "鈴庫山": [
+      {
+        "id": "64",
+        "name": "鈴庫山【ｽｽﾞｸﾗﾔﾏ】線",
+        "norm": "鈴庫山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=64",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "65",
+        "name": "鈴庫山【ｽｽﾞｸﾗﾔﾏ】線",
+        "norm": "鈴庫山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=65",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "水ケ森": [
+      {
+        "id": "66",
+        "name": "水ヶ森【ﾐｽﾞｶﾞﾓﾘ】線",
+        "norm": "水ケ森",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=66",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "杣口→県道柳平塩山": [
+      {
+        "id": "67",
+        "name": "杣口(ｿﾏｸﾞﾁ)線→県道柳平塩山(219号)線",
+        "norm": "杣口→県道柳平塩山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=67",
+        "status": "regulated",
+        "reg_from": "2025-04-01",
+        "reg_reason": "工事"
+      }
+    ],
+    "蕪入沢上芦川": [
+      {
+        "id": "68",
+        "name": "蕪入沢上芦川【ｶﾌﾞｲﾘｻﾜｶﾐｱｼｶﾞﾜ】線",
+        "norm": "蕪入沢上芦川",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=68",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "69",
+        "name": "蕪入沢上芦川【ｶﾌﾞｲﾘｻﾜｶﾐｱｼｶﾞﾜ】線",
+        "norm": "蕪入沢上芦川",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=69",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "嵯峨塩深沢": [
+      {
+        "id": "70",
+        "name": "嵯峨塩深沢【ｻｶﾞｼｵﾌｶｻﾜ】線",
+        "norm": "嵯峨塩深沢",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=70",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "日川": [
+      {
+        "id": "71",
+        "name": "日川【ﾆｯｶﾜ】線",
+        "norm": "日川",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=71",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "京戸岩崎山": [
+      {
+        "id": "72",
+        "name": "京戸岩崎山【ｷｮｳﾄﾞｲﾜｻｷﾔﾏ】線",
+        "norm": "京戸岩崎山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=72",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "大窪鶯宿": [
+      {
+        "id": "73",
+        "name": "大窪鶯宿【ｵｵｸﾎﾞｵｳｼｭｸ】線",
+        "norm": "大窪鶯宿",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=73",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "74",
+        "name": "大窪鶯宿【ｵｵｸﾎﾞｵｳｼｭｸ】線",
+        "norm": "大窪鶯宿",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=74",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "一ツ木水ケ森": [
+      {
+        "id": "75",
+        "name": "一ツ木水ヶ森【ﾋﾄﾂｷﾞﾐｽﾞｶﾞﾓﾘ】線",
+        "norm": "一ツ木水ケ森",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=75",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "76",
+        "name": "一ツ木水ヶ森【ﾋﾄﾂｷﾞﾐｽﾞｶﾞﾓﾘ】線",
+        "norm": "一ツ木水ケ森",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=76",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "一ツ木": [
+      {
+        "id": "129",
+        "name": "一ツ木【ﾋﾄﾂｷﾞ】線",
+        "norm": "一ツ木",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=129",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "焼山沢真木": [
+      {
+        "id": "77",
+        "name": "焼山沢真木【ﾔｹﾔﾏｻﾜﾏｷﾞ】線",
+        "norm": "焼山沢真木",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=77",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "菱山深沢": [
+      {
+        "id": "78",
+        "name": "菱山深沢【ﾋｼﾔﾏﾌｶｻﾜ】線",
+        "norm": "菱山深沢",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=78",
+        "status": "regulated",
+        "reg_reason": "落石"
+      }
+    ],
+    "砥山": [
+      {
+        "id": "80",
+        "name": "砥山【ﾄﾔﾏ】線",
+        "norm": "砥山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=80",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "稲山": [
+      {
+        "id": "81",
+        "name": "稲山【ｲﾅﾔﾏ】線",
+        "norm": "稲山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=81",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "黒坂里道": [
+      {
+        "id": "82",
+        "name": "黒坂里道【ｸﾛｻｶｻﾄﾐﾁ】線",
+        "norm": "黒坂里道",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=82",
+        "status": "regulated",
+        "reg_from": "2025-03-13",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "83",
+        "name": "黒坂里道【ｸﾛｻｶｻﾄﾐﾁ】線",
+        "norm": "黒坂里道",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=83",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "名所山": [
+      {
+        "id": "84",
+        "name": "名所山【ﾒｲｼｮﾔﾏ】線",
+        "norm": "名所山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=84",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "大口山": [
+      {
+        "id": "85",
+        "name": "大口山【ｵｵｸﾞﾁﾔﾏ】線",
+        "norm": "大口山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=85",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "大積寺": [
+      {
+        "id": "86",
+        "name": "大積寺【ﾀﾞｲｼｬｸｼﾞ】線",
+        "norm": "大積寺",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=86",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "土室日川": [
+      {
+        "id": "87",
+        "name": "土室日川【ﾂﾁﾑﾛﾆｯｶﾜ】線",
+        "norm": "土室日川",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=87",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "大蔵沢大鹿": [
+      {
+        "id": "88",
+        "name": "大蔵沢大鹿【ｵｵｸﾗｻﾜｵｵｼｶ】線",
+        "norm": "大蔵沢大鹿",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=88",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "114",
+        "name": "大蔵沢大鹿【ｵｵｸﾗｻﾜｵｵｼｶ】線",
+        "norm": "大蔵沢大鹿",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=114",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "乾徳山": [
+      {
+        "id": "89",
+        "name": "乾徳山(南)【ｹﾝﾄｸｻﾝ(ﾐﾅﾐ)】線",
+        "norm": "乾徳山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=89",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "井川雨畑": [
+      {
+        "id": "90",
+        "name": "井川雨畑【ｲｶﾜｱﾒﾊﾀ】線",
+        "norm": "井川雨畑",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=90",
+        "status": "closed",
+        "reg_reason": "落石"
+      },
+      {
+        "id": "91",
+        "name": "井川雨畑【ｲｶﾜｱﾒﾊﾀ】線",
+        "norm": "井川雨畑",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=91",
+        "status": "closed",
+        "reg_reason": "工事"
+      }
+    ],
+    "五開茂倉": [
+      {
+        "id": "92",
+        "name": "五開茂倉【ｺﾞｶｲﾓｸﾞﾗ】線",
+        "norm": "五開茂倉",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=92",
+        "status": "closed",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "93",
+        "name": "五開茂倉【ｺﾞｶｲﾓｸﾞﾗ】線",
+        "norm": "五開茂倉",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=93",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "五開": [
+      {
+        "id": "94",
+        "name": "五開【ｺﾞｶｲ】線",
+        "norm": "五開",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=94",
+        "status": "closed",
+        "reg_reason": "工事"
+      }
+    ],
+    "丸山": [
+      {
+        "id": "95",
+        "name": "丸山【ﾏﾙﾔﾏ】線",
+        "norm": "丸山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=95",
+        "status": "closed",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "104",
+        "name": "丸山支【ﾏﾙﾔﾏｼ】線",
+        "norm": "丸山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=104",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "湯之奥猪之頭": [
+      {
+        "id": "96",
+        "name": "湯之奥猪之頭【ﾕﾉｵｸｲﾉｶﾞｼﾗ】線",
+        "norm": "湯之奥猪之頭",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=96",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "97",
+        "name": "湯之奥猪之頭【ﾕﾉｵｸｲﾉｶﾞｼﾗ】線",
+        "norm": "湯之奥猪之頭",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=97",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "豊岡梅ケ島": [
+      {
+        "id": "98",
+        "name": "豊岡梅ヶ島【ﾄﾖｵｶｳﾒｶﾞｼﾏ】線",
+        "norm": "豊岡梅ケ島",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=98",
+        "status": "closed",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "99",
+        "name": "豊岡梅ヶ島【ﾄﾖｵｶｳﾒｶﾞｼﾏ】線",
+        "norm": "豊岡梅ケ島",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=99",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "赤石高下": [
+      {
+        "id": "100",
+        "name": "赤石高下【ｱｶｲｼﾀｶｵﾘ】線",
+        "norm": "赤石高下",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=100",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "101",
+        "name": "赤石高下【ｱｶｲｼﾀｶｵﾘ】線",
+        "norm": "赤石高下",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=101",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "佐野峠": [
+      {
+        "id": "103",
+        "name": "佐野峠【ｻﾉﾄｳｹﾞ】線",
+        "norm": "佐野峠",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=103",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "池の茶屋": [
+      {
+        "id": "105",
+        "name": "池の茶屋【ｲｹﾉﾁｬﾔ】線",
+        "norm": "池の茶屋",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=105",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "大久保平": [
+      {
+        "id": "106",
+        "name": "大久保平【ｵｵｸﾎﾞﾀﾞｲﾗ】線",
+        "norm": "大久保平",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=106",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "真木小金沢": [
+      {
+        "id": "107",
+        "name": "真木小金沢【ﾏｷﾞｺｶﾞﾈｻﾞﾜ】線",
+        "norm": "真木小金沢",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=107",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "鹿留": [
+      {
+        "id": "108",
+        "name": "鹿留【ｼｼﾄﾞﾒ】線",
+        "norm": "鹿留",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=108",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "109",
+        "name": "鹿留【ｼｼﾄﾞﾒ】線",
+        "norm": "鹿留",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=109",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "奈良子": [
+      {
+        "id": "110",
+        "name": "奈良子【ﾅﾗｺﾞ】線",
+        "norm": "奈良子",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=110",
+        "status": "closed",
+        "reg_from": "2025-06-12",
+        "reg_to": "2025-06-20",
+        "reg_reason": "工事"
+      }
+    ],
+    "金山": [
+      {
+        "id": "111",
+        "name": "金山【ｶﾅﾔﾏ】線",
+        "norm": "金山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=111",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "盛里": [
+      {
+        "id": "112",
+        "name": "盛里【ﾓﾘｻﾄ】線",
+        "norm": "盛里",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=112",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "黒野田": [
+      {
+        "id": "113",
+        "name": "黒野田【ｸﾛﾉﾀﾞ】線",
+        "norm": "黒野田",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=113",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "遅能戸": [
+      {
+        "id": "115",
+        "name": "遅能戸【ｵｿﾉﾄ】線",
+        "norm": "遅能戸",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=115",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "棚頭": [
+      {
+        "id": "116",
+        "name": "棚頭【ﾀﾅｶﾞｼﾗ】線",
+        "norm": "棚頭",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=116",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "和見棚頭": [
+      {
+        "id": "117",
+        "name": "和見棚頭【ﾜﾐﾀﾅｶﾞｼﾗ】線",
+        "norm": "和見棚頭",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=117",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "細野鹿留": [
+      {
+        "id": "118",
+        "name": "細野鹿留【ﾎｿﾉｼｼﾄﾞﾒ】線",
+        "norm": "細野鹿留",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=118",
+        "status": "closed",
+        "reg_from": "2025-07-22",
+        "reg_to": "2025-10-20",
+        "reg_reason": "工事"
+      }
+    ],
+    "滝沢": [
+      {
+        "id": "119",
+        "name": "滝沢【ﾀｷｻﾞﾜ】線",
+        "norm": "滝沢",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=119",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "西川新倉": [
+      {
+        "id": "120",
+        "name": "西川新倉【ﾆｼｶﾜｱﾗｸﾗ】線",
+        "norm": "西川新倉",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=120",
+        "status": "regulated",
+        "reg_reason": "工事"
+      },
+      {
+        "id": "121",
+        "name": "西川新倉【ﾆｼｶﾜｱﾗｸﾗ】線",
+        "norm": "西川新倉",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=121",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "富士大石": [
+      {
+        "id": "128",
+        "name": "富士大石【ﾌｼﾞｵｵｲｼ】線",
+        "norm": "富士大石",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=128",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "軽水": [
+      {
+        "id": "122",
+        "name": "軽水【ｶﾙﾐｽﾞ】線",
+        "norm": "軽水",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=122",
+        "status": "closed",
+        "reg_from": "2025-11-08",
+        "reg_to": "2025-11-09",
+        "reg_reason": "工事"
+      }
+    ],
+    "富士": [
+      {
+        "id": "123",
+        "name": "富士【ﾌｼﾞ】線",
+        "norm": "富士",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=123",
+        "status": "closed",
+        "reg_from": "2025-11-08",
+        "reg_to": "2025-11-09",
+        "reg_reason": "工事"
+      }
+    ],
+    "大田和": [
+      {
+        "id": "124",
+        "name": "大田和【ｵｵﾀﾞﾜ】線",
+        "norm": "大田和",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=124",
+        "status": "closed",
+        "reg_from": "2025-11-08",
+        "reg_to": "2025-11-09",
+        "reg_reason": "工事"
+      }
+    ],
+    "鳴沢": [
+      {
+        "id": "125",
+        "name": "鳴沢【ﾅﾙｻﾜ】線",
+        "norm": "鳴沢",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=125",
+        "status": "closed",
+        "reg_from": "2025-11-08",
+        "reg_to": "2025-11-09",
+        "reg_reason": "工事"
+      }
+    ],
+    "侭下": [
+      {
+        "id": "126",
+        "name": "侭下【ﾏﾏｼﾀ】線",
+        "norm": "侭下",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=126",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "船津": [
+      {
+        "id": "127",
+        "name": "船津【ﾌﾅﾂ】線",
+        "norm": "船津",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=127",
+        "status": "closed",
+        "reg_from": "2025-11-08",
+        "reg_to": "2025-11-09",
+        "reg_reason": "工事"
+      }
+    ],
+    "竹森": [
+      {
+        "id": "134",
+        "name": "竹森【ﾀｹﾓﾘ】線",
+        "norm": "竹森",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=134",
+        "status": "regulated",
+        "reg_from": "2025-09-22",
+        "reg_to": "2025-03-13",
+        "reg_reason": "工事"
+      }
+    ],
+    "鶏冠山": [
+      {
+        "id": "135",
+        "name": "鶏冠山(東)【ｹｲｶﾝｻﾞﾝ(ﾋｶﾞｼ)】線",
+        "norm": "鶏冠山",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=135",
+        "status": "closed",
+        "reg_reason": "工事"
+      }
+    ],
+    "足馴峠": [
+      {
+        "id": "138",
+        "name": "足馴峠【ｱｼﾅﾗｼﾄｳｹﾞ】線",
+        "norm": "足馴峠",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=138",
+        "status": "closed",
+        "reg_reason": "工事"
+      }
+    ],
+    "小楢山北": [
+      {
+        "id": "139",
+        "name": "小楢山北【ｺﾅﾗﾔﾏｷﾀ】線",
+        "norm": "小楢山北",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=139",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "高芝": [
+      {
+        "id": "140",
+        "name": "高芝【タカシバ】線",
+        "norm": "高芝",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=140",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ],
+    "金山沢": [
+      {
+        "id": "156",
+        "name": "金山沢【カナヤマサワ】線",
+        "norm": "金山沢",
+        "url": "https://www.pref.yamanashi.jp/rindoujyouhou/kisei.php?id=156",
+        "status": "regulated",
+        "reg_reason": "工事"
+      }
+    ]
+  }
+}
